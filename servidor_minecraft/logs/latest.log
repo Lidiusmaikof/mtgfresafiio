@@ -1,0 +1,497 @@
+[01:03:18] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.10+7-Ubuntu-124.04; Ubuntu null) on Linux 6.8.0-1044-azure (amd64)
+[01:03:19] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.1-57-master@b483da4 (2024-09-01T18:09:05Z) for Minecraft 1.21.1
+[01:03:19] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[01:03:26] [ServerMain/INFO]: [BeautyQuests] Loading 8 libraries using Paper plugin loader...
+[01:03:26] [ServerMain/INFO]: [PluginInitializerManager] Initialized 24 plugins
+[01:03:26] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (1):
+ - FancyNpcs (2.9.2)
+[01:03:26] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (23):
+ - BeautyQuests (2.0.0), Chunky (1.4.40), CommandPanels (3.23.4), ConditionalEvents (4.75.1), CustomDiscs (0.9.125), CustomizablePlayerModels (0.6.25a), Geyser-Spigot (2.9.4-SNAPSHOT), ItemEdit (3.7.8), LuckPerms (5.5.36), Multiverse-Core (5.5.3), Multiverse-Portals (5.2.1), MythicMobs (5.11.2-6a371d59), PlaceholderAPI (2.12.2), ServerVariables (3.5.1), Shopkeepers (2.24.0), Sit (1.7.2), StringDupersReturn (1.0.12), ViaVersion (5.8.0), WorldEdit (7.3.10-beta-01+cb9fd58), WorldGuard (7.0.12+829a4a4), emotecraft (2.4.12), floodgate (2.2.5-SNAPSHOT (b130-d73192f)), voicechat (2.6.14)
+[01:03:31] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[01:03:35] [ServerMain/WARN]: Non [a-z0-9_.-] character in namespace .DS_Store in pack ./world/datapacks/1.3.5-backpacks_dtpk-1.21-1.21.1.zip, ignoring
+[01:03:35] [ServerMain/WARN]: Non [a-z0-9_.-] character in namespace .DS_Store in pack ./world/datapacks/1.3.5-backpacks_dtpk-1.21-1.21.1.zip, ignoring
+[01:03:35] [ServerMain/ERROR]: Spawn data: Value must be positive: 0
+[01:03:37] [Worker-Main-1/ERROR]: Couldn't parse element minecraft:predicate/sculk_expansion:in_spectator - Not a json array: "spectator"
+[01:03:38] [Worker-Main-1/ERROR]: Couldn't parse element minecraft:loot_table/minecraft:chests/tower1 - Failed to parse either. First: Unknown registry key in ResourceKey[minecraft:root / minecraft:loot_function_type]: minecraft:set_nbt; Second: Not a json array: {"function":"set_nbt","tag":"{Potion:slow_falling}"}
+[01:03:38] [Worker-Main-1/ERROR]: Couldn't parse element minecraft:loot_table/minecraft:chests/tower2 - Failed to parse either. First: Unknown registry key in ResourceKey[minecraft:root / minecraft:loot_function_type]: minecraft:set_nbt; Second: Not a json array: {"function":"set_nbt","tag":"{Potion:slow_falling}"}
+[01:03:41] [Worker-Main-1/WARN]: Invalid path in datapack: spellbound_weapons:advancement/magmus_charger copy.json, ignoring
+[01:03:43] [ServerMain/INFO]: Loaded 1489 recipes
+[01:03:43] [ServerMain/ERROR]: Failed to load function spawnanimations:internal/entity/ehs/pehkui/enderman/hide
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:97) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[01:03:43] [ServerMain/ERROR]: Failed to load function spawnanimations:internal/entity/ehs/pehkui/enderman/unhide
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:97) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[01:03:43] [ServerMain/ERROR]: Failed to load function spawnanimations:internal/entity/ehs/pehkui/check_installed
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:97) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[01:03:43] [ServerMain/ERROR]: Failed to load function spawnanimations:internal/entity/ehs/pehkui/hide
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:97) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[01:03:43] [ServerMain/ERROR]: Failed to load function spawnanimations:internal/entity/ehs/pehkui/unhide
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:97) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[01:03:43] [ServerMain/ERROR]: Couldn't load advancements: [minecraft:wander_add_map, minecraft:give_quest_trader_trade]
+[01:03:43] [ServerMain/INFO]: Loaded 2286 advancements
+[01:03:44] [Server thread/INFO]: Starting minecraft server version 1.21.1
+[01:03:44] [Server thread/INFO]: Loading properties
+[01:03:44] [Server thread/INFO]: This server is running Paper version 1.21.1-57-master@b483da4 (2024-09-01T18:09:05Z) (Implementing API version 1.21.1-R0.1-SNAPSHOT)
+[01:03:45] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[01:03:45] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:03:45] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:03:45] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and population gen parallelism of 1 threads
+[01:03:45] [Server thread/INFO]: Default game type: SURVIVAL
+[01:03:45] [Server thread/INFO]: Generating keypair
+[01:03:45] [Server thread/INFO]: Starting Minecraft server on *:25565
+[01:03:45] [Server thread/INFO]: Using epoll channel type
+[01:03:45] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[01:03:45] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[01:03:45] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/.paper-remapped/emotecraft-2.4.12-bukkit.jar' in 'plugins/.paper-remapped'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [ProtocolLib]. Please download and install these plugins to run 'emotecraft'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:546) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:292) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loading 4 libraries... please wait
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loading 0 libraries... please wait
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/io/github/revxrsal/lamp.bukkit/4.0.0-rc.13/lamp.bukkit-4.0.0-rc.13.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/io/github/revxrsal/lamp.brigadier/4.0.0-rc.13/lamp.brigadier-4.0.0-rc.13.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/io/github/revxrsal/lamp.common/4.0.0-rc.13/lamp.common-4.0.0-rc.13.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/com/github/cryptomorin/XSeries/13.5.0/XSeries-13.5.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/com/zaxxer/HikariCP/6.0.0/HikariCP-6.0.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/fr/mrmicky/fastboard/2.1.5/fastboard-2.1.5.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-api/4.9.3/adventure-api-4.9.3.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-key/4.9.3/adventure-key-4.9.3.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/org/jetbrains/annotations/22.0.0/annotations-22.0.0.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.0.1/adventure-platform-bukkit-4.0.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.0.1/adventure-platform-api-4.0.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.0.1/adventure-text-serializer-bungeecord-4.0.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.9.1/adventure-text-serializer-legacy-4.9.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.9.1/adventure-nbt-4.9.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.9.1/adventure-text-serializer-gson-4.9.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.9.1/adventure-text-serializer-gson-legacy-impl-4.9.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.0.1/adventure-platform-facet-4.0.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.0.1/adventure-platform-viaversion-4.0.1.jar
+[01:03:47] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+[01:03:48] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loading 5 libraries... please wait
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-api/4.20.0/adventure-api-4.20.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-key/4.20.0/adventure-key-4.20.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.4/adventure-platform-bukkit-4.3.4.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.4/adventure-platform-api-4.3.4.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.4/adventure-text-serializer-bungeecord-4.3.4.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.4/adventure-platform-facet-4.3.4.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.4/adventure-platform-viaversion-4.3.4.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.20.0/adventure-text-minimessage-4.20.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.20.0/adventure-text-serializer-gson-4.20.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.20.0/adventure-text-serializer-json-4.20.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/option/1.1.0/option-1.1.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-commons/4.20.0/adventure-text-serializer-commons-4.20.0.jar
+[01:03:49] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.20.0/adventure-text-serializer-legacy-4.20.0.jar
+[01:03:49] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.10-beta-01+cb9fd58
+[01:03:50] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@2cc00365]
+[01:03:51] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.12.2
+[01:03:51] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.12+829a4a4
+[01:03:51] [Server thread/INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.5.3
+[01:03:51] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.8.0
+[01:03:51] [Server thread/INFO]: [ViaVersion] ViaVersion 5.8.0 is now loaded. Registering protocol transformers and injecting...
+[01:03:52] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
+[01:03:52] [Via-Mappingloader-1/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[01:03:54] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.11.2-6a371d59
+[01:03:54] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[01:03:54] [Server thread/INFO]: [MythicMobs] §x§f§f§0§0§0§0M§x§f§f§6§6§0§0y§x§f§f§c§c§0§0t§x§c§b§f§f§0§0h§x§6§5§f§f§0§0i§x§0§0§f§f§0§0c§x§0§0§f§f§6§6 §x§0§0§f§f§c§bE§x§0§0§c§b§f§fn§x§0§0§6§5§f§fa§x§0§0§0§0§f§fb§x§6§6§0§0§f§fl§x§c§c§0§0§f§fe§x§f§f§0§0§c§cd§x§f§f§0§0§6§6!
+[01:03:54] [Server thread/INFO]: [FancyNpcs] Loading server plugin FancyNpcs v2.9.2
+[01:03:54] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b130-d73192f)
+[01:03:55] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[01:03:55] [Server thread/INFO]: [floodgate] Took 1,746ms to boot Floodgate
+[01:03:55] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.36
+[01:03:56] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[01:03:56] [Server thread/INFO]: [Multiverse-Portals] Loading server plugin Multiverse-Portals v5.2.1
+[01:03:56] [Server thread/INFO]: [BeautyQuests] Loading server plugin BeautyQuests v2.0.0
+[01:03:56] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.14
+[01:03:56] [Server thread/INFO]: [CustomizablePlayerModels] Loading server plugin CustomizablePlayerModels v0.6.25a
+[01:03:56] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+[01:03:56] [Server thread/INFO]: [Sit] Loading server plugin Sit v1.7.2
+[01:03:56] [Server thread/INFO]: [CommandPanels] Loading server plugin CommandPanels v3.23.4
+[01:03:56] [Server thread/INFO]: [Shopkeepers] Loading server plugin Shopkeepers v2.24.0
+[01:03:57] [Server thread/INFO]: [Shopkeepers] Loaded all plugin classes (1249 ms).
+[01:03:57] [Server thread/INFO]: [Shopkeepers] Compatibility provider loaded: 1_21_R2
+[01:03:57] [Server thread/INFO]: [Shopkeepers] Loading config.
+[01:03:58] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': COPPER_GOLEM
+[01:03:58] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': CREAKING
+[01:03:58] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': HAPPY_GHAST
+[01:03:58] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': MANNEQUIN
+[01:03:58] [Server thread/WARN]: [Shopkeepers] Config: All existing entity type names can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+[01:03:58] [Server thread/INFO]: [Shopkeepers] Loading language file: language-en-default.yml
+[01:03:58] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': COPPER_GOLEM
+[01:03:58] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': CREAKING
+[01:03:58] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': HAPPY_GHAST
+[01:03:58] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': MANNEQUIN
+[01:03:58] [Server thread/WARN]: [Shopkeepers] Config: All existing entity type names can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+[01:03:58] [Server thread/INFO]: [Shopkeepers] Registering WorldGuard flag 'allow-shop'.
+[01:03:58] [Server thread/INFO]: [Shopkeepers] Registering defaults.
+[01:03:58] [Server thread/INFO]: [StringDupersReturn] Loading server plugin StringDupersReturn v1.0.12
+[01:03:58] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.4-SNAPSHOT
+[01:03:58] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[01:03:58] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[01:03:58] [Server thread/INFO]: [CustomDiscs] Loading server plugin CustomDiscs v0.9.125
+[01:03:58] [Server thread/INFO]: [ConditionalEvents] Loading server plugin ConditionalEvents v4.75.1
+[01:03:58] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.7.8
+[01:03:58] [Server thread/INFO]: [ServerVariables] Loading server plugin ServerVariables v3.5.1
+[01:03:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:03:58] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.10-beta-01+cb9fd58
+[01:03:58] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[01:03:58] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[01:03:59] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21.PaperweightAdapter as the Bukkit adapter
+[01:04:01] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.36
+[01:04:01] [Server thread/INFO]:         __    
+[01:04:01] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.36
+[01:04:01] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[01:04:01] [Server thread/INFO]: 
+[01:04:01] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[01:04:02] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[01:04:02] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[01:04:02] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1660ms)
+[01:04:02] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[01:04:02] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[01:04:02] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[01:04:02] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[01:04:02] [Server thread/INFO]: Preparing level "world"
+[01:04:05] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[01:04:06] [Server thread/INFO]: Time elapsed: 1029 ms
+[01:04:06] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[01:04:06] [Server thread/INFO]: Time elapsed: 186 ms
+[01:04:06] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[01:04:06] [Server thread/INFO]: Time elapsed: 136 ms
+[01:04:06] [Server thread/INFO]: Preparing start region for dimension deeper_dark:deeper_dark
+[01:04:06] [Server thread/INFO]: Time elapsed: 150 ms
+[01:04:06] [Server thread/INFO]: Preparing start region for dimension kattersstructures:deep_blue
+[01:04:06] [Server thread/INFO]: Time elapsed: 223 ms
+[01:04:06] [Server thread/INFO]: Preparing start region for dimension nmr:astral_plane
+[01:04:07] [Server thread/INFO]: Time elapsed: 192 ms
+[01:04:07] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.12.2
+[01:04:07] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[01:04:07] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.12+829a4a4
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_deeper_dark_deeper_dark) TNT ignition is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_deeper_dark_deeper_dark) Lighters are PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_deeper_dark_deeper_dark) Lava fire is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_deeper_dark_deeper_dark) Fire spread is UNRESTRICTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_deeper_dark_deeper_dark'
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_kattersstructures_deep_blue) TNT ignition is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_kattersstructures_deep_blue) Lighters are PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_kattersstructures_deep_blue) Lava fire is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_kattersstructures_deep_blue) Fire spread is UNRESTRICTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_kattersstructures_deep_blue'
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_nmr_astral_plane) TNT ignition is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_nmr_astral_plane) Lighters are PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_nmr_astral_plane) Lava fire is PERMITTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] (world_nmr_astral_plane) Fire spread is UNRESTRICTED.
+[01:04:07] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nmr_astral_plane'
+[01:04:07] [Server thread/INFO]: [WorldGuard] Loading region data...
+[01:04:08] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.5.3
+[01:04:10] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: multiverse-core [5.5.3]
+[01:04:10] [Server thread/INFO]: [Multiverse-Core] API service loaded!
+[01:04:10] [Server thread/INFO]: [Multiverse-Core] Version 5.5.3 (API v5.5) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71
+[01:04:10] [Server thread/INFO]: [Multiverse-Core] Loving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse
+[01:04:10] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.8.0
+[01:04:10] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21-1.21.1 (767)
+[01:04:10] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.11.2-6a371d59
+[01:04:11] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.21.1)...
+[01:04:11] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
+[01:04:13] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythic [5.0.0]
+[01:04:14] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
+[01:04:14] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
+[01:04:17] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[01:04:18] [Server thread/INFO]: [MythicMobs] Loading Items...
+[01:04:18] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[01:04:18] [Server thread/INFO]: [MythicMobs] All items loaded after 94ms!
+[01:04:18] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[01:04:18] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[01:04:18] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[01:04:18] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[01:04:19] [Server thread/INFO]: [MythicMobs] Second passes loaded after 63ms!
+[01:04:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 8 mobs.
+[01:04:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[01:04:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[01:04:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
+[01:04:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[01:04:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 mythic items.
+[01:04:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[01:04:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[01:04:19] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
+[01:04:19] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
+[01:04:19] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs v5.11.2 ( build 6a371d59 ) has been successfully loaded!
+[01:04:19] [Server thread/INFO]: [FancyNpcs] Enabling FancyNpcs v2.9.2
+[01:04:19] [Server thread/WARN]: [org.mineskin.MineSkinClient] Creating MineSkinClient without API key
+[01:04:19] [ForkJoinPool.commonPool-worker-1/WARN]: [FancyNpcs] 
+-------------------------------------------------------
+You are not using the latest version of the FancyNpcs plugin.
+Please update to the newest version (2.10.0).
+https://modrinth.com/plugin/FancyNpcs
+-------------------------------------------------------
+
+[01:04:19] [FancyLogger/INFO]: [FancyNpcs] (ForkJoinPool.commonPool-worker-1) WARN: You are not using the latest version of the FancyNpcs plugin.
+[01:04:20] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b130-d73192f)
+[01:04:20] [FancyLogger/INFO]: [FancyNpcs] (Server thread) INFO: FancyNpcs (2.9.2) has been enabled.
+[01:04:21] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v5.2.1
+[01:04:21] [Server thread/INFO]: [Multiverse-Portals] 0 - Portals(s) loaded
+[01:04:22] [Server thread/INFO]: [Multiverse-Portals] Found WorldEdit. Using it for selections.
+[01:04:22] [Server thread/INFO]: [Multiverse-Portals] Version 5.2.1 (API v5.2) Enabled - By Rigby, fernferret and benwoo1110
+[01:04:22] [Server thread/INFO]: [BeautyQuests] Enabling BeautyQuests v2.0.0
+[01:04:22] [Server thread/INFO]: [BeautyQuests] ------------ BeautyQuests ------------
+[01:04:22] [Server thread/INFO]: [BeautyQuests] Loaded valid Paper internals access.
+[01:04:22] [Server thread/INFO]: [BeautyQuests] Loaded language en_US (0.052s)!
+[01:04:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: beautyquests [2.0.0]
+[01:04:23] [Server thread/INFO]: [BeautyQuests] Placeholders registered !
+[01:04:23] [Server thread/INFO]: [WorldGuard] Registering session handler fr.skytasul.quests.integrations.worldguard.WorldGuardEntryHandler
+[01:04:23] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.14
+[01:04:23] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.21.1-R0.1
+[01:04:23] [Server thread/INFO]: [voicechat] Compatibility version 20
+[01:04:23] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[01:04:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: voicechat [2.6.14]
+[01:04:23] [Server thread/INFO]: [voicechat] Successfully registered PlaceholderAPI expansion
+[01:04:23] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[01:04:23] [Server thread/INFO]: [CustomizablePlayerModels] Enabling CustomizablePlayerModels v0.6.25a
+[01:04:24] [Server thread/WARN]: [CustomizablePlayerModels] Command API not found, using fallback command system.
+[01:04:24] [Server thread/WARN]: [CustomizablePlayerModels] Attributes not found
+java.lang.IncompatibleClassChangeError: Method 'org.bukkit.attribute.Attribute[] org.bukkit.attribute.Attribute.values()' must be Methodref constant
+	at CustomPlayerModels-Bukkit-0.6.25a.jar/com.tom.cpm.bukkit.Network.<init>(Network.java:51) ~[CustomPlayerModels-Bukkit-0.6.25a.jar:?]
+	at CustomPlayerModels-Bukkit-0.6.25a.jar/com.tom.cpm.bukkit.CPMBukkitPlugin.onEnable(CPMBukkitPlugin.java:176) ~[CustomPlayerModels-Bukkit-0.6.25a.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-mojangapi-1.21.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-mojangapi-1.21.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:640) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:589) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:754) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:516) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:329) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[01:04:24] [Server thread/INFO]: [CustomizablePlayerModels] Customizable Player Models Initialized
+[01:04:24] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.40
+[01:04:24] [Server thread/INFO]: [Sit] Enabling Sit v1.7.2
+[01:04:24] [Server thread/INFO]: [CommandPanels] Enabling CommandPanels v3.23.4
+[01:04:24] [Server thread/INFO]: [CommandPanels] RockyHawk's CommandPanels v3.23.4 Plugin Loading...
+[01:04:24] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.1! Trying to find NMS support
+[01:04:24] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R1' loaded!
+[01:04:24] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'CommandPanels' to create a bStats instance!
+[01:04:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: commandpanels [3.23.4]
+[01:04:25] [Server thread/INFO]: [CommandPanels] RockyHawk's CommandPanels v3.23.4 Plugin Loaded!
+[01:04:25] [Server thread/INFO]: [Shopkeepers] Enabling Shopkeepers v2.24.0
+[01:04:25] [Server thread/INFO]: [StringDupersReturn] Enabling StringDupersReturn v1.0.12
+[01:04:25] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.4-SNAPSHOT
+[01:04:29] [Server thread/INFO]: [CustomDiscs] Enabling CustomDiscs v0.9.125
+[01:04:29] [Server thread/INFO]: [ConditionalEvents] Enabling ConditionalEvents v4.75.1
+[01:04:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: conditionalevents [4.75.1]
+[01:04:29] [Server thread/INFO]: [ConditionalEvents] Has been enabled! Version: 4.75.1
+[01:04:29] [Server thread/INFO]: [ConditionalEvents] Thanks for using my plugin!   ~Ajneb97
+[01:04:29] [Server thread/INFO]: There is a new version available. (4.76.2)
+[01:04:29] [Server thread/INFO]: You can download it at: https://modrinth.com/plugin/conditionalevents
+[01:04:29] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.7.8
+[01:04:29] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[01:04:29] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[01:04:30] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[01:04:30] [Server thread/INFO]: [ItemEdit] Hooking into PlaceHolderAPI
+[01:04:30] [Server thread/INFO]: [ItemEdit] placeholders:
+[01:04:30] [Server thread/INFO]: [ItemEdit]   %itemedit_amount_<{itemid}>_[{slot}]_[{player}]%
+[01:04:30] [Server thread/INFO]: [ItemEdit]     shows how many itemid player has on slot
+[01:04:30] [Server thread/INFO]: [ItemEdit]     <{itemid}> for item id on serveritem
+[01:04:30] [Server thread/INFO]: [ItemEdit]     [{slot}] for the slot where the item should be counted, by default inventory
+[01:04:30] [Server thread/INFO]: [ItemEdit]       Values: inventory (include offhand), equip (include offhand), inventoryandequip (include offhand), hand, offhand, head, chest, legs, feet
+[01:04:30] [Server thread/INFO]: [ItemEdit]     [{player}] for the player, by default self
+[01:04:30] [Server thread/INFO]: [ItemEdit]     example: %itemedit_amount_{my_item_id}_{hand}%
+[01:04:30] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: itemedit [1.0]
+[01:04:30] [Server thread/INFO]: [ItemEdit] Hooking into MythicMobs
+[01:04:30] [Server thread/INFO]: [ItemEdit] # Enabled (took 657 ms)
+[01:04:30] [Server thread/INFO]: [ServerVariables] Enabling ServerVariables v3.5.1
+[01:04:30] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: servervariables [3.5.1]
+[01:04:30] [Server thread/INFO]: [ServerVariables] Has been enabled! Version: 3.5.1
+[01:04:30] [Server thread/INFO]: [ServerVariables] Thanks for using my plugin!   ~Ajneb97
+[01:04:30] [Server thread/INFO]: There is a new version available. (3.6.2)
+[01:04:30] [Server thread/INFO]: You can download it at: https://modrinth.com/plugin/servervariables
+[01:04:30] [Server thread/INFO]: [spark] Starting background profiler...
+[01:04:32] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[01:04:32] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[01:04:32] [Server thread/INFO]: [Geyser-Spigot] 
+[01:04:32] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.4-b1097 (git-master-2f1cb9b)
+[01:04:32] [Server thread/INFO]: [Geyser-Spigot] 
+[01:04:32] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[01:04:39] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[01:04:40] [Server thread/INFO]: [Geyser-Spigot] Done (7.673s)! Run /geyser help for help!
+[01:04:40] [ForkJoinPool.commonPool-worker-1/INFO]: [Geyser-Spigot] There's a new Geyser update available to support Bedrock version 26.20. Download it here: https://geysermc.org/download
+[01:04:40] [Server thread/INFO]: Done preparing level "world" (37.614s)
+[01:04:40] [Server thread/INFO]: Running delayed init tasks
+[01:04:40] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[01:04:40] [Server thread/INFO]: Done (83.347s)! For help, type "help"
+[01:04:40] [Server thread/INFO]: Timings Reset
+[01:04:40] [Server thread/INFO]: [voicechat] Loading plugins
+[01:04:40] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[01:04:40] [Server thread/INFO]: [voicechat] Initializing plugins
+[01:04:40] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[01:04:40] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[01:04:40] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 24454
+[01:04:40] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.9]
+[01:04:40] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: sbtags [1.0.1]
+[01:04:40] [Server thread/INFO]: 2 placeholder hook(s) registered!
+[01:04:41] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.9.1, you're on: 5.8.0
+[01:04:45] [Server thread/INFO]: [BeautyQuests] 1 quests loaded (0.243s)!
+[01:04:46] [Server thread/INFO]: [BeautyQuests] Periodic saves task started (18000 ticks). Task ID: 48
+[01:04:55] [Server thread/INFO]: TPS from last 1m, 5m, 15m: 20.0, 20.0, 20.0
+[01:04:58] [Server thread/INFO]: [Not Secure] [Server] hola
+[01:06:07] [User Authenticator #0/INFO]: UUID of player VenaticWinner67 is 27624550-5762-38db-a0a7-5ccd77095ef1
+[01:06:11] [Server thread/INFO]: VenaticWinner67[/100.72.70.36:50150] logged in with entity id 39 at ([world]1899.9450050681194, 206.0, 1982.4422581963108)
+[01:06:12] [Server thread/INFO]: [voicechat] Received secret request of VenaticWinner67 (20)
+[01:06:12] [Server thread/INFO]: [voicechat] Sent secret to VenaticWinner67
+[01:06:13] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 27624550-5762-38db-a0a7-5ccd77095ef1
+[01:06:14] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 27624550-5762-38db-a0a7-5ccd77095ef1
+[01:06:14] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player VenaticWinner67 (27624550-5762-38db-a0a7-5ccd77095ef1) successfully connected to voice chat
+[01:11:45] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[01:11:45] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[01:18:09] [Server thread/INFO]: VenaticWinner67 lost connection: Disconnected
+[01:18:09] [Server thread/INFO]: [voicechat] Disconnecting client VenaticWinner67
+[01:19:45] [Craft Scheduler Thread - 96 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[01:21:05] [Server thread/INFO]: TPS from last 1m, 5m, 15m: 20.0, 20.0, 20.0
+[01:21:08] [Server thread/INFO]: [Not Secure] [Server] hola
+[01:22:46] [Server thread/INFO]: TPS from last 1m, 5m, 15m: 20.0, 20.0, 20.0
+[01:26:00] [User Authenticator #1/INFO]: UUID of player VenaticWinner67 is 27624550-5762-38db-a0a7-5ccd77095ef1
+[01:26:01] [Server thread/INFO]: VenaticWinner67[/100.72.70.36:50192] logged in with entity id 1170 at ([world]1906.913510923354, 206.0, 1983.3307171864135)
+[01:26:01] [Server thread/INFO]: [voicechat] Received secret request of VenaticWinner67 (20)
+[01:26:01] [Server thread/INFO]: [voicechat] Sent secret to VenaticWinner67
+[01:26:02] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 27624550-5762-38db-a0a7-5ccd77095ef1
+[01:26:03] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 27624550-5762-38db-a0a7-5ccd77095ef1
+[01:26:03] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player VenaticWinner67 (27624550-5762-38db-a0a7-5ccd77095ef1) successfully connected to voice chat
+[01:26:09] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Player connected with username TussalSeal7276 (924)
+[01:26:09] [localSession-7-2/INFO]: [Geyser-Spigot] TussalSeal7276 (logged in as: TussalSeal7276) has connected to the Java server
+[01:26:09] [Server thread/INFO]: [floodgate] Floodgate player logged in as .TussalSeal7276 joined (UUID: 00000000-0000-0000-0009-01fb8de4c6b7)
+[01:26:09] [Server thread/INFO]: .TussalSeal7276[/100.124.40.15:0] logged in with entity id 1217 at ([world]5.5, 69.0, -3.5)
+[01:26:37] [Server thread/INFO]: VenaticWinner67 issued server command: /setworldspawn 1892 209 1984
+[01:26:37] [Server thread/INFO]: [VenaticWinner67: Set the world spawn point to 1892, 209, 1984 [0.0]]
+[01:27:00] [Server thread/INFO]: VenaticWinner67 issued server command: /tp .TussalSeal7276 VenaticWinner67
+[01:27:00] [Server thread/INFO]: [VenaticWinner67: Teleported .TussalSeal7276 to VenaticWinner67]
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:00] [Server thread/WARN]: .TussalSeal7276 moved too quickly! 1875.4480001255652,142.0,1983.7893180961998
+[01:27:10] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[01:27:10] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[01:27:35] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] TussalSeal7276 has disconnected from the Java server because of Bedrock client timed out
+[01:27:35] [Geyser Spigot connection thread-6-3/INFO]: [floodgate] Floodgate player logged in as .TussalSeal7276 disconnected
+[01:27:35] [Server thread/INFO]: .TussalSeal7276 lost connection: Disconnected
+[01:27:35] [Server thread/INFO]: [voicechat] Disconnecting client .TussalSeal7276
+[01:28:51] [Server thread/INFO]: VenaticWinner67 lost connection: Disconnected
+[01:28:51] [Server thread/INFO]: [voicechat] Disconnecting client VenaticWinner67
+[01:29:00] [Server thread/INFO]: TPS from last 1m, 5m, 15m: 20.0, 20.0, 20.0
+[01:34:45] [Craft Scheduler Thread - 180 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[01:39:28] [Server thread/INFO]: There are 0 of a max of 20 players online: 
+[01:42:02] [Server thread/INFO]: TPS from last 1m, 5m, 15m: 20.0, 20.0, 20.0

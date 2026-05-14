@@ -1,0 +1,268 @@
+{
+  "kattersstructures:root": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "senti:register": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "backpacks:tree/root": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "mt:mechanics/small/timer": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "incendium:technical/new_player": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "mt:mechanics/step_height/timer": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "mt:mechanics/reach/timer": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "mt:mechanics/big/timer": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "mt:load": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "senti:tick": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "nmr:progression/root": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "yggdrasil:explore/root": {
+    "criteria": {
+      "tick": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "mt:mechanics/light/timer": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:10 +0000"
+    },
+    "done": true
+  },
+  "mt:item_related_advancements/mountain_leggings": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:11 +0000"
+    },
+    "done": true
+  },
+  "mt:item_related_advancements/jungle_shoes": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:11 +0000"
+    },
+    "done": true
+  },
+  "ketket_furnitures:adv_main": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:11 +0000"
+    },
+    "done": true
+  },
+  "incendium:technical/scroll_of_returning": {
+    "criteria": {
+      "log_spam_fixer": "2026-03-30 05:20:11 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/using/ragnarok": {
+    "criteria": {
+      "log_spam_fixer": "2026-03-30 05:20:11 +0000"
+    },
+    "done": false
+  },
+  "nmr:technical/setup_player_bossbar": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:11 +0000"
+    },
+    "done": true
+  },
+  "nvr:progression/root": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:11 +0000"
+    },
+    "done": true
+  },
+  "ketkets:main": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:11 +0000"
+    },
+    "done": true
+  },
+  "incendium:technical/using/trailblazer": {
+    "criteria": {
+      "log_spam_fixer": "2026-03-30 05:20:11 +0000"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:ocean": "2026-03-30 05:20:11 +0000",
+      "minecraft:stony_shore": "2026-04-26 01:14:07 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/using/shield": {
+    "criteria": {
+      "log_spam_fixer": "2026-03-30 05:20:11 +0000"
+    },
+    "done": false
+  },
+  "mt:mechanics/charm/timer": {
+    "criteria": {
+      "requirement": "2026-03-30 05:20:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_slab": {
+    "criteria": {
+      "has_chiseled_quartz_block": "2026-04-11 17:20:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar": {
+    "criteria": {
+      "has_chiseled_quartz_block": "2026-04-11 17:20:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_stairs": {
+    "criteria": {
+      "has_chiseled_quartz_block": "2026-04-11 17:20:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
+    "criteria": {
+      "has_chiseled_quartz_block": "2026-04-11 17:20:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/glow_item_frame": {
+    "criteria": {
+      "has_glow_ink_sac": "2026-04-26 01:23:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/make_a_sign_glow": {
+    "criteria": {
+      "make_a_sign_glow": "2026-04-26 01:25:57 +0000"
+    },
+    "done": true
+  },
+  "incendium:technical/sentrys_wrath": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/inventory/sentrys_wrath": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/feed_ghastling": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/on_player_hurt": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/firestorm": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/inventory/firestorm": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/give_ghastling": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/on_kill": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/multiplex_crossbow": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/on_inventory_change": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/holy_wrath": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/on_block": {
+    "criteria": {
+      "log_spam_fixer": "2026-05-06 01:28:40 +0000"
+    },
+    "done": false
+  },
+  "DataVersion": 3955
+}

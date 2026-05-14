@@ -1,0 +1,47 @@
+discs:
+  - sound: "my_discs:portal_radio"
+    name: "&bPortal radio"
+    item: "minecraft:music_disc_mellohi"
+    cmd: 2004
+enable-playing_msg: true
+use-colored-name-in-msg: false
+use-colored-desc: false
+remove-item-in-creative: false
+allow-spectator-use: false
+sound-volume: 4
+messages:
+  reload: "&aReloaded!"
+  no-permission: "&cI'm sorry, but you do not have permission to perform this command."
+  override-paper-no-permission-msg: false
+  id-not-given: "&cPlease provide disc id"
+  id-not-found: "&cDisc with this id not found"
+  player-not-found: "&cPlayer with this name not found"
+  config-warning: "&cWarning!&e config.yml&c file was rewritten, old copy of file was saved as&e config-backup.yml&c. You can disable this warning in config"
+  disable-config-warning: false
+  list-cmd:
+    top: "&a----==== &bLoaded custom discs (%count%): &a====----"
+    entry: "&c№%index% &7- S: &c%sound%&7, N: &c%name%&7,\nCMD: &c%cmd%&7, M: &c%item%"
+    bottom: "none" # change to any other text to enable sending
+  get-cmd:
+    success: "&cGiven disc &b№%id% &cto &e%player%"
+    console-use: "&cUse &e/cd get <id> <player>&c for console"
+    use: "&cUse &e/cd get <id> [player]"
+  del-cmd:
+    use: "&cUse: &e/cd del <id>"
+    success: "&cDisc &e№%id%&c deleted"
+  add-cmd:
+    use: '&cUse: &e/cd add <item> <sound> <cmd> <name>'
+    use-example: "&cExample: &e/cd add minecraft:music_disc_cat minecraft:music.game 2005 &2Menu Music"
+    cmd-tab-complete: "<CustomModelData-int>"
+    name-tab-complete: "<name>"
+    material-not-exists: "&cMaterial &e%item%&c not found"
+    not-int: "&cCustomModelData must be positive integer"
+    success: "&cNew disc &e№%id%&c created"
+  help-cmd:
+    top: "&cHelp for CustomDiscs:"
+    help: "&e/cd help &b- sends a help message"
+    list: "&e/cd list &b- get a list of custom discs"
+    get: "&e/cd get <id> [player] &b- get a loaded disc"
+    del: "&e/cd del <id> &b- remove disc from config"
+    add: "&e/cd add <item> <sound> <cmd> <name> &b- add a new disc"
+    bottom: "&c============"

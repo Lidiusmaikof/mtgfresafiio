@@ -1,0 +1,48 @@
+# =============================================================================
+# EFECTOS AL NACER: IMPLOSIÓN DE ARCILLA Y POLVO
+# =============================================================================
+EfectoNacimientoTerracota:
+  Skills:
+    # Crujido cerámico pesado + golpe de roca compacta
+    - sound{sound=block.terracotta.break;volume=2;pitch=0.5} @Self
+    - sound{sound=entity.iron_golem.attack;volume=1.5;pitch=0.6} @Self
+    - sound{sound=block.sand.break;volume=1.5;pitch=0.8} @Self
+    # Explosión visual: Nubes de polvo del cañón y ráfagas de viento secas
+    - particles{particle=gust;amount=5;speed=0.1;hS=1;vS=1} @Self              # Ráfaga de viento 1.21
+    - particles{particle=cloud;amount=40;speed=0.15;hS=1.5;vS=1.5} @Self       # Torbellino de polvo
+    - particles{particle=crit;amount=35;speed=0.3;hS=1;vS=1} @Self             # Chispas de fragmentos minerales
+
+# =============================================================================
+# AURA PASIVA DE LOS MONSTRUOS MIENTRAS CAMINAN
+# =============================================================================
+AuraAmbienteTerracota:
+  Skills:
+    - particles{particle=crit;amount=5;speed=0.01;hS=0.4;vS=0.8} @Self          # Desprendimiento de arenisca
+    - particles{particle=smoke;amount=3;speed=0.02;hS=0.3;vS=0.6} @Self         # Efecto de calor sofocante
+    - sound{sound=block.sand.step;volume=0.4;pitch=0.7} @Self ~onTimer:90
+
+# =============================================================================
+# COMBATE: GOLPE SÍSMICO (MANTIENE DAÑO REAL Y DEBUFF DE LENTITUD)
+# =============================================================================
+GolpeSismico:
+  Skills:
+    # Impacto sísmico en los pies del rival
+    - sound{sound=entity.iron_golem.damage;volume=1.2;pitch=0.5} @Target
+    - sound{sound=block.terracotta.step;volume=1.2;pitch=0.6} @Target
+    - particles{particle=cloud;amount=15;speed=0.1;hS=0.8;vS=0.2} @Target       # Polvo al quebrar el suelo
+    - potion{type=SLOW;duration=60;lvl=4} @Target                               # Mantiene: Lentitud IV por 3s
+    - damage{amount=4;ignoreArmor=true} @Target                                 # Mantiene: 4 de daño verdadero
+
+# =============================================================================
+# EFECTO DE NÚCLEO ACTIVO: VÓRTICE DE LAS BADLANDS (CENTRO DE EFECTOS)
+# =============================================================================
+EfectoSpawnerTerracota:
+  Skills:
+    # Eco profundo de cañón desértico
+    - sound{sound=block.trial_spawner.ambient;volume=1.5;pitch=0.5} @Self
+    - sound{sound=block.sand.break;volume=0.5;pitch=0.5} @Self
+    # Efectos visuales de tormenta mineral en el epicentro
+    - particles{particle=gust;amount=2;speed=0.05;hS=2;vS=1} @Self             # Remolinos de viento desértico
+    - particles{particle=cloud;amount=30;speed=0.02;hS=3;vS=2} @Self           # Tormenta de arena en suspensión
+    - particles{particle=crit;amount=25;speed=0.05;hS=2.5;vS=1.5} @Self        # Brillo de cuarzo y arcilla horneada
+    - particles{particle=smoke;amount=15;speed=0.01;hS=3;vS=1} @Self           # Ondas de calor seco emanando del núcleo

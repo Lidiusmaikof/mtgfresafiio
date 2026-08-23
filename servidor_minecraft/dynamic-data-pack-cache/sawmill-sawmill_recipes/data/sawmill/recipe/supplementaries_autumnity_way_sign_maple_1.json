@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "autumnity:maple_planks"
+  },
+  "result": {
+    "id": "supplementaries:autumnity/way_sign_maple",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

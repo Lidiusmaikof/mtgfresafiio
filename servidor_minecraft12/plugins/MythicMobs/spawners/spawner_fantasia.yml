@@ -1,0 +1,20 @@
+# =============================================================================
+# GENERADOR ÚNICO: EL JINETE DE LAS ESTRELLAS (MOLDE DE ENTORNO AÉREO)
+# =============================================================================
+GeneradorFantasiaAereo:
+  MobName: EspectroEstelar
+  World: world # Modifica por el nombre de tu mundo de fantasía
+  X: 1383 # Coordenadas altas (ej: la cima de una torre)
+  Y: 241
+  Z: 1175
+  Radius: 25
+  UsePlayerRadius: true
+  PlayerRadius: 25
+  MaxMobs: 10 # Límite balanceado para no saturar el espacio aéreo
+  MobsPerSpawn: 5 # Aparece de uno en uno como un miniboss élite
+  Cooldown: 20 # Tiempo de recarga entre avistamientos (20 segundos)
+  ActivationRange: 30
+  CheckForPlayers: true
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 2

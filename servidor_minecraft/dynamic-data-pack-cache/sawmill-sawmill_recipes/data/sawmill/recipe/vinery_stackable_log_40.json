@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "ecologics:walnut_log"
+    },
+    {
+      "item": "ecologics:walnut_wood"
+    },
+    {
+      "item": "ecologics:stripped_walnut_log"
+    },
+    {
+      "item": "ecologics:stripped_walnut_wood"
+    }
+  ],
+  "result": {
+    "id": "vinery:stackable_log",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

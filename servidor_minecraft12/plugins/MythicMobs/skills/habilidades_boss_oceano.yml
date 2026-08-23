@@ -1,0 +1,152 @@
+# =============================================================================
+# ⚡ 1. SECUENCIA CINEMÁTICA: CARGA DE PODER + EXPLOSIÓN TITÁNICA INICIAL
+# =============================================================================
+BossAparicionCargaPoder:
+  Skills:
+    # --- ETAPA 1: CONGELACIÓN E INMUNIDAD (0 a 2 SEGUNDOS) ---
+    - potion{type=SLOW;duration=100;lvl=10} @Self                               # Se paraliza para acumular energía
+    - potion{type=DAMAGE_RESISTANCE;duration=100;lvl=5} @Self                   # Inmune mientras carga poder
+    - title{title="&3&l[SISTEMA DE PRESIÓN CRÍTICA]";subtitle="&bUn poder ancestral se está concentrando...";d=50} @PlayersInRadius{r=45}
+    # Sonido progresivo de carga sónica y latidos gigantes
+    - sound{sound=entity.warden.sonic_charge;volume=2;pitch=0.5} @PlayersInRadius{r=45}
+    - sound{sound=entity.warden.heartbeat;volume=2;pitch=0.3} @PlayersInRadius{r=45}
+    - particles{particle=sculk_charge;amount=100;speed=0.2;hS=4;vS=4} @Self
+    - particles{particle=nautilus;amount=120;speed=0.3;hS=3;vS=3} @Self
+
+    # --- ETAPA 2: SOBRECARGA DE ENERGÍA (RETARDO DE 2 SEGUNDOS) ---
+    - delay 40
+    - title{title="&4&l¡SOBRECARGA ABISAL 99%!";subtitle="&c¡LA PRESIÓN ESTÁ A PUNTO DE EXPLOTAR!";d=40} @PlayersInRadius{r=45}
+    - sound{sound=block.conduit.activate;volume=2;pitch=0.5} @PlayersInRadius{r=45}
+    - sound{sound=entity.lightning_bolt.thunder;volume=2;pitch=0.4} @PlayersInRadius{r=45}
+    - particles{particle=dust;color=#00FFFF;size=3;amount=150;speed=0.01;hS=5;vS=1} @Self
+    - particles{particle=current_down;amount=100;speed=0.2;hS=4;vS=4} @Self
+
+    # --- ETAPA 3: LIBERACIÓN TITÁNICA E IMPLOSIÓN INSTA-KILL (RETARDO DE 4 SEGUNDOS) ---
+    - delay 40
+    - title{title="&3&l¡LEVIATÁN TITÁNICO!";subtitle="&4&l¡SIENTEN EL PODER DEL SEÑOR DEL ABISMO!";d=80} @PlayersInRadius{r=45}
+    - message{msg="&4&l[¡CATACLISMO!] &c&lEl Leviatán ha liberado su carga de poder. ¡LA MASA DE AGUA HA COLAPSADO!"} @PlayersInRadius{r=45}
+    # Sonidos de Autoridad Suprema
+    - sound{sound=entity.ender_dragon.growl;volume=2;pitch=0.3} @PlayersInRadius{r=45}
+    - sound{sound=entity.elder_guardian.curse;volume=2;pitch=0.4} @PlayersInRadius{r=45}
+    - sound{sound=entity.generic.explode;volume=2;pitch=0.4} @PlayersInRadius{r=45}
+    # Muestra visual titánica
+    - particles{particle=explosion_emitter;amount=6;speed=0;hS=2;vS=2} @Self
+    - particles{particle=sonic_boom;amount=4;speed=0;hS=1;vS=1} @Self
+    - particles{particle=splash;amount=300;speed=0.8;hS=8;vS=8} @Self
+    # Explosión Insta-Kill inicial a quien esté dentro del radio del ritual
+    - damage{amount=3000;ignoreArmor=true} @PlayersInRadius{r=10}
+
+# =============================================================================
+# 🌊 2. AURA PASIVA INFINITA DE AUTORIDAD (EFECTO AMBIENTAL BUCLE)
+# =============================================================================
+BossAuraPasivaInfinita:
+  Skills:
+    - particles{particle=current_down;amount=20;speed=0.02;hS=3;vS=3} @Self
+    - particles{particle=glow;amount=12;speed=0.01;hS=2;vS=2} @Self
+    - particles{particle=nautilus;amount=10;speed=0.02;hS=2;vS=2} @Self
+    - particles{particle=bubble;amount=25;speed=0.05;hS=2;vS=3} @Self
+    - sound{sound=block.conduit.ambient;volume=1.2;pitch=0.5} @Self ~onTimer:40
+    - sound{sound=entity.warden.heartbeat;volume=0.8;pitch=0.4} @Self ~onTimer:60
+
+# =============================================================================
+# ⚔️ 3. COMBATE Y ATAQUES VELOCES
+# =============================================================================
+GolpeMareaDevastadora:
+  Skills:
+    - potion{type=SPEED;duration=40;lvl=2} @Self
+    - sound{sound=entity.player.splash;volume=1.8;pitch=0.4} @Target
+    - sound{sound=block.conduit.attack_target;volume=1.5;pitch=0.5} @Target
+    - particles{particle=splash;amount=70;speed=0.4;hS=1.5;vS=1.5} @Target
+    - particles{particle=current_down;amount=30;speed=0.1;hS=1.5;vS=1.5} @Target
+    - potion{type=SLOW;duration=80;lvl=4} @Target
+    - potion{type=BLINDNESS;duration=50;lvl=1} @Target
+    - damage{amount=15;ignoreArmor=true} @Target
+
+TridenteVortice:
+  Skills:
+    - sound{sound=entity.elder_guardian.curse;volume=1.5;pitch=0.6} @PlayersInRadius{r=30}
+    - sound{sound=entity.wither.spawn;volume=1.0;pitch=0.8} @PlayersInRadius{r=30}
+    - particles{particle=nautilus;amount=80;speed=0.3;hS=3;vS=3} @Self
+    - pull{velocity=3.0} @PlayersInRadius{r=25}                                 # Succión masiva hacia el Boss
+    - message{msg="&4&l[Leviatán Titánico] &c&l¡VENGAN A MÍ, CRIATURAS INSIGNIFICANTES!"} @PlayersInRadius{r=25}
+
+# =============================================================================
+# 🔱 4. INVOCACIÓN DE HORDA ESBIRRA
+# =============================================================================
+InvocacionHordaEsbirros:
+  Skills:
+    - sound{sound=entity.drowned.ambient_water;volume=2;pitch=0.4} @Self
+    - sound{sound=entity.elder_guardian.ambient;volume=1.5;pitch=0.5} @Self
+    - particles{particle=splash;amount=120;speed=0.3;hS=4;vS=3} @Self
+    - summon{mob=GuardiaCoronaAbisal;amount=5;radius=6} @Self
+    - summon{mob=EscuderoAbisal;amount=4;radius=6} @Self
+
+# =============================================================================
+# ⚡ 5. TRANSICIÓN A FASE 2: ENRAGE TOTAL
+# =============================================================================
+BossTransicionFase2:
+  Skills:
+    - potion{type=DAMAGE_RESISTANCE;duration=120;lvl=5} @Self                   # Escudo de inmunidad
+    - potion{type=SPEED;duration=99999;lvl=3} @Self                            # Velocidad de titan acelerada
+    - sound{sound=entity.ender_dragon.growl;volume=2;pitch=0.2} @PlayersInRadius{r=50}
+    - sound{sound=entity.wither.spawn;volume=2;pitch=0.5} @PlayersInRadius{r=50}
+    - title{title="&4&l¡FURIA TITÁNICA ACTIVADA!";subtitle="&cEl Leviatán ha roto sus sellos de contención";d=70} @PlayersInRadius{r=50}
+    - summon{mob=GuardiaCoronaAbisal;amount=6;radius=7} @Self
+    - summon{mob=EscuderoAbisal;amount=5;radius=7} @Self
+    - particles{particle=explosion_emitter;amount=6;speed=0;hS=3;vS=3} @Self
+
+# =============================================================================
+# ☠️ 6. HABILIDAD INSTA-KILL: COLAPSO DE LAS MARIANAS
+# =============================================================================
+ColapsoMarianasInstaKill:
+  Skills:
+    - title{title="&4&l¡PRESIÓN CRÍTICA!";subtitle="&e¡Evacua el círculo rojo en 4 segundos!";d=80} @PlayersInRadius{r=45}
+    - message{msg="&4&l[¡ALERTA MÁXIMA!] &c¡El Leviatán está destruyendo el lecho marino! ¡HUYE!"} @PlayersInRadius{r=45}
+    - sound{sound=block.conduit.deactivate;volume=2;pitch=0.3} @PlayersInRadius{r=45}
+    - sound{sound=entity.warden.sonic_charge;volume=1.5;pitch=0.5} @PlayersInRadius{r=45}
+    # Indicador de peligro masivo
+    - particles{particle=dust;color=#FF0000;size=3;amount=120;speed=0.01;hS=8;vS=0.2} @Target
+    - delay 80                                                                  # 4 Segundos de aviso
+    # Impacto
+    - sound{sound=entity.elder_guardian.curse;volume=2;pitch=0.1} @PlayersInRadius{r=45}
+    - sound{sound=entity.generic.explode;volume=2;pitch=0.5} @PlayersInRadius{r=45}
+    - particles{particle=sonic_boom;amount=4;speed=0;hS=0;vS=0} @Target
+    - particles{particle=splash;amount=300;speed=0.6;hS=8;vS=8} @Target
+    - damage{amount=3000;ignoreArmor=true} @PlayersInRadius{r=10}              # Insta-kill en 10 bloques
+
+# =============================================================================
+# 💀 7. SECUENCIA DE MUERTE CATACLÍSMICA
+# =============================================================================
+BossMuerteCinematica:
+  Skills:
+    # --- FASE DE AGONÍA 1 (0 SEGUNDOS) ---
+    - potion{type=SLOW;duration=140;lvl=10} @Self
+    - potion{type=DAMAGE_RESISTANCE;duration=140;lvl=5} @Self
+    - title{title="&3&l¡EL TITÁN HA SIDO DERROTADO!";subtitle="&cEl núcleo abisal está a punto de implosionar...";d=120} @PlayersInRadius{r=50}
+    - sound{sound=entity.wither.death;volume=2;pitch=0.4} @PlayersInRadius{r=50}
+    - sound{sound=entity.ender_dragon.death;volume=2;pitch=0.4} @PlayersInRadius{r=50}
+    - particles{particle=sculk_soul;amount=150;speed=0.1;hS=4;vS=6} @Self
+    
+    # --- FASE DE AGONÍA 2 (RETARDO DE 2 SEGUNDOS) ---
+    - delay 40
+    - sound{sound=entity.lightning_bolt.thunder;volume=2;pitch=0.4} @PlayersInRadius{r=50}
+    - particles{particle=nautilus;amount=200;speed=0.4;hS=5;vS=7} @Self
+    - particles{particle=current_down;amount=150;speed=0.3;hS=5;vS=5} @Self
+
+    # --- FASE DE AGONÍA 3 (RETARDO DE 4 SEGUNDOS) ---
+    - delay 40
+    - title{title="&4&l¡EXPLOSIÓN FINAL INMINENTE!";subtitle="&4¡Aléjate inmediatamente o morirás!";d=40} @PlayersInRadius{r=50}
+    - sound{sound=block.conduit.deactivate;volume=2;pitch=0.1} @PlayersInRadius{r=50}
+    - particles{particle=dust;color=#FF0000;size=4;amount=180;speed=0.01;hS=12;vS=0.5} @Self
+
+    # --- CATACLISMO FINAL (RETARDO DE 6 SEGUNDOS) ---
+    - delay 40
+    - sound{sound=entity.generic.explode;volume=2;pitch=0.3} @PlayersInRadius{r=50}
+    - sound{sound=entity.elder_guardian.curse;volume=2;pitch=0.1} @PlayersInRadius{r=50}
+    - sound{sound=entity.wither.spawn;volume=2;pitch=0.3} @PlayersInRadius{r=50}
+    - particles{particle=explosion_emitter;amount=10;speed=0;hS=4;vS=4} @Self
+    - particles{particle=sonic_boom;amount=6;speed=0;hS=1;vS=1} @Self
+    - particles{particle=splash;amount=400;speed=0.8;hS=12;vS=12} @Self
+    - message{msg="&4&l[Leviatán Titánico] &c&l¡EL ABISMO LOS CONSUMIRÁ A TODOS POR LA ETERNIDAD!"} @PlayersInRadius{r=50}
+    # Explosión Insta-Kill definitiva de muerte en 14 bloques a la redonda
+    - damage{amount=4000;ignoreArmor=true} @PlayersInRadius{r=14}

@@ -1,0 +1,20 @@
+# =============================================================================
+# GENERADOR MAESTRO: LAS MAREAS HELADAS (CONSERVADO INTACTO)
+# =============================================================================
+GeneradorGlacialCustom:
+  MobName: CaminanteGlacial
+  World: world # Recuerda mantener tus coordenadas configuradas
+  X: 4022
+  Y: 70
+  Z: 101
+  Radius: 20
+  UsePlayerRadius: true
+  PlayerRadius: 15
+  MaxMobs: 10
+  MobsPerSpawn: 2
+  Cooldown: 12
+  ActivationRange: 15
+  CheckForPlayers: true
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 5

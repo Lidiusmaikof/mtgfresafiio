@@ -1,0 +1,11 @@
+{
+  "group": "log",
+  "ingredient": {
+    "item": "ecologics:azalea_log"
+  },
+  "result": {
+    "id": "ecologics:stripped_azalea_wood",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

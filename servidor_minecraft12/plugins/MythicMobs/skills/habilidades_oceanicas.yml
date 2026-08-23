@@ -1,0 +1,59 @@
+# =============================================================================
+# MECÁNICA DE ACOPLAMIENTO: ENSAMBLAJE SEGURO AL 100%
+# =============================================================================
+GarantizarMontura:
+  Skills:
+    - mount{mob=GuardianAbisal} @Self
+
+# =============================================================================
+# EFECTOS AL NACER: IMPLOSIÓN CRISTALINA DE PRISMARINA
+# =============================================================================
+EfectoNacimientoOceanico:
+  Skills:
+    # Combinación de rugidos abisales de Guardianes y golpes de agua pesada
+    - sound{sound=entity.guardian.ambient;volume=2;pitch=0.5} @Self
+    - sound{sound=entity.elder_guardian.curse;volume=1.2;pitch=0.8} @Self
+    - sound{sound=entity.player.splash;volume=1.8;pitch=0.6} @Self
+    # Estallido Visual Premium: Anillos de energía náutilus y vórtice de agua descendente
+    - particles{particle=nautilus;amount=40;speed=0.1;hS=1.5;vS=1.5} @Self
+    - particles{particle=bubble;amount=60;speed=0.2;hS=2;vS=2} @Self
+    - particles{particle=current_down;amount=25;speed=0.05;hS=1;vS=2} @Self      # Partícula 1.21 de corrientes de agua
+    - particles{particle=glow;amount=20;speed=0.1;hS=1.2;vS=1.2} @Self
+
+# =============================================================================
+# AURA PASIVA DE LOS MONSTRUOS: ECO RADIAL ACUÁTICO
+# =============================================================================
+AuraAmbienteOceanica:
+  Skills:
+    # Goteo constante de energía náutilus y burbujas de presión hidrodinámica
+    - particles{particle=bubble;amount=8;speed=0.02;hS=0.6;vS=1} @Self
+    - particles{particle=nautilus;amount=4;speed=0.01;hS=0.5;vS=0.8} @Self
+    - sound{sound=entity.guardian.flop;volume=0.3;pitch=0.6} @Self ~onTimer:60
+
+# =============================================================================
+# COMBATE: PRESIÓN ABISAL (MANTIENE EQUILIBRIO MATEMÁTICO REAL)
+# =============================================================================
+PresionAbisal:
+  Skills:
+    # Impacto acústico de ataque de conducto marino
+    - sound{sound=block.conduit.attack_target;volume=1.3;pitch=0.5} @Target
+    - sound{sound=entity.drowned.shoot;volume=1.2;pitch=0.6} @Target
+    # Explosión visual hidrodinámica en la cara del jugador
+    - particles{particle=splash;amount=25;speed=0.2;hS=0.5;vS=0.5} @Target
+    - particles{particle=glow;amount=10;speed=0.05;hS=0.4;vS=0.4} @Target
+    - potion{type=SLOW;duration=60;lvl=4} @Target                               # Mantiene: Lentitud IV por 3s
+    - damage{amount=4;ignoreArmor=true} @Target                                 # Mantiene: 4 de daño verdadero
+
+# =============================================================================
+# EFECTO DE NÚCLEO ACTIVO: EL VÓRTICE DE LA PRISMARINA (ALTA GAMA VISUAL)
+# =============================================================================
+EfectoSpawnerOceanico:
+  Skills:
+    # Sonido envolvente de un templo submarino activo
+    - sound{sound=block.conduit.ambient;volume=1.5;pitch=0.7} @Self
+    - sound{sound=ambient.underwater.loop.additions.rare;volume=1.0;pitch=0.5} @Self
+    # Tormenta submarina simétrica en el epicentro del spawner
+    - particles{particle=nautilus;amount=35;speed=0.02;hS=3.5;vS=3.5} @Self      # Runas flotando en círculo
+    - particles{particle=bubble;amount=50;speed=0.04;hS=3;vS=4} @Self           # Gran columna de burbujas hacia arriba
+    - particles{particle=current_down;amount=15;speed=0.01;hS=2.5;vS=2} @Self   # Remolinos gravitacionales
+    - particles{particle=glow;amount=20;speed=0.02;hS=3;vS=3} @Self             # Brillo místico del núcleo

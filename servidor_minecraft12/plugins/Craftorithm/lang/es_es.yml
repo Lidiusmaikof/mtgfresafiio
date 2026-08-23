@@ -1,0 +1,334 @@
+prefix: '&8[&3Craftorithm&8]' # DinoBossYT te tradujo el plugin a español <3 ahora dejame usarlo ta good
+unsupported_version: <prefix> Versión no Soportada
+new_version: <prefix> &aDetectada una nueva versión <new_version>, ¡por favor actualiza
+  a la versión más reciente lo antes posible!
+# Mensajes de retroalimentación del uso de comandos
+command:
+  no_perm: <prefix> &cNo tienes permiso para usar este comando.
+  player_only: <prefix> &cSolo los jugadores pueden ejecutar este comando.
+  not_enough_param: <prefix> &cEl comando necesita parámetros, se requieren <number>
+    parámetros.
+  undefined_subcmd: <prefix> &cSubcomando no definido!
+  item:
+    save:
+      success: <prefix> &aElemento guardado con éxito.
+      failed_save_air: '<prefix> &cError al guardar el elemento. Motivo: No se puede
+        guardar un elemento inexistente.'
+    give:
+      success: <prefix> &aElemento entregado con éxito
+      not_exist_item: <prefix> &cEl elemento <item_name> no existe.
+      player_offline: <prefix> &cEl jugador no está en línea o no tiene un perfil.
+    fuel:
+      add:
+        success: <prefix> &aCombustible personalizado añadido con éxito.
+        failed_add_air: '<prefix> &cError al añadir combustible personalizado. Motivo:
+          No se puede añadir un elemento inexistente como combustible.'
+        failed_exist: '<prefix> &cError al añadir combustible personalizado. Motivo:
+          Este combustible ya existe.'
+      remove:
+        success: <prefix> &aCombustible personalizado eliminado con éxito.
+        failed_not_exist: '<prefix> &cError al eliminar combustible personalizado.
+          Motivo: Este combustible no existe.'
+  reload:
+    success: <prefix> &a¡Plugin recargado!
+    exception: <prefix> &cSe produjo un error durante la recarga del plugin, por favor
+      revisa la consola.
+    recipe_manager_reloading: <prefix> &cEl gestor de recetas se está recargando.
+      Por favor, inténtalo de nuevo más tarde.
+  remove:
+    success: <prefix> &aReceta eliminada con éxito.
+    not_exist: <prefix> &cLa receta no existe.
+  disable:
+    success: <prefix> &cReceta deshabilitada con éxito.
+    not_exist: <prefix> &cLa receta no existe o ya ha sido deshabilitada.
+    failed: <prefix> &cError al deshabilitar la receta, puede que ya esté deshabilitada
+      o no exista.
+  version: '<prefix> &aVersión del plugin: <version>'
+  create:
+    unsupported_recipe_type: <prefix> &cTipo de receta no soportado.
+    unsupported_recipe_name: <prefix> &cNombre de receta no soportado, solo se permiten
+      letras minúsculas, números, "_", "-" y ".".
+    name_used: <prefix> &cEl ID de la receta ya está en uso.
+    null_result: <prefix> &cEl resultado de la receta no puede estar vacío!
+    null_source: <prefix> &cLos ingredientes de la receta no pueden estar vacíos!
+    success: <prefix> &aReceta <recipe_type> <recipe_name> creada con éxito.
+    invalid_recipe_id: <prefix> &cNombre de receta no soportado. Solo se permiten
+      letras minúsculas, números, "_", "-" y ".".
+    input_hint:
+      smelting_time: '&aIntroduce el tiempo de fundición para esta receta (escribe
+        cancel para cancelar)'
+      smelting_exp: '&aIntroduce la experiencia de recompensa para esta receta (escribe
+        cancel para cancelar)'
+      anvil_cost_level: '&aIntroduce el costo en experiencia para esta receta de yunque
+        (escribe cancel para cancelar)'
+  run_arcenciel:
+    success: <prefix> &aEjecución exitosa, tomó <time> ms.
+  list:
+    unsupported_version: <prefix> &cEsta función solo está disponible en la versión
+      1.16 o superior.
+  unknown_player: '<prefix> &cJugador desconocido: <player_name>'
+  display:
+    unsupported_recipe_type: <prefix> &cTipo de receta no soportado.
+  openmenu:
+    unknown_menu: '<prefix> &cMenú desconocido: <menu_name>'
+  script:
+    operation_time: <prefix> &aLa ejecución de la instrucción tardó <time> ms.
+  edit:
+    invalid_recipe_id: <prefix> &cID de receta inválido.
+    recipe_not_found: <prefix> &cReceta no encontrada.
+    success: <prefix> &aReceta <recipe_file_name> (<recipe_id>) editada con éxito.
+  recipebook:
+    success: <prefix> &aLibro de recetas abierto.
+    type_not_found: <prefix> &cEl tipo de receta <recipe_type> no existe
+menu:
+  recipe_list:
+    title: '&3&lLista de Recetas'
+    icon:
+      frame: '&3&lLista de Recetas'
+      previous: '&aPágina Anterior'
+      next: '&aPágina Siguiente'
+  new_recipe_list:
+    title: '&3&lLista de Nuevas Recetas de Craftorithm'
+    icon:
+      frame: '&3&lLista de nuevas recetas'
+      previous: '&aPágina Anterior'
+      next: '&aPágina Siguiente'
+      elements:
+        lore:
+        - ''
+        - '&3Click izquierdo para ver'
+        - '&3Click derecho para editar'
+  recipe_display:
+    title:
+      shaped: Receta con Forma
+      shapeless: Receta sin Forma
+      furnace: Receta de Horno
+      blasting: Receta de Alto Horno
+      smoking: Receta de Ahumador
+      campfire: Receta de Hoguera
+      smithing: Receta de Herrería
+      stone_cutting: Receta de Cortapiedras
+      potion: Receta de Poción
+      anvil: Receta de Yunque
+    anvil:
+      cost_level: '&3Nivel requerido: &a<level>'
+    vanilla_smelting:
+      time: '&3Tiempo de fundición: &a<time>'
+      reward_exp: '&3Experiencia de recompensa: &a<reward_exp>'
+    back: '&cHaz clic para volver'
+  recipe_creator:
+    title: '&3Creando receta &a<recipe_type> &3: &a<recipe_name>'
+    icon:
+      frame: '&aCreando Receta'
+      result_frame: '&aResultado de la Receta'
+      confirm: '&3&lConfirmar Creación'
+      unlock: '&3Desbloquear Receta para Jugador: &a<unlock>'
+      cooking_frame: '&aIngredientes para Fundir'
+      furnace_toggle: '&3Habilitar Receta de Horno: &a<enable>'
+      blast_furnace_toggle: '&3Habilitar Receta de Alto Horno: &a<enable>'
+      smoker_toggle: '&3Habilitar Receta de Ahumador: &a<enable>'
+      campfire_toggle: '&3Habilitar Receta de Hoguera: &a<enable>'
+      cooking_time:
+        name: '&3Tiempo de Fundición: &a<time> tick'
+        lore:
+        - ''
+        - '&3Click para modificar el tiempo de fundición'
+        input_hint: '&aPor favor introduce el tiempo de fundición en ticks. Escribe
+          "cancel" para cancelar.'
+      cooking_exp:
+        name: '&3Recompensa de Experiencia: &a<exp>'
+        lore:
+        - ''
+        - '&3Click para modificar la recompensa de experiencia.'
+        input_hint: '&aPor favor introduce la recompensa de experiencia. Escribe "cancel"
+          para cancelar.'
+      smithing_frame: '&aIngredientes para Forjar'
+      smithing_copy_nbt_toggle: '&3Preservar NBT del Item: &a<enable>'
+      potion_frame: '&aIngredientes para Pociones'
+      anvil_frame: '&aIngredientes para Yunque'
+      anvil_copy_nbt_toggle: '&3Preservar NBT del Item: &a<enable>'
+      anvil_cost_level:
+        name: '&3Nivel Requerido: &a<level>'
+        lore:
+        - ''
+        - '&3Click para modificar el nivel requerido'
+        input_hint: '&aPor favor introduce el nivel requerido. Escribe "cancel" para
+          cancelar.'
+    name: Creador
+    null_result: <prefix> &c¡El resultado de la receta no puede estar vacío!
+    null_ingredients: <prefix> &c¡Los ingredientes de la receta no pueden estar vacíos!
+    result_frame_icon_name: '&aColoca el resultado de la receta aquí'
+    confirm_icon_name: '&6&lConfirmar creación de receta'
+    result_frame: '&aResultado'
+    frame_lore:
+      crafting: '&7Coloca los materiales en la cuadrícula 3x3'
+      smelting: '&7Coloca el material a la izquierda'
+      brewing_input: '&7Coloca la poción a la izquierda'
+      brewing_ingredient: '&7Coloca el ingrediente abajo a la izquierda'
+      stonecutting: '&7Coloca el material a la izquierda'
+      smithing: '&7Coloca plantilla, base y adición a la izquierda'
+      anvil: '&7Coloca los objetos a la izquierda'
+      result_right: '&7Coloca el resultado a la derecha'
+      confirm_button: '&7Haz clic en el botón de abajo para crear'
+    result_lore:
+      shaped: '&7Coloca el resultado aquí'
+      smelting: '&7Coloca el resultado de fundición aquí'
+      brewing: '&7Coloca el resultado de elaboración aquí'
+      stonecutting: '&7Coloca el resultado del cortapiedras aquí'
+      smithing: '&7Coloca el resultado de herrería aquí'
+    confirm_lore:
+      shaped: '&7Haz clic para crear receta con forma'
+      shapeless: '&7Haz clic para crear receta sin forma'
+      smelting: '&7Haz clic para crear receta de horno'
+      blasting: '&7Haz clic para crear receta de alto horno'
+      smoking: '&7Haz clic para crear receta de ahumador'
+      campfire: '&7Haz clic para crear receta de hoguera'
+      smithing: '&7Haz clic para crear receta de herrería'
+      stonecutting: '&7Haz clic para crear receta de cortapiedras'
+      brewing: '&7Haz clic para crear receta de elaboración'
+      anvil: '&7Haz clic para crear receta de yunque'
+    category_prefix: '&aCategoría:'
+    category_lore: '&7Haz clic para cambiar categoría'
+    smelting:
+      time: '&aTiempo de fundición: &e<time> &7(tick)'
+      time_lore: '&7Haz clic para introducir el tiempo'
+      exp: '&aXP de recompensa: &e<exp>'
+      exp_lore: '&7Haz clic para introducir la XP'
+    anvil:
+      cost_level: '&aNivel requerido: &e<level>'
+      cost_level_lore: '&7Haz clic para introducir el nivel'
+  recipe_book:
+    sort_mode:
+      name_asc: A-Z
+      name_desc: Z-A
+      time_asc: Antiguo→Nuevo
+      time_desc: Nuevo→Antiguo
+    title: '&6Libro de recetas - <type_name> (<page>/<max_page>)'
+    select_title: '&6Libro de recetas - Seleccionar tipo'
+    sort_name: '&eOrden: <sort_mode>'
+    sort_lore: '&7Haz clic para cambiar el orden'
+    recipe_count: '&7<recipe_count> receta(s)'
+    click_recipe: '&7Haz clic para ver la receta'
+    all_recipes: Todas las recetas
+  recipe_editor:
+    name: Editor
+    result_frame: '&aEditor - Resultado'
+    confirm_lore: '&7Haz clic para guardar cambios'
+    back_lore: '&7Haz clic para volver a la lista'
+    category_prefix: '&aCategoría:'
+    category_lore: '&7Haz clic para cambiar categoría'
+    crafting_category:
+      misc: '&eObjetos'
+      building: '&eBloques de construcción'
+      redstone: '&eRedstone'
+      tools: '&eHerramientas'
+    cooking_category:
+      food: '&eComida'
+      blocks: '&eBloques'
+      misc: '&eDiversos'
+    smelting:
+      time: '&aTiempo de fundición: &e<time> &7(tick)'
+      time_lore: '&7Haz clic para introducir el tiempo'
+      exp: '&aXP de recompensa: &e<exp>'
+      exp_lore: '&7Haz clic para introducir la XP'
+    anvil:
+      cost_level: '&aNivel requerido: &e<level>'
+      cost_level_lore: '&7Haz clic para introducir el nivel'
+  tag_select:
+    name: Página de selección de Tag
+    frame_icon_name: '&c¡Selecciona el tag que deseas usar!'
+  common:
+    prev_page: '&aAnterior'
+    next_page: '&aSiguiente'
+    back: '&c&lVolver'
+    back_lore: '&7Haz clic para volver'
+    click_to_view: '&7Haz clic para ver'
+    confirm_edit: '&a&lConfirmar edición'
+    confirm_create: '&a&lCrear'
+recipe_editor:
+  title: '&3&lEditar Receta: &b&l<recipe_name>'
+  icon:
+    frame: ''
+    next: '&aSiguiente Página'
+    previous: '&aPágina Anterior'
+    slot_id:
+      name: '&3ID de Orden: &a<id>'
+      lore:
+      - ''
+      - '&3Click para modificar el ID de orden'
+      input_hint: '&aPor favor introduce el ID de orden. Escribe "cancel" para cancelar'
+    unlock: '&3Desbloquear Receta para Jugador: &a<unlock>'
+    cooking_element:
+      lore:
+      - ''
+      - '&3Ingrediente: &a<ingredient>'
+      - '&3Tiempo de Fundición: &a<time> tick'
+      - '&3Recompensa de Experiencia: &a<exp>'
+      - ''
+      - '&aClick izquierdo para modificar el tiempo de fundición'
+      - '&aClick derecho para modificar la recompensa de experiencia'
+      input_cooking_time_hint: '&aPor favor introduce el tiempo de fundición en ticks.
+        Escribe "cancel" para cancelar.'
+      input_cooking_exp_hint: '&aPor favor introduce la recompensa de experiencia.
+        Escribe "cancel" para cancelar.'
+      type_name:
+        furnace: '&3&lReceta de Horno'
+        blast_furnace: '&3&lReceta de Alto Horno'
+        smoker: '&3&lReceta de Ahumador'
+        campfire: '&3&lReceta de Hoguera'
+    anvil_element:
+      lore:
+      - ''
+      - '&3Nivel Requerido: &a<level>'
+      - '&3Preservar NBT del Item: &a<enable>'
+      - ''
+      - '&aClick izquierdo para modificar el nivel requerido'
+      - '&aClick derecho para activar/desactivar la preservación del NBT del ítem'
+      input_hint: '&aPor favor introduce el nivel requerido. Escribe "cancel" para
+        cancelar'
+    remove:
+      name: '&c&lClick para eliminar este grupo de recetas'
+      message: <prefix> &aReceta <recipe_name> eliminada con éxito.
+recipe_type_name:
+  shaped: Con Forma
+  shapeless: Sin Forma
+  cooking: Fundición
+  smithing: Herrería
+  stone_cutting: Corte de Piedra
+  potion: Elaboración de Pociones
+  anvil: Yunque
+  vanilla_shaped: Receta con forma
+  vanilla_shapeless: Receta sin forma
+  vanilla_smelting_furnace: Receta de horno
+  vanilla_smelting_blast: Receta de alto horno
+  vanilla_smelting_smoker: Receta de ahumador
+  vanilla_smelting_campfire: Receta de hoguera
+  vanilla_smithing_transform: Receta de herrería
+  vanilla_smithing_trim: Receta de decoración de herrería
+  vanilla_stonecutting: Receta de cortapiedras
+  vanilla_brewing: Receta de elaboración de pociones
+# Mensajes de retroalimentación del script Arcenciel
+arcenciel:
+  not_enough_param: <prefix> &cLa declaración "<statement>" está incompleta.
+  unknown_token: '<prefix> &cPalabra clave o función no definida: <token>'
+# Información de retroalimentación de la carga del plugin
+load:
+  finish: <prefix> &aPlugin cargado con éxito.
+  recipe_load_exception: <prefix> &cSe produjo un error al cargar la receta <recipe_name>.
+  item_load_exception: <prefix> &cSe produjo un error al cargar el ítem <item_name>.
+  hook_plugin:
+    success: <prefix> &aEncontrado <plugin>, enganchado con éxito.
+    not_exist: <prefix> &cPlugin <plugin> no encontrado.
+load_finish: <prefix> &aPlugin cargado con éxito.
+recipe_load_exception: <prefix> &cError al cargar la receta <recipe_name>.
+item_load_exception: <prefix> &cError al cargar el objeto <item_name>.
+hook_plugin_success: <prefix> &a<plugin> encontrado y conectado con éxito.
+crafting_category_name:
+  misc: '&eObjetos'
+  building: '&eBloques de construcción'
+  redstone: '&eRedstone'
+  tools: '&eHerramientas'
+cooking_category_name:
+  food: '&eComida'
+  blocks: '&eBloques'
+  misc: '&eDiversos'

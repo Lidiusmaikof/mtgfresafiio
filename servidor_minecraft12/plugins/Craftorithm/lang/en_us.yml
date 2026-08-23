@@ -1,0 +1,331 @@
+prefix: '&8[&3Craftorithm&8]'
+unsupported_version: <prefix> Unsupported Version
+new_version: <prefix> &aDetected a new version <new_version>, please update to the
+  latest version promptly!
+# 使用命令的一些反馈消息
+command:
+  no_perm: <prefix> &cYou do not have permission to use this command.
+  player_only: <prefix> &cOnly players can execute this command.
+  not_enough_param: <prefix> &cThe Command is missing parameters, <number> parameters
+    required.
+  undefined_subcmd: <prefix> &cUndefined subcommand!
+  item:
+    save:
+      success: <prefix> &aItem saved successfully.
+      failed_save_air: '<prefix> &cItem save failed. Reason: Cannot save a non-existent
+        item.'
+    give:
+      success: <prefix> &aGive item successfully
+      not_exist_item: <prefix> &cItem <item_name> does not exist.
+      player_offline: <prefix> &cThe player is not online or does not have a profile.
+    fuel:
+      add:
+        success: <prefix> &aAdd custom fuel successfully.
+        failed_add_air: '<prefix> &cAdd custom fuel failed. Reason: Cannot add a non-existent
+          item as fuel.'
+        failed_exist: '<prefix> &cAdd custom fuel failed. Reason: This fuel already
+          exists.'
+      remove:
+        success: <prefix> &aRemove custom fuel successfully.
+        failed_not_exist: '<prefix> &cRemove custom fuel failed. Reason: This fuel
+          does not exist.'
+  reload:
+    success: <prefix> &aPlugin reload!
+    exception: <prefix> &cError occurred during plugin reload, please check the console.
+    recipes_confirm: <prefix> &eConfirm reloading recipes? If there are many recipes
+      or many players online, it may cause server overload!
+    recipes: <prefix> &aRecipes reloaded!
+    recipe_manager_reloading: <prefix> &cRecipe manager is currently reloading, please
+      try again later.
+  remove:
+    success: <prefix> &aRecipe removed successfully.
+    not_exist: <prefix> &cRecipe does not exist.
+  disable:
+    success: <prefix> &cRecipe disabled successfully.
+    not_exist: <prefix> &cRecipe does not exist or has already been disabled.
+    failed: <prefix> &cFailed to disable recipe, it may already be disabled or does
+      not exist.
+  version: '<prefix> &aPlugin version: <version>'
+  create:
+    unsupported_recipe_type: <prefix> &cUnsupported recipe type.
+    unsupported_recipe_name: <prefix> &cUnsupported recipe name, only lowercase letters,
+      numbers, "_", "-", and "." are allowed.
+    name_used: <prefix> &cRecipe ID has already been used.
+    null_result: <prefix> &cRecipe result cannot be empty!
+    null_source: <prefix> &cRecipe ingredients cannot be empty!
+    success: <prefix> &a<recipe_type> recipe <recipe_name> created successfully.
+    invalid_recipe_id: <prefix> &cUnsupported recipe name, only lowercase letters,
+      numbers, "_", "-", and "." are allowed.
+    input_hint:
+      smelting_time: '&aPlease enter the smelting time for this recipe (type cancel
+        to cancel)'
+      smelting_exp: '&aPlease enter the reward experience for this recipe (type cancel
+        to cancel)'
+      anvil_cost_level: '&aPlease enter the experience cost for this anvil recipe
+        (type cancel to cancel)'
+  run_arcenciel:
+    success: <prefix> &aExecution successful, took <time> ms.
+  list:
+    unsupported_version: <prefix> &cThis feature is only available in version 1.16
+      and above.
+  unknown_player: '<prefix> &cUnknown player: <player_name>'
+  display:
+    unsupported_recipe_type: <prefix> &cUnsupported recipe type.
+  openmenu:
+    unknown_menu: '<prefix> &cUnknown menu: <menu_name>'
+  script:
+    operation_time: <prefix> &aStatement execution took <time> ms.
+  edit:
+    invalid_recipe_id: <prefix> &cInvalid recipe ID.
+    recipe_not_found: <prefix> &cRecipe not found.
+    success: <prefix> &aRecipe <recipe_file_name> (<recipe_id>) edited successfully.
+  recipebook:
+    success: <prefix> &aRecipe book opened.
+    type_not_found: <prefix> &cRecipe type <recipe_type> does not exist.
+menu:
+  recipe_list:
+    title: '&3&lRecipe List'
+    icon:
+      frame: '&3&lRecipe List'
+      previous: '&aPrevious Page'
+      next: '&aNext Page'
+  new_recipe_list:
+    title: '&3&lCraftorithm New Recipe List'
+    icon:
+      frame: '&3&lNew recipe list'
+      previous: '&aPrevious Page'
+      next: '&aNext Page'
+      elements:
+        lore:
+        - ''
+        - '&3Left click to view'
+        - '&3Right click to edit'
+  recipe_display:
+    title:
+      shaped: Shaped Recipe
+      shapeless: Shapeless Recipe
+      furnace: Furnace Recipe
+      blasting: Blast Furnace Recipe
+      smoking: Smoker Recipe
+      campfire: Campfire Recipe
+      smithing: Smithing Recipe
+      stone_cutting: Stonecutter Recipe
+      potion: Brewing Recipe
+      anvil: Anvil Recipe
+    anvil:
+      cost_level: '&3Required Level: &a<level>'
+    vanilla_smelting:
+      time: '&3Smelting Time: &a<time>'
+      reward_exp: '&3Reward Experience: &a<reward_exp>'
+    back: '&cClick to return'
+  recipe_creator:
+    title: '&3Creating &a<recipe_type> &3recipe: &a<recipe_name>'
+    icon:
+      frame: '&aCreating Recipe'
+      result_frame: '&aRecipe Result'
+      confirm: '&3&lConfirm Creation'
+      unlock: '&3Unlock Recipe for Player: &a<unlock>'
+      cooking_frame: '&aSmelting Ingredients'
+      furnace_toggle: '&3Enable Furnace Recipe: &a<enable>'
+      blast_furnace_toggle: '&3Enable Blast Furnace Recipe: &a<enable>'
+      smoker_toggle: '&3Enable Smoker Recipe: &a<enable>'
+      campfire_toggle: '&3Enable Campfire Recipe: &a<enable>'
+      cooking_time:
+        name: '&3Smelting Time: &a<time> tick'
+        lore:
+        - ''
+        - '&3Click to modify smelting time'
+        input_hint: '&aPlease enter smelting time in ticks. Type "cancel" to cancel.'
+      cooking_exp:
+        name: '&3Experience Reward: &a<exp>'
+        lore:
+        - ''
+        - '&3Click to modify experience reward.'
+        input_hint: '&aPlease enter experience reward. Type "cancel" to cancel.'
+      smithing_frame: '&aSmithing Ingredients'
+      smithing_copy_nbt_toggle: '&3Preserve item NBT: &a<enable>'
+      potion_frame: '&aBrewing Ingredients'
+      anvil_frame: '&aAnvil Ingredients'
+      anvil_copy_nbt_toggle: '&3Preserve item NBT: &a<enable>'
+      anvil_cost_level:
+        name: '&3Required Level: &a<level>'
+        lore:
+        - ''
+        - '&3Click to modify required level'
+        input_hint: '&aPlease enter required level. Type "cancel" to cancel.'
+    name: Creator
+    null_result: <prefix> &cRecipe result cannot be empty!
+    null_ingredients: <prefix> &cRecipe ingredients cannot be empty!
+    result_frame_icon_name: '&aPlace recipe result here'
+    confirm_icon_name: '&6&lConfirm Recipe Creation'
+    result_frame: '&aResult Item'
+    frame_lore:
+      crafting: '&7Place ingredients in the 3x3 grid'
+      smelting: '&7Place ingredient on the left'
+      brewing_input: '&7Place input potion on the left'
+      brewing_ingredient: '&7Place ingredient below left'
+      stonecutting: '&7Place ingredient on the left'
+      smithing: '&7Place template, base, addition on left'
+      anvil: '&7Place items on the left'
+      result_right: '&7Place result item on the right'
+      confirm_button: '&7Click the button below to confirm'
+    result_lore:
+      shaped: '&7Place the crafting result here'
+      smelting: '&7Place the smelting result here'
+      brewing: '&7Place the brewing result here'
+      stonecutting: '&7Place the stonecutting result here'
+      smithing: '&7Place the smithing result here'
+    confirm_lore:
+      shaped: '&7Click to create shaped recipe'
+      shapeless: '&7Click to create shapeless recipe'
+      smelting: '&7Click to create smelting recipe'
+      blasting: '&7Click to create blasting recipe'
+      smoking: '&7Click to create smoking recipe'
+      campfire: '&7Click to create campfire recipe'
+      smithing: '&7Click to create smithing recipe'
+      stonecutting: '&7Click to create stonecutting recipe'
+      brewing: '&7Click to create brewing recipe'
+      anvil: '&7Click to create anvil recipe'
+    category_prefix: '&aCategory:'
+    category_lore: '&7Click to switch category'
+    smelting:
+      time: '&aCooking Time: &e<time> &7(ticks)'
+      time_lore: '&7Click to set cooking time'
+      exp: '&aReward XP: &e<exp>'
+      exp_lore: '&7Click to set reward XP'
+    anvil:
+      cost_level: '&aRequired Level: &e<level>'
+      cost_level_lore: '&7Click to set required level'
+  recipe_editor:
+    title: '&3&lEdit Recipe: &b&l<recipe_name>'
+    icon:
+      frame: ''
+      next: '&aNext Page'
+      previous: '&aPrevious Page'
+      slot_id:
+        name: '&3Sort id: &a<id>'
+        lore:
+        - ''
+        - '&3Click to modify sort id'
+        input_hint: '&aPlease enter sort id. Type "cancel" to cancel'
+      unlock: '&3Unlock Recipe for Player: &a<unlock>'
+      cooking_element:
+        lore:
+        - ''
+        - '&3Ingredient: &a<ingredient>'
+        - '&3Smelting Time: &a<time> tick'
+        - '&3Experience Reward: &a<exp>'
+        - ''
+        - '&aLeft click to modify smelting time'
+        - '&aRight click to modify experience reward'
+        input_cooking_time_hint: '&aPlease enter smelting time in ticks. Type "cancel"
+          to cancel.'
+        input_cooking_exp_hint: '&aPlease enter experience reward. Type "cancel" to
+          cancel.'
+        type_name:
+          furnace: '&3&lFurnace Recipe'
+          blast_furnace: '&3&lBlast Furnace Recipe'
+          smoker: '&3&lSmoker Recipe'
+          campfire: '&3&lCampfire Recipe'
+      anvil_element:
+        lore:
+        - ''
+        - '&3Required Level: &a<level>'
+        - '&3Preserve Item NBT: &a<enable>'
+        - ''
+        - '&aLeft click to modify required level'
+        - '&aRight click to toggle preserve item nbt'
+        input_hint: '&aPlease enter required level. Type "cancel" to cancel'
+      remove:
+        name: '&c&lClick to remove this recipe group'
+        message: <prefix> &aRecipe <recipe_name> removed successfully.
+    name: Editor
+    result_frame: '&aEditor - Result Item'
+    confirm_lore: '&7Click to save recipe changes'
+    back_lore: '&7Click to return to recipe list'
+    category_prefix: '&aCategory:'
+    category_lore: '&7Click to switch category'
+    crafting_category:
+      misc: '&eItems'
+      building: '&eBuilding Blocks'
+      redstone: '&eRedstone'
+      tools: '&eTools'
+    cooking_category:
+      food: '&eFood'
+      blocks: '&eBlocks'
+      misc: '&eMiscellaneous'
+    smelting:
+      time: '&aCooking Time: &e<time> &7(ticks)'
+      time_lore: '&7Click to set cooking time'
+      exp: '&aReward XP: &e<exp>'
+      exp_lore: '&7Click to set reward XP'
+    anvil:
+      cost_level: '&aRequired Level: &e<level>'
+      cost_level_lore: '&7Click to set required level'
+  recipe_book:
+    sort_mode:
+      name_asc: A-Z
+      name_desc: Z-A
+      time_asc: Old→New
+      time_desc: New→Old
+    title: '&6Recipe Book - <type_name> (<page>/<max_page>)'
+    select_title: '&6Recipe Book - Select Type'
+    sort_name: '&eSort: <sort_mode>'
+    sort_lore: '&7Click to change sort mode'
+    recipe_count: '&7<recipe_count> recipe(s)'
+    click_recipe: '&7Click to view recipe'
+    all_recipes: All Recipes
+  tag_select:
+    name: Tag Selection
+    frame_icon_name: '&cSelect the tag you want to use!'
+  common:
+    prev_page: '&aPrevious Page'
+    next_page: '&aNext Page'
+    back: '&c&lBack'
+    back_lore: '&7Click to return'
+    click_to_view: '&7Click to view'
+    confirm_edit: '&a&lConfirm Edit'
+    confirm_create: '&a&lCreate'
+recipe_type_name:
+  shaped: Shaped
+  shapeless: Shapeless
+  cooking: Smelting
+  smithing: Smithing
+  stone_cutting: Stonecutting
+  potion: Brewing
+  anvil: Anvil
+  vanilla_shaped: Shaped Recipe
+  vanilla_shapeless: Shapeless Recipe
+  vanilla_smelting_furnace: Furnace Recipe
+  vanilla_smelting_blast: Blasting Recipe
+  vanilla_smelting_smoker: Smoking Recipe
+  vanilla_smelting_campfire: Campfire Recipe
+  vanilla_smithing_transform: Smithing Recipe
+  vanilla_smithing_trim: Smithing Trim Recipe
+  vanilla_stonecutting: Stonecutting Recipe
+  vanilla_brewing: Brewing Recipe
+# Arcenciel脚本的提示消息
+arcenciel:
+  not_enough_param: <prefix> &cStatement "<statement>" is incomplete.
+  unknown_token: '<prefix> &cUndefined keyword or function: <token>'
+# 插件加载的反馈信息
+load:
+  finish: <prefix> &aPlugin loaded successfully.
+  recipe_load_exception: <prefix> &cError occurred while loading recipe <recipe_name>.
+  item_load_exception: <prefix> &cError occurred while loading item <item_name>.
+  hook_plugin:
+    success: <prefix> &aFound <plugin>, hooked successfully.
+    not_exist: <prefix> &cPlugin <plugin> not found.
+load_finish: <prefix> &aPlugin loaded successfully.
+recipe_load_exception: <prefix> &cAn error occurred while loading recipe <recipe_name>.
+item_load_exception: <prefix> &cAn error occurred while loading item <item_name>.
+hook_plugin_success: <prefix> &aFound <plugin>, hooked successfully.
+crafting_category_name:
+  misc: '&eItems'
+  building: '&eBuilding Blocks'
+  redstone: '&eRedstone'
+  tools: '&eTools'
+cooking_category_name:
+  food: '&eFood'
+  blocks: '&eBlocks'
+  misc: '&eMiscellaneous'

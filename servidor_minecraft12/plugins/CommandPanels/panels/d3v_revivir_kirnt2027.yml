@@ -1,0 +1,44 @@
+panels:
+  d3v_revivir_kirnt2027:
+    rows: 3
+    title: ''
+    custom-item:
+      cuchara:
+        material: STICK
+        stack: 1
+        customdata: 10
+    item:
+      '4':
+        material: STICK
+        customdata: 6
+        stack: 1
+        name: '&e&lkirnt2027'
+      '13':
+        material: cps= kirnt2027
+        customdata: 6
+        stack: 1
+        name: ' '
+      '19':
+        material: STICK
+        customdata: 2
+        stack: 1
+        name: ' '
+        commands:
+        - 'open= d3v_revivir_itssos'
+      '22':
+        material: STICK
+        customdata: 5
+        stack: 1
+        name: '&fRevivir a: &e&lkirnt2027'
+        commands:
+        - 'item-paywall= cuchara 1'
+        - 'console= function cpaladeds3:cmd/start_revive'
+        - 'console= pardon kirnt2027'
+        - cpc
+      '25':
+        material: STICK
+        customdata: 3
+        stack: 1
+        name: ' '
+        commands:
+        - 'open= d3v_revivir_maxxvoiid'

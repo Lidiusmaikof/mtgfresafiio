@@ -1,0 +1,23 @@
+stored_version: 1.1.0
+timers:
+  players:
+    cb2c5c37-2e68-4934-81a5-383cd99408ae:
+      27624550-5762-38db-a0a7-5ccd77095ef1: 593
+    2827f0f2-d2c2-4b76-81ad-6fa64d953189:
+      27624550-5762-38db-a0a7-5ccd77095ef1: 967
+  worlds: {}
+worlds:
+  cb2c5c37-2e68-4934-81a5-383cd99408ae:
+    config: default
+  a543bc51-4d18-401f-9087-9081a913a32c:
+    config: default
+  115d7499-cdb0-42bb-9ad4-b59176a3053c:
+    config: default
+  2827f0f2-d2c2-4b76-81ad-6fa64d953189:
+    config: default
+  eb0b24f8-0719-46aa-8115-b7bae3ae88bd:
+    config: default
+  2cba6559-7cc6-4844-90e6-227bdf6ccc06:
+    config: default
+migrations:
+  plague_cure_brewing_recipes: true

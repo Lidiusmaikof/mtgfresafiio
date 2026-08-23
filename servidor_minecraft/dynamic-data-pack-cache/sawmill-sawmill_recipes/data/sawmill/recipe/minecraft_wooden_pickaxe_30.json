@@ -1,0 +1,16 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "ecologics:flowering_azalea_log"
+    },
+    {
+      "item": "ecologics:flowering_azalea_wood"
+    }
+  ],
+  "result": {
+    "id": "minecraft:wooden_pickaxe",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

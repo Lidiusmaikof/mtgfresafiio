@@ -1,0 +1,20 @@
+# =============================================================================
+# GENERADOR A: EL TRITÓN DE LAS MAREAS (INDIVIDUAL / MOLDE MAESTRO)
+# =============================================================================
+GeneradorOceanoTriton:
+  MobName: TritonMareas
+  World: world_kattersstructures_deep_blue # Modifica por el nombre de tu mundo acuático
+  X: 0 # Coloca aquí las coordenadas del Primer Altar
+  Y: 29
+  Z: 36
+  Radius: 20
+  UsePlayerRadius: true
+  PlayerRadius: 15
+  MaxMobs: 10 # Vuelve al límite estricto de 10 de tu molde maestro
+  MobsPerSpawn: 2 # Vuelve a invocar de 2 en 2
+  Cooldown: 12
+  ActivationRange: 15
+  CheckForPlayers: true
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

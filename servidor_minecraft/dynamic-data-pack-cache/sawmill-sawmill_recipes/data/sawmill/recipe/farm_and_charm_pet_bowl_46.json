@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "ecologics:walnut_log"
+    },
+    {
+      "item": "ecologics:walnut_wood"
+    },
+    {
+      "item": "ecologics:stripped_walnut_log"
+    },
+    {
+      "item": "ecologics:stripped_walnut_wood"
+    }
+  ],
+  "result": {
+    "id": "farm_and_charm:pet_bowl",
+    "count": 3
+  },
+  "type": "sawmill:woodcutting"
+}

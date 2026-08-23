@@ -1,0 +1,20 @@
+# =============================================================================
+# GENERADOR ÚNICO: LA AVANZADA DE LA LEGIÓN OSCURA
+# =============================================================================
+GeneradorLegionDraconica:
+  MobName: PretorianoVacio
+  World: world_deeper_dark_deeper_dark # Cambia por el nombre de tu mundo del End
+  X: 96 # Coordenadas del epicentro de la Legión
+  Y: 42
+  Z: 147
+  Radius: 15
+  UsePlayerRadius: true
+  PlayerRadius: 20
+  MaxMobs: 10 # Límite estricto: 5 comandantes élite activos
+  MobsPerSpawn: 5 # Aparecen de uno en uno para infundir terror
+  Cooldown: 30 # 15 segundos de recarga
+  ActivationRange: 25
+  CheckForPlayers: true
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

@@ -1,0 +1,50 @@
+# =============================================================================
+# ENEMIGO: VIVIENTE PÁLIDO (IA DIURNA Y ANTI-SOL)
+# =============================================================================
+VivientePalido:
+  Type: STRAY
+  Display: '&f&lViviente Pálido'
+  Health: 80
+  Damage: 7
+  Faction: PaleGarden
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.25
+    PreventSunburn: true         # Inmune al sol
+    KnockbackResistance: 0.5
+  # ---------------------------------------------------------------------------
+  # CEREBRO DE COMBATE MAESTRO: Agresividad absoluta las 24 horas del día
+  # ---------------------------------------------------------------------------
+  AIGoalSelectors:
+    - clear
+    - float
+    - meleeattack
+    - wander
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - iron_chestplate CHEST      # Armadura pálida/plateada
+    - iron_boots BOOTS
+    - birch_log HAND            # Tronco pálido con el que arremete
+  Skills:
+    - skill{s=EfectoNacimientoPalido} @Self ~onSpawn
+    - skill{s=AuraAmbientePalido} @Self ~onTimer:30
+    - skill{s=AbrazoSinAlma} @Target ~onAttack
+
+# =============================================================================
+# ENTIDAD DE EFECTOS: NÚCLEO ENRAIZADO FIJO (SPAWN MANUAL PERMANENTE)
+# =============================================================================
+AnclaVisualPalida:
+  Type: ARMOR_STAND
+  Options:
+    Invisible: true
+    Marker: true
+    NoGravity: true
+    Invulnerable: true
+    ForceSpawn: true
+    Despawn: false               # Permanente
+    Persistent: true             # Blindado contra reinicios del servidor
+  Skills:
+    - skill{s=EfectoSpawnerPalido} @Self ~onTimer:20

@@ -1,0 +1,45 @@
+# =============================================================================
+# EFECTOS AL NACER: DESPRENDIMIENTO DE CORTEZA Y NIEBLA FANTASMAL
+# =============================================================================
+EfectoNacimientoPalido:
+  Skills:
+    # Crujido de madera vieja al romperse + gemido espectral
+    - sound{sound=block.wood.break;volume=2;pitch=0.4} @Self
+    - sound{sound=entity.phantom.ambient;volume=1.5;pitch=0.5} @Self
+    # Estallido visual: Niebla espesa y destello pálido místico
+    - particles{particle=cloud;amount=35;speed=0.05;hS=1;vS=1.5} @Self           # Bruma del bosque
+    - particles{particle=white_smoke;amount=25;speed=0.1;hS=1.5;vS=1} @Self      # Humo desaturado
+    - particles{particle=flash;amount=1;speed=0;hS=0.1;vS=0.1} @Self
+
+# =============================================================================
+# AURA PASIVA DE LOS MONSTRUOS MIENTRAS ACECHAN
+# =============================================================================
+AuraAmbientePalido:
+  Skills:
+    - particles{particle=white_smoke;amount=4;speed=0.01;hS=0.4;vS=0.8} @Self
+    - sound{sound=block.wood.step;volume=0.3;pitch=0.5} @Self ~onTimer:80        # Pisadas huecas de madera
+
+# =============================================================================
+# COMBATE: ABRAZO SIN ALMA (MANTIENE DAÑO REAL Y DEBUFF DE LENTITUD)
+# =============================================================================
+AbrazoSinAlma:
+  Skills:
+    # Impacto seco de madera contra el pecho del jugador
+    - sound{sound=block.wood.hit;volume=1.2;pitch=0.4} @Target
+    - sound{sound=entity.stray.ambient;volume=1;pitch=0.6} @Target
+    - particles{particle=spell;amount=15;speed=0.1;hS=0.5;vS=0.5} @Target        # Espirales de magia blanca
+    - potion{type=SLOW;duration=60;lvl=4} @Target                               # Mantiene: Lentitud IV por 3s
+    - damage{amount=4;ignoreArmor=true} @Target                                 # Mantiene: 4 de daño verdadero
+
+# =============================================================================
+# EFECTO DE NÚCLEO ACTIVO: NIEBLA DEL JARDÍN PÁLIDO (CENTRO DE EFECTOS)
+# =============================================================================
+EfectoSpawnerPalido:
+  Skills:
+    # Sonido ambiente: Crujidos de madera tensa + el latido sordo del Corazón Pálido
+    - sound{sound=block.wood.break;volume=0.6;pitch=0.2} @Self
+    - sound{sound=entity.warden.heartbeat;volume=1.2;pitch=0.5} @Self
+    # Efecto visual: Vórtice de niebla pálida completamente estática y misteriosa
+    - particles{particle=cloud;amount=25;speed=0.01;hS=3;vS=1.5} @Self           # Manto de bruma densa
+    - particles{particle=white_smoke;amount=20;speed=0.02;hS=2.5;vS=2} @Self      # Partículas de aire frío
+    - particles{particle=spell;amount=10;speed=0.01;hS=3;vS=1} @Self             # Runas blancas flotando

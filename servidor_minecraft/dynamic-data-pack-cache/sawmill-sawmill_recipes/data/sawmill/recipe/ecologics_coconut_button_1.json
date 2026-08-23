@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "ecologics:coconut_planks"
+  },
+  "result": {
+    "id": "ecologics:coconut_button",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

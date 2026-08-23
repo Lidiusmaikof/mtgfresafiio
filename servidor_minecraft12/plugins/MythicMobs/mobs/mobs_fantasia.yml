@@ -1,0 +1,57 @@
+# =============================================================================
+# JINETE: EL ESPECTRO ESTELAR (ARQUERO MÁGICO)
+# =============================================================================
+EspectroEstelar:
+  Type: STRAY
+  Display: '&b&lEspectro Estelar'
+  Health: 50
+  Damage: 7
+  Faction: CelestialRealm
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.25
+    PreventSunburn: true         # Inmune al sol para volar de día y de noche
+    KnockbackResistance: 1.0     # No puede ser derribado de su montura por golpes
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - leather_chestplate CHEST   # Tip: Puedes tintar esta armadura de cian/azul
+    - leather_boots BOOTS
+    - bow HAND                   # Equipado con arco para acribillar desde el aire
+  Skills:
+    - skill{s=GarantizarMonturaAerea} @Self ~onSpawn
+    - skill{s=EfectoNacimientoFantasia} @Self ~onSpawn
+    - skill{s=AuraEstelarConstante} @Self ~onTimer:20
+    - skill{s=CastigoAstral} @Target ~onAttack
+
+# =============================================================================
+# MONTURA AÉREA: PHANTOM ESTELAR GIGANTE
+# =============================================================================
+PhantomEstelar:
+  Type: PHANTOM
+  Options:
+    Size: 10                     # ¡Escala masiva! Convierte al Phantom en una bestia enorme
+    PreventSunburn: true
+    Collidable: false           # Evita colisiones de cajas físicas en el aire
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+
+# =============================================================================
+# ENTIDAD DE EFECTOS: FARO CÓSMICO (NÚCLEO PERMANENTE)
+# =============================================================================
+AnclaVisualFantasia:
+  Type: ARMOR_STAND
+  Options:
+    Invisible: true
+    Marker: true
+    NoGravity: true
+    Invulnerable: true
+    ForceSpawn: true
+    Despawn: false
+    Persistent: true
+  Skills:
+    - skill{s=EfectoCoreFantasia} @Self ~onTimer:20

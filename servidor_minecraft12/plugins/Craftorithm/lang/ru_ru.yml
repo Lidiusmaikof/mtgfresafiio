@@ -1,0 +1,321 @@
+prefix: '&8[&3Craftorithm&8]'
+unsupported_version: <prefix> неподдерживаемая версия.
+new_version: <prefix> &aОбнаружена новая версия <new_version>, пожалуйста, обновитесь.
+# 使用命令的一些反馈消息
+command:
+  no_perm: <prefix> &cУ вас нет разрешения на выполнение этой команды.
+  player_only: <prefix> &cЭта команда доступна только игрокам.
+  not_enough_param: <prefix> &cОтсутствуют аргументы команды, недостающих <number>.
+  undefined_subcmd: <prefix> &cэто неподдерживаемая подкоманда.
+  item:
+    save:
+      success: <prefix> &aЭлемент успешно сохранен.
+      failed_save_air: '<prefix> &cНе удалось сохранить предмет, так как он не существует.
+        Причина: попытка сохранить несуществующий предмет.'
+    give:
+      success: <prefix> &aПредмет успешно получен.
+      not_exist_item: <prefix> &cПредмет <item_name> не существует.
+      player_offline: <prefix> &cЭтот игрок офлайн или не существует.
+    fuel:
+      add:
+        success: <prefix> &aДобавить собственное топливо успешно.
+        failed_add_air: '<prefix> &cНе удалось добавить собственное топливо. Причина:
+          Невозможно добавить несуществующий предмет в качестве топлива.'
+        failed_exist: '<prefix> &cНе удалось добавить собственное топливо. Причина:
+          Это топливо уже существует.'
+      remove:
+        success: <prefix> &aУдаление пользовательского топлива успешно.
+        failed_not_exist: '<prefix> &cНе удалось удалить пользовательское топливо.
+          Причина: Этого топлива не существует.'
+  reload:
+    success: <prefix> &aПерезагрузка плагина выполнена успешно.
+    exception: <prefix> &cВпроцессе перезагрузки плагина произошла ошибка. Пожалуйста,
+      проверьте консоль.
+    recipe_manager_reloading: <prefix> &cМенеджер рецептов сейчас перезагружается.
+      Попробуйте позже.
+  remove:
+    success: <prefix> &aРецепт успешно удален.
+    not_exist: <prefix> &cРецепт не существует.
+  disable:
+    success: <prefix> &cРецепт успешно отключен.
+    not_exist: <prefix> &cРецепт не существует или уже отключен.
+    failed: <prefix> &cНе удалось отключить рецепт, возможно уже отключен или не существует.
+  version: '<prefix> &aВерсия плагина: <version>'
+  create:
+    unsupported_recipe_type: <prefix> &cНеподдерживаемый тип рецепта.
+    unsupported_recipe_name: <prefix> &cНеподдерживаемое имя рецепта, разрешены только
+      строчные буквы, цифры, "_", "-" и ".".
+    name_used: <prefix> &cИдентификатор рецепта уже используется.
+    null_result: <prefix> &cРезультат рецепта не может быть пустым!
+    null_source: <prefix> &cИнгредиенты рецепта не могут быть пустыми!
+    success: <prefix> &aРецепт <recipe_name> типа <recipe_type> успешно создан.
+    invalid_recipe_id: <prefix> &cНеподдерживаемое имя рецепта. Допустимы только строчные
+      буквы, цифры, "_", "-" и ".".
+    input_hint:
+      smelting_time: '&aВведите время плавки для этого рецепта (cancel для отмены)'
+      smelting_exp: '&aВведите количество опыта за плавку (cancel для отмены)'
+      anvil_cost_level: '&aВведите стоимость в опыте для этого рецепта наковальни
+        (cancel для отмены)'
+  run_arcenciel:
+    success: <prefix> &aУспешно завершено, время выполнения <time> мс.
+  list:
+    unsupported_version: <prefix> &cЭта функция доступна только в версии 1.16 и выше.
+  unknown_player: '<prefix> &cНеизвестный игрок: <player_name>'
+  display:
+    unsupported_recipe_type: <prefix> &cНеподдерживаемый тип рецепта.
+  openmenu:
+    unknown_menu: '<prefix> &cНеизвестное меню: <menu_name>'
+  script:
+    operation_time: <prefix> &aВыполнение инструкции заняло <time> мс.
+  edit:
+    invalid_recipe_id: <prefix> &cНедопустимый идентификатор рецепта.
+    recipe_not_found: <prefix> &cРецепт не найден.
+    success: <prefix> &aРецепт <recipe_file_name> (<recipe_id>) успешно изменён.
+  recipebook:
+    success: <prefix> &aКнига рецептов открыта.
+    type_not_found: <prefix> &cТип рецепта <recipe_type> не существует
+menu:
+  recipe_list:
+    title: '&3&lСписок рецептов'
+    icon:
+      frame: '&3&lСписок рецептов'
+      previous: '&aПредыдущая'
+      next: '&aСледующая'
+  new_recipe_list:
+    title: '&3&lCraftorithm Создание списка рецептов'
+    icon:
+      frame: '&3&lСоздание списка новых рецептов'
+      previous: '&aПредыдущая'
+      next: '&aСледующая'
+      elements:
+        lore:
+        - ''
+        - '&3Нажмите левой кнопкой мыши, чтобы просмотреть рецепт'
+        - '&3щелкните правой кнопкой мыши, чтобы изменить рецепт'
+  recipe_display:
+    title:
+      shaped: Упорядоченный рецепт
+      shapeless: Неупорядоченный рецепт
+      furnace: Плавильный рецепт
+      blasting: Коксовый рецепт
+      smoking: Дымчатый рецепт
+      campfire: Рецепт на костре
+      smithing: Рецепт на наковальне
+      stone_cutting: Тесаковочный станок
+      potion: Рецепт на дистилляторе
+      anvil: Кузнечный рецепт
+    anvil:
+      cost_level: '&3Необходимый уровень: &a<level>'
+    vanilla_smelting:
+      time: '&3Время плавки: &a<time>'
+      reward_exp: '&3Опыт за плавку: &a<reward_exp>'
+    back: '&cНажмите для возврата'
+  recipe_creator:
+    title: '&3Создание рецепта &a<recipe_type>&3: &a<recipe_name>'
+    icon:
+      frame: '&aСоздание рецепта'
+      result_frame: '&aРезультат рецепта'
+      confirm: '&3&lПодтвердить создание'
+      unlock: '&3Разблокировать рецепт для игрока: &a<unlock>'
+      cooking_frame: '&aПлавление материалов'
+      furnace_toggle: '&3Включить плавильный рецепт: &a<enable>'
+      blast_furnace_toggle: '&3Включить коксовый рецепт: &a<enable>'
+      smoker_toggle: '&3Включить рецепты для коптильни: &a<enable>'
+      campfire_toggle: '&3Включить рецепты для костра: &a<enable>'
+      cooking_time:
+        name: '&3Время плавления: &a<time> такт'
+        lore:
+        - ''
+        - '&3Нажмите, чтобы изменить время плавления'
+        input_hint: '&aВведите время плавления в тактах, введите "cancel" для отмены.'
+      cooking_exp:
+        name: '&3Награда опытом: &a<exp>'
+        lore:
+        - ''
+        - '&3Нажмите, чтобы изменить награду опытом, введите "cancel" для отмены.'
+        input_hint: '&aПожалуйста, введите количество опыта для награды.'
+      smithing_frame: '&aИзготовление предметов'
+      smithing_copy_nbt_toggle: '&3Сохранить данные NBT предмета: &a<enable>'
+      potion_frame: '&aСырье для зельеварения'
+      anvil_frame: '&aМатериалы для ковки'
+      anvil_copy_nbt_toggle: '&3Сохранить данные NBT предмета: &a<enable>'
+      anvil_cost_level:
+        name: '&3Требуемый уровень: &a<level>'
+        lore:
+        - ''
+        - '&3Нажмите, чтобы изменить требуемый уровень'
+        input_hint: '&aВведите требуемый уровень, введите "cancel" для отмены.'
+    name: Создатель
+    null_result: <prefix> &cРезультат рецепта не может быть пустым!
+    null_ingredients: <prefix> &cИнгредиенты рецепта не могут быть пустыми!
+    result_frame_icon_name: '&aПоместите результат рецепта сюда'
+    confirm_icon_name: '&6&lПодтвердить создание рецепта'
+    result_frame: '&aРезультат'
+    frame_lore:
+      crafting: '&7Разместите материалы в сетке 3x3'
+      smelting: '&7Разместите материал слева'
+      brewing_input: '&7Разместите зелье слева'
+      brewing_ingredient: '&7Разместите ингредиент снизу слева'
+      stonecutting: '&7Разместите материал слева'
+      smithing: '&7Разместите шаблон, основу и добавку слева'
+      anvil: '&7Разместите предметы слева'
+      result_right: '&7Разместите результат справа'
+      confirm_button: '&7Нажмите кнопку ниже для создания'
+    result_lore:
+      shaped: '&7Разместите результат здесь'
+      smelting: '&7Разместите результат плавки здесь'
+      brewing: '&7Разместите результат зельеварения здесь'
+      stonecutting: '&7Разместите результат камнерезки здесь'
+      smithing: '&7Разместите результат ковки здесь'
+    confirm_lore:
+      shaped: '&7Нажмите для создания формованного рецепта'
+      shapeless: '&7Нажмите для создания беспорядочного рецепта'
+      smelting: '&7Нажмите для создания печного рецепта'
+      blasting: '&7Нажмите для создания доменного рецепта'
+      smoking: '&7Нажмите для создания коптильного рецепта'
+      campfire: '&7Нажмите для создания рецепта на костре'
+      smithing: '&7Нажмите для создания кузнечного рецепта'
+      stonecutting: '&7Нажмите для создания камнерезного рецепта'
+      brewing: '&7Нажмите для создания зельеварочного рецепта'
+      anvil: '&7Нажмите для создания рецепта наковальни'
+    category_prefix: '&aКатегория:'
+    category_lore: '&7Нажмите для переключения'
+    smelting:
+      time: '&aВремя плавки: &e<time> &7(tick)'
+      time_lore: '&7Нажмите для ввода времени'
+      exp: '&aОпыт: &e<exp>'
+      exp_lore: '&7Нажмите для ввода опыта'
+    anvil:
+      cost_level: '&aНеобходимый уровень: &e<level>'
+      cost_level_lore: '&7Нажмите для ввода уровня'
+  recipe_editor:
+    title: '&3&lРедактировать рецепт: &b&l<recipe_name>'
+    icon:
+      next: '&aСледующая'
+      previous: '&aПредыдущая'
+      slot_id:
+        name: '&3Сортировка Id: &a<id>'
+        lore:
+        - ''
+        - '&3Нажмите, чтобы изменить cортировка'
+        input_hint: '&aПожалуйста, введите Id сортировки. Введите "cancel" для отмены'
+      unlock: '&3Разблокировать рецепт для игрока: &a<unlock>'
+      cooking_element:
+        lore:
+        - ''
+        - '&3Ингредиент: &a<ingredient>'
+        - '&3Время плавления: &a<time> такт'
+        - '&3Награда опытом: &a<exp>'
+        - ''
+        - '&aЛевый клик для изменения времени плавки'
+        - '&aЩелкните правой кнопкой мыши для изменения вознаграждения за опыт'
+        input_cooking_time_hint: '&aВведите время плавления в тактах, введите "cancel"
+          для отмены.'
+        input_cooking_exp_hint: '&aПожалуйста, введите количество опыта для награды.'
+        type_name:
+          furnace: '&3&lПлавильный рецепт'
+          blast_furnace: '&3&lКоксовый рецепт'
+          smoker: '&3&lДымчатый рецепт'
+          campfire: '&3&lРецепт на костре'
+      anvil_element:
+        lore:
+        - ''
+        - '&3Требуемый уровень: &a<level>'
+        - '&3Сохранить данные NBT предмета: &a<enable>'
+        - ''
+        - '&aЛевый клик для изменения требуемого уровня'
+        - '&aНажмите правой кнопкой мыши для переключения режима nbt'
+        input_hint: '&aВведите требуемый уровень, введите "cancel" для отмены'
+      remove:
+        name: '&c&lНажмите, чтобы удалить эту группу рецептов'
+        message: <prefix> &aРецепт <recipe_name> успешно удален.
+    name: Редактор
+    result_frame: '&aРедактор - Результат'
+    confirm_lore: '&7Нажмите для сохранения'
+    back_lore: '&7Нажмите для возврата к списку'
+    category_prefix: '&aКатегория:'
+    category_lore: '&7Нажмите для переключения'
+    crafting_category:
+      misc: '&eПредметы'
+      building: '&eСтроительные блоки'
+      redstone: '&eРедстоун'
+      tools: '&eИнструменты'
+    cooking_category:
+      food: '&eЕда'
+      blocks: '&eБлоки'
+      misc: '&eРазное'
+    smelting:
+      time: '&aВремя плавки: &e<time> &7(tick)'
+      time_lore: '&7Нажмите для ввода времени'
+      exp: '&aОпыт: &e<exp>'
+      exp_lore: '&7Нажмите для ввода опыта'
+    anvil:
+      cost_level: '&aНеобходимый уровень: &e<level>'
+      cost_level_lore: '&7Нажмите для ввода уровня'
+  recipe_book:
+    sort_mode:
+      name_asc: A-Z
+      name_desc: Z-A
+      time_asc: Старые→Новые
+      time_desc: Новые→Старые
+    title: '&6Книга рецептов - <type_name> (<page>/<max_page>)'
+    select_title: '&6Книга рецептов - Выбор типа'
+    sort_name: '&eСортировка: <sort_mode>'
+    sort_lore: '&7Нажмите для изменения сортировки'
+    recipe_count: '&7<recipe_count> рецепт(ов)'
+    click_recipe: '&7Нажмите для просмотра'
+    all_recipes: Все рецепты
+  tag_select:
+    name: Страница выбора тега
+    frame_icon_name: '&cВыберите нужный тег!'
+  common:
+    prev_page: '&aНазад'
+    next_page: '&aВперёд'
+    back: '&c&lНазад'
+    back_lore: '&7Нажмите для возврата'
+    click_to_view: '&7Нажмите для просмотра'
+    confirm_edit: '&a&lПодтвердить'
+    confirm_create: '&a&lСоздать'
+recipe_type_name:
+  shaped: последовательно
+  shapeless: неупорядоченный
+  cooking: Выплавка
+  smithing: ковка
+  stone_cutting: Резка камня
+  potion: Зельеварение
+  anvil: кузнечное дело
+  vanilla_shaped: Формованный рецепт
+  vanilla_shapeless: Беспорядочный рецепт
+  vanilla_smelting_furnace: Печной рецепт
+  vanilla_smelting_blast: Доменный рецепт
+  vanilla_smelting_smoker: Коптильный рецепт
+  vanilla_smelting_campfire: Рецепт на костре
+  vanilla_smithing_transform: Кузнечный рецепт
+  vanilla_smithing_trim: Декоративный кузнечный рецепт
+  vanilla_stonecutting: Камнерезный рецепт
+  vanilla_brewing: Зельеварочный рецепт
+# Arcenciel脚本的提示消息
+arcenciel:
+  not_enough_param: <prefix> &cПредложение "<statement>" неполное
+  unknown_token: <prefix> &cНеизвестное ключевое слово или функция <token>
+# 插件加载的反馈信息
+load:
+  finish: <prefix> &aПлагин успешно загружен.
+  recipe_load_exception: <prefix> &cОшибка при загрузке рецепта <recipe_name>
+  item_load_exception: <prefix> &cОшибка при загрузке предмета <item_name>
+  hook_plugin:
+    success: <prefix> &aОбнаружен <plugin>, подключен.
+    not_exist: <prefix> &cПлагин <plugin> не найден
+load_finish: <prefix> &aПлагин успешно загружен.
+recipe_load_exception: <prefix> &cОшибка при загрузке рецепта <recipe_name>.
+item_load_exception: <prefix> &cОшибка при загрузке предмета <item_name>.
+hook_plugin_success: <prefix> &a<plugin> обнаружен и подключён.
+crafting_category_name:
+  misc: '&eПредметы'
+  building: '&eСтроительные блоки'
+  redstone: '&eРедстоун'
+  tools: '&eИнструменты'
+cooking_category_name:
+  food: '&eЕда'
+  blocks: '&eБлоки'
+  misc: '&eРазное'

@@ -1,0 +1,36 @@
+name: §l§4Mision Diaria
+endMsg: §l§3Completaste la Mision Diaria.
+endRewards:
+- id: expReward
+  xp: 100
+- id: itemReward
+  items:
+  - v: 3955
+    type: DIAMOND
+    amount: 16
+  - v: 3955
+    type: IRON_INGOT
+    amount: 32
+  - v: 3955
+    type: GOLD_INGOT
+    amount: 32
+description: Mata mobs hostiles
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          objects:
+            29c94ddf-dc91-34dd-97fa-41950c53efcd:
+              amount: 30
+              object:
+                factoryName: bukkitEntity
+                value: ZOMBIE
+            1f727de5-158e-31ec-842d-042b585e88b5:
+              amount: 20
+              object:
+                factoryName: bukkitEntity
+                value: SKELETON
+          stageType: MOBS
+      endingStages: {}
+id: 1

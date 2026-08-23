@@ -1,0 +1,81 @@
+# =============================================================================
+# JEFE FINAL: LEVIATÁN ABISAL - EDICIÓN TITÁNICO Y DEFINITIVO (1.21.1)
+# =============================================================================
+LeviatanAbisal:
+  Type: DROWNED
+  Display: '&3&l&k!&4&l LEVIATÁN TITÁNICO &3&l&k!'
+  Health: 3000
+  Damage: 25
+  Faction: OceanAbyss
+  BossBar:
+    Enabled: true
+    Title: '&4&lTITÁN ABISAL &7- &b&lEL SEÑOR SUPREMO DE LOS MARES'
+    Range: 45
+    Color: PURPLE
+    Style: SEGMENTED_12
+  Options:
+    Scale: 3.5                   # TAMANO GIGANTESCO (Atributo nativo 1.21.1)
+    AlwaysShowName: true
+    MovementSpeed: 0.35          # Imponente y ágil
+    PreventSunburn: true
+    PreventSuffocation: true
+    PreventDrowning: true
+    KnockbackResistance: 1.0     # Inamovible
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - wander
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - netherite_chestplate CHEST
+    - netherite_boots BOOTS
+    - turtle_helmet HEAD
+    - trident HAND
+  Skills:
+    # --- CICLO DE APARICIÓN: CARGA DE PODER CINEMÁTICA ---
+    - skill{s=BossAparicionCargaPoder} @Self ~onSpawn
+    # --- AURA PASIVA INFINITA DE AUTORIDAD ---
+    - skill{s=BossAuraPasivaInfinita} @Self ~onTimer:20
+    # --- ATAQUES TITÁNICOS ---
+    - skill{s=GolpeMareaDevastadora} @Target ~onAttack
+    - skill{s=TridenteVortice} @Target ~onTimer:70
+    - skill{s=InvocacionHordaEsbirros} @Self ~onTimer:180
+    # --- TRANSICIÓN A FASE 2 (ENRAGE AL 50% HP) ---
+    - skill{s=BossTransicionFase2} @Self ~onDamaged =50%
+    # --- HABILIDAD INSTA-KILL CANALIZADA ---
+    - skill{s=ColapsoMarianasInstaKill} @Target ~onTimer:320
+    # --- CATACLISMO DE MUERTE TIPO WITHER/DRAGÓN ---
+    - skill{s=BossMuerteCinematica} @Self ~onDeath
+
+# =============================================================================
+# ESBIRRO 1: GUARDIA DE LA CORONA ABISAL
+# =============================================================================
+GuardiaCoronaAbisal:
+  Type: GUARDIAN
+  Display: '&b&lGuardia de la Corona'
+  Health: 180
+  Damage: 10
+  Faction: OceanAbyss
+  Options:
+    PreventSunburn: true
+    Collidable: false
+    MovementSpeed: 0.35
+
+# =============================================================================
+# ESBIRRO 2: ESCUDERO DE LAS PROFUNDIDADES
+# =============================================================================
+EscuderoAbisal:
+  Type: DROWNED
+  Display: '&3&lEscudero Abisal'
+  Health: 220
+  Damage: 12
+  Faction: OceanAbyss
+  Equipment:
+    - iron_chestplate CHEST
+    - trident HAND
+  Options:
+    PreventSunburn: true
+    MovementSpeed: 0.32

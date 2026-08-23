@@ -1,0 +1,633 @@
+[15Aug2026 20:44:07.526] [main/INFO] [net.neoforged.fml.startup.Entrypoint/]: JVM Uptime at startup: 138ms
+[15Aug2026 20:44:07.535] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Starting FancyModLoader version 11.0.16 (DEDICATED_SERVER in PROD)
+[15Aug2026 20:44:07.535] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Game directory: /workspaces/mtgfresafiio/servidor_minecraft
+[15Aug2026 20:44:07.599] [main/INFO] [net.neoforged.fml.loading.EarlyServiceDiscovery/]: Found 2 early service jars (out of 141) in 29ms
+[15Aug2026 20:44:07.600] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Early Services:
+[15Aug2026 20:44:07.601] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - libraries/net/neoforged/fancymodloader/loader/11.0.16/loader-11.0.16.jar
+[15Aug2026 20:44:07.602] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - libraries/net/neoforged/fancymodloader/earlydisplay/11.0.16/earlydisplay-11.0.16.jar
+[15Aug2026 20:44:07.608] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Not loading early display in headless mode.
+[15Aug2026 20:44:07.626] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.GameLocator/]: Failed to find common Minecraft classes and resources on the classpath. Assuming we're launching production.
+[15Aug2026 20:44:07.803] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Skipping jar. File mods/caves_canyons-3.4.3fabric.jar is a Fabric mod and cannot be loaded
+[15Aug2026 20:44:08.432] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 82 dependencies adding them to mods collection
+[15Aug2026 20:44:08.439] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Abridged 2.0.2 (abridged)
+		Almanac 1.26.7.3 (almanac)
+		Alternate Current 1.9.0 (alternate_current)
+		Amplified Nether 1.2.16 (amplified_nether)
+		Apollib 1.2.0 (apollib)
+		ATi Structures - Vanilla Edition 1.4.5 (mr_ati_structuresvanillaedition)
+		Better Trees 1.9.3 (mr_better_trees)
+		Biolith 3.7.0-alpha.2 (biolith)
+		Cascades 1.0.7 (mr_hybrid_beta)
+		Chunky 1.5.4 (chunky)
+		Clifftree 3.3 (clifftree)
+		Climate Rivers 26.2.1 (climaterivers)
+		Cloud Command Framework 2.0.0-beta.17 (cloud)
+		Collective 8.39 (collective)
+		Concurrent Chunk Management Engine 0.4.2-alpha.0.96+26.2 (c2me)
+		Concurrent Chunk Management Engine (Base) 0.4.2-alpha.0.96+26.2 (c2me_base)
+		Concurrent Chunk Management Engine (Client/Uncap View Distance) 0.4.2-alpha.0.96+26.2 (c2me_client_uncapvd)
+		Concurrent Chunk Management Engine (Fixes/Chunk IO/Threading Issues) 0.4.2-alpha.0.96+26.2 (c2me_fixes_chunkio_threading_issues)
+		Concurrent Chunk Management Engine (Fixes/General/Threading Issues) 0.4.2-alpha.0.96+26.2 (c2me_fixes_general_threading_issues)
+		Concurrent Chunk Management Engine (Fixes/WorldGen/Threading Issues) 0.4.2-alpha.0.96+26.2 (c2me_fixes_worldgen_threading_issues)
+		Concurrent Chunk Management Engine (Fixes/WorldGen/Vanilla Bugs) 0.4.2-alpha.0.96+26.2 (c2me_fixes_worldgen_vanilla_bugs)
+		Concurrent Chunk Management Engine (No Tick View Distance) 0.4.2-alpha.0.96+26.2 (c2me_notickvd)
+		Concurrent Chunk Management Engine (Optimizations/Chunk IO) 0.4.2-alpha.0.96+26.2 (c2me_opts_chunkio)
+		Concurrent Chunk Management Engine (Optimizations/Density Function Compiler) 0.4.2-alpha.0.96+26.2 (c2me_opts_dfc)
+		Concurrent Chunk Management Engine (Optimizations/General WorldGen) 0.4.2-alpha.0.96+26.2 (c2me_opts_worldgen_general)
+		Concurrent Chunk Management Engine (Optimizations/Math) 0.4.2-alpha.0.96+26.2 (c2me_opts_math)
+		Concurrent Chunk Management Engine (Optimizations/Memory Allocations) 0.4.2-alpha.0.96+26.2 (c2me_opts_allocs)
+		Concurrent Chunk Management Engine (Optimizations/Natives Math) 0.4.2-alpha.0.96+26.2 (c2me_opts_natives_math)
+		Concurrent Chunk Management Engine (Optimizations/Scheduling) 0.4.2-alpha.0.96+26.2 (c2me_opts_scheduling)
+		Concurrent Chunk Management Engine (Optimizations/Vanilla WorldGen) 0.4.2-alpha.0.96+26.2 (c2me_opts_worldgen_vanilla)
+		Concurrent Chunk Management Engine (Rewrites/Chunk IO) 0.4.2-alpha.0.96+26.2 (c2me_rewrites_chunkio)
+		Concurrent Chunk Management Engine (Rewrites/Chunk Serializer) 0.4.2-alpha.0.96+26.2 (c2me_rewrites_chunk_serializer)
+		Concurrent Chunk Management Engine (Rewrites/Chunk System) 0.4.2-alpha.0.96+26.2 (c2me_rewrites_chunk_system)
+		Concurrent Chunk Management Engine (Server Utils) 0.4.2-alpha.0.96+26.2 (c2me_server_utils)
+		Concurrent Chunk Management Engine (Threading/Lighting) 0.4.2-alpha.0.96+26.2 (c2me_threading_lighting)
+		Cristel Lib 3.1.11 (cristellib)
+		Deeper Dark 4.4.1 (mr_deeper_dark)
+		Dungeon Crawl 2.3.17 (dungeoncrawl)
+		Dungeons and Taverns Desert Temple Overhaul 1-v2.1 (mr_dungeons_andtavernsdeserttempleoverhaul)
+		Dungeons and Taverns Jungle Temple Overhaul 1-v2.1 (mr_dungeons_andtavernsjungletempleoverhaul)
+		Dungeons and Taverns Nether Fortress Overhaul 1-v3.1 (mr_dungeons_andtavernsnetherfortressoverhaul)
+		Dungeons and Taverns Pillager Outpost Overhaul 1-v3.3 (mr_dungeons_andtavernspillageroutpostoverhaul)
+		Dungeons and Taverns Stronghold Overhaul 1-v2.4.0 (mr_dungeons_andtavernsstrongholdoverhaul)
+		Dungeons and Taverns Woodland Mansion Overhaul 2.1 (mr_dungeons_andtavernswoodlandmansionoverhaul)
+		Dungeons+ 1.12.0 (mr_dungeons)
+		Epic Structures: Dungeons 1.2.4 (mr_epic_structuresdungeons)
+		Epic Structures: Villages 1.2.0 (mr_epic_structuresvillages)
+		Epic Structures: Witch Huts 1.3.0 (mr_epic_structureswitchhuts)
+		Explorify 1.6.5 (explorify)
+		Fast Noise 1.0.40 (zfastnoise)
+		Ferrite Core 9.0.0 (ferritecore)
+		Formations 1.0.4 (formations)
+		Formations Nether 1.0.5+a (formationsnether)
+		Formations Overworld 1.0.5+a (formationsoverworld)
+		Geophilic 3.6 (geophilic)
+		Geyser 2.11.1-SNAPSHOT (geyser_neoforge)
+		Grim kingdoms: Vanilla Edition 2.0.0 (mr_grim_kingdomsloststructuresruinsvanillaedition)
+		Hobbit Hill Village 0.0.4 (hobbit_hill_village)
+		HopoBetterMineshaft 1.3.7 (hopo)
+		HopoBetterRuinedPortals 1.5.1 (hoporp)
+		HopoBetterUnderwaterRuins 1.2.8 (hopour)
+		Incendium 5.5.0 (incendium)
+		Krypton Reno 26.3.2-26.2 (kreno)
+		Ksyxis 1.4.3 (ksyxis)
+		LetMeDespawn 1.26.7.3 (letmedespawn)
+		Lithium 0.25.3 (lithium)
+		Lithosphere 1.8.1 (mr_lithosphere)
+		Lithostitched 1.8.0+beta3 (lithostitched)
+		Minecraft 26.2 (minecraft)
+		ModernFix 5.27.20+mc26.2 (modernfix)
+		Moog's Structure Lib 3.0.6 (moogs_structures)
+		MoogsEndStructures 2.0.3 (mes)
+		MoogsMissingVillages 2.1.2 (mmv)
+		MoogsNetherStructures 3.0.0 (mns)
+		MoogsSoaringStructures 2.1.2 (mss)
+		MoogsVoyagerStructures 5.0.11 (mvs)
+		More Mobs 1.5.10+mod (moremobs)
+		NeoForge 26.2.0.59 (neoforge)
+		Nullscape 1.2.20 (nullscape)
+		PacketFixer 3.3.6 (packetfixer)
+		Pufferfish's Biome Dither 1.0.0 (puffish_biome_dither)
+		Puzzles Lib 26.2.3 (puzzleslib)
+		Repurposed Structures 7.7.5+26.2-neoforge (repurposed_structures)
+		Resourcefulconfig 5.0.0 (resourcefulconfig)
+		ScalableLux 0.3.0-alpha.0.16+26.2 (scalablelux)
+		ServerCore 1.5.19+26.2 (servercore)
+		Spiral Tower Village 0.0.3 (spiral_tower_village)
+		SpringLotus 1.1.1+26.2 (springlotus)
+		Stellarity 5.5.5 (stellarity)
+		Structory 1.3.17 (structory)
+		Structory: Towers 1.0.17 (structory_towers)
+		Structure Layout Optimizer 1.1.4+26.1-neoforge (structure_layout_optimizer)
+		Tectonic 3.0.27 (tectonic)
+		Terralith 2.6.4 (terralith)
+		Towns and Towers 1.13.11 (t_and_t)
+		Trek 1-B0.6.2 (mr_trek)
+		Village Spawn Point 4.7 (villagespawnpoint)
+[15Aug2026 20:44:08.491] [main/WARN] [net.neoforged.fml.loading.FMLLoader/]: File mods/caves_canyons-3.4.3fabric.jar is a Fabric mod and cannot be loaded
+[15Aug2026 20:44:08.829] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/workspaces/mtgfresafiio/servidor_minecraft/libraries/net/fabricmc/sponge-mixin/0.17.3+mixin.0.8.7/sponge-mixin-0.17.3+mixin.0.8.7.jar Service=FML Env=SERVER
+[15Aug2026 20:44:08.908] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Plugins:
+[15Aug2026 20:44:08.909] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > expiringmap-0.5.10.jar
+[15Aug2026 20:44:08.913] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > caffeine-3.2.1.jar
+[15Aug2026 20:44:08.913] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > base-api-1.0.3.jar
+[15Aug2026 20:44:08.913] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > adventure-text-serializer-plain-5.2.0.jar
+[15Aug2026 20:44:08.914] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > nbt-3.0.4.Final.jar
+[15Aug2026 20:44:08.914] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > asyncutil-0.1.0.jar
+[15Aug2026 20:44:08.915] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > natives-1.0.3.jar
+[15Aug2026 20:44:08.915] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > reactive-streams-1.0.4.jar
+[15Aug2026 20:44:08.919] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > adventure-text-serializer-json-5.2.0.jar
+[15Aug2026 20:44:08.920] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > cloud-neoforge-2.0.0-beta.17.jar > cloud-services-2.0.0.jar
+[15Aug2026 20:44:08.921] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/servercore-neoforge-1.5.19+26.2.jar > snakeyaml-2.6.jar
+[15Aug2026 20:44:08.922] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > annotations-24.0.0.jar
+[15Aug2026 20:44:08.924] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > adventure-text-serializer-commons-5.2.0.jar
+[15Aug2026 20:44:08.924] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/springlotus-neoforge-1.1.1+26.2.jar > sewlia-config-1.1.1-SNAPSHOT.jar
+[15Aug2026 20:44:08.927] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/springlotus-neoforge-1.1.1+26.2.jar > tiny-utils-2.4.0.jar
+[15Aug2026 20:44:08.927] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > exp4j-0.4.8.jar
+[15Aug2026 20:44:08.927] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > adventure-text-serializer-gson-5.2.0.jar
+[15Aug2026 20:44:08.928] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > cloud-neoforge-2.0.0-beta.17.jar > cloud-brigadier-2.0.0-beta.16.jar
+[15Aug2026 20:44:08.928] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > mixinsquared-neoforge-0.3.7-beta.1.jar > MixinSquared-0.3.7-beta.1.jar
+[15Aug2026 20:44:08.928] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > bedrock-connection-3.0.0.Beta13-20260814.192942-15.jar
+[15Aug2026 20:44:08.932] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > j2objc-annotations-1.3.jar
+[15Aug2026 20:44:08.932] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > netty-codec-haproxy-4.2.7.Final.jar
+[15Aug2026 20:44:08.932] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > option-1.1.0.jar
+[15Aug2026 20:44:08.933] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > common-2.11.1-SNAPSHOT.jar
+[15Aug2026 20:44:08.933] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - ~libraries/net/neoforged/neoforge/26.2.0.59/neoforge-26.2.0.59-universal.jar > net.neoforged.neoforge-coremods-26.2.0.59.jar
+[15Aug2026 20:44:08.942] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > adventure-nbt-5.2.0.jar
+[15Aug2026 20:44:08.943] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > bstats-base-3.1.0.jar
+[15Aug2026 20:44:08.944] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > netty-transport-raknet-1.1.0.CR1-SNAPSHOT.jar
+[15Aug2026 20:44:08.947] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > adventure-text-serializer-json-legacy-impl-5.2.0.jar
+[15Aug2026 20:44:08.950] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > protocol-26.2-20260709.110151-15.jar
+[15Aug2026 20:44:08.950] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/kreno-neoforge-26.2-26.3.2-26.2.jar > velocity-native-3.4.0-SNAPSHOT.jar
+[15Aug2026 20:44:08.951] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > adventure-key-5.2.0.jar
+[15Aug2026 20:44:08.954] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > lmbda-2.0.0.jar
+[15Aug2026 20:44:08.954] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > events-1.1-SNAPSHOT.jar
+[15Aug2026 20:44:08.957] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/servercore-neoforge-1.5.19+26.2.jar > dazzleconf-core-1.3.0-M2.jar
+[15Aug2026 20:44:08.957] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > adventure-text-serializer-legacy-5.2.0.jar
+[15Aug2026 20:44:08.957] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > Java-WebSocket-1.5.1.jar
+[15Aug2026 20:44:08.958] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > jspecify-1.0.0.jar
+[15Aug2026 20:44:08.958] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > rxjava-3.1.12.jar
+[15Aug2026 20:44:08.958] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/abridged-2.0.2-neoforge-26.2.jar > apollib-1.1.4-neoforge-26.2.jar > json5-java-3.0.0.jar
+[15Aug2026 20:44:08.965] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > cloud-neoforge-2.0.0-beta.17.jar > cloud-core-2.0.0.jar
+[15Aug2026 20:44:08.966] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/cristellib-neoforge-26.2-3.1.11.jar > jankson-1.2.3.jar
+[15Aug2026 20:44:08.966] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > immutable-2.0.jar
+[15Aug2026 20:44:08.969] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > common-1.1-20240521.000109-3.jar
+[15Aug2026 20:44:08.969] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > cumulus-1.1.2.jar
+[15Aug2026 20:44:08.975] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > common-3.0.0.Beta13-20260814.192942-15.jar
+[15Aug2026 20:44:08.976] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > MinecraftAuth-5.0.0.jar
+[15Aug2026 20:44:08.976] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > aircompressor-0.27.jar
+[15Aug2026 20:44:08.977] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > bedrock-codec-3.0.0.Beta13-20260814.192942-15.jar
+[15Aug2026 20:44:08.981] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/servercore-neoforge-1.5.19+26.2.jar > dazzleconf-ext-snakeyaml-1.3.0-M2.jar
+[15Aug2026 20:44:08.984] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > jsr305-3.0.2.jar
+[15Aug2026 20:44:08.984] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > jose4j-0.9.6.jar
+[15Aug2026 20:44:08.984] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > adventure-api-5.2.0.jar
+[15Aug2026 20:44:08.988] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > jctools-core-4.0.5.jar
+[15Aug2026 20:44:08.988] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > cloud-neoforge-2.0.0-beta.17.jar > geantyref-1.3.16.jar
+[15Aug2026 20:44:08.995] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > gson-1.9.0.jar
+[15Aug2026 20:44:08.995] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/Geyser-NeoForge.jar > httpclient-1.9.0.jar
+[15Aug2026 20:44:09.028] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-fixes-worldgen-threading-issues-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.031] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-threading-lighting-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.032] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/puffish_biome_dither-1.0.0-26.2-neoforge.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.032] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/formationsnether-1.0.5a-mc1.21+.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.032] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-natives-math-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.032] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-fixes-general-threading-issues-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.033] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/Structory_26.2_v1.3.7.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.033] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/hobbit_hill_village-0.0.4.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.033] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-math-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.033] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-rewrites-chunk-system-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.034] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/HopoBetterUnderwaterRuins-[26.2]-1.2.8.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.038] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/spiral_tower_village-0.0.3.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.039] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-worldgen-vanilla-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.039] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-fixes-worldgen-vanilla-bugs-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.039] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-scheduling-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.039] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/Geophilic v3.6.mod.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.040] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/formationsoverworld-1.0.5a-mc1.21+.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.042] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-fixes-chunkio-threading-issues-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.042] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/Explorify v1.6.5.mod.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.043] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/HopoBetterRuinedPortals-[26.2]-1.5.1.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.045] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-server-utils-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.046] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/Amplified_Nether_26.2_v1.2.16.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.046] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-dfc-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.046] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/Nullscape_26.2_v1.2.20.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.046] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-worldgen-general-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.049] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-chunkio-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.050] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/MoogsNetherStructures-1.21-3.0.0.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.050] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-rewrites-chunkio-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.050] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/Stellarity-5.5.5.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.051] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/HopoBetterMineshaft-[26.2]-1.3.7.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.051] [main/WARN] [net.neoforged.fml.loading.LanguageProviderLoader/]: Mod jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar) > jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-allocs-mc26.2-0.4.2-alpha.0.96.jar) is using the deprecated 'lowcodefml' language loader. This warning can be fixed by simply removing the modLoader and loaderVersion settings from neoforge.mods.toml.
+[15Aug2026 20:44:09.485] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Building game content classloader:
+ - abridged (jar(mods/abridged-2.0.2-neoforge-26.2.jar))
+ - almanac (jar(mods/almanac-neoforge-26.2-1.26.7.3.jar))
+ - alternate_current (jar(mods/alternate_current-mc26.2-1.9.0.jar))
+ - amplified_nether (jar(mods/Amplified_Nether_26.2_v1.2.16.jar))
+ - apollib (jar(mods/clifftree-3.3-neoforge-26.2.jar > apollib-1.2.0-neoforge-26.2.jar))
+ - biolith (jar(mods/biolith-neoforge-3.7.0-alpha.2.jar))
+ - c2me (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_base (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-base-mc26.2-0.4.2-alpha.0.96-all.jar))
+ - c2me_client_uncapvd (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-client-uncapvd-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_fixes_chunkio_threading_issues (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-fixes-chunkio-threading-issues-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_fixes_general_threading_issues (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-fixes-general-threading-issues-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_fixes_worldgen_threading_issues (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-fixes-worldgen-threading-issues-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_fixes_worldgen_vanilla_bugs (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-fixes-worldgen-vanilla-bugs-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_notickvd (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-notickvd-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_opts_allocs (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-allocs-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_opts_chunkio (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-chunkio-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_opts_dfc (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-dfc-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_opts_math (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-math-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_opts_natives_math (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-natives-math-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_opts_scheduling (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-scheduling-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_opts_worldgen_general (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-worldgen-general-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_opts_worldgen_vanilla (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-opts-worldgen-vanilla-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_rewrites_chunk_serializer (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-rewrites-chunk-serializer-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_rewrites_chunk_system (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-rewrites-chunk-system-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_rewrites_chunkio (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-rewrites-chunkio-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_server_utils (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-server-utils-mc26.2-0.4.2-alpha.0.96.jar))
+ - c2me_threading_lighting (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > c2me-neoforge-threading-lighting-mc26.2-0.4.2-alpha.0.96.jar))
+ - chunky (jar(mods/Chunky-NeoForge-1.5.4.jar))
+ - clifftree (jar(mods/clifftree-3.3-neoforge-26.2.jar))
+ - climaterivers (jar(mods/ClimateRivers-v26.2.1-mc26.2.x-NeoForge.jar))
+ - cloud (jar(mods/Geyser-NeoForge.jar > cloud-neoforge-2.0.0-beta.17.jar))
+ - collective (jar(mods/collective-26.2.0-8.39.jar))
+ - cristellib (jar(mods/cristellib-neoforge-26.2-3.1.11.jar))
+ - dungeoncrawl (jar(mods/DungeonCrawl-NeoForge-26.2-2.3.17.jar))
+ - explorify (jar(mods/Explorify v1.6.5.mod.jar))
+ - ferritecore (jar(mods/ferritecore-9.0.0-neoforge.jar))
+ - formations (jar(mods/formations-1.0.4-neoforge-mc26.2.jar))
+ - formationsnether (jar(mods/formationsnether-1.0.5a-mc1.21+.jar))
+ - formationsoverworld (jar(mods/formationsoverworld-1.0.5a-mc1.21+.jar))
+ - geophilic (jar(mods/Geophilic v3.6.mod.jar))
+ - geyser_neoforge (jar(mods/Geyser-NeoForge.jar))
+ - hobbit_hill_village (jar(mods/hobbit_hill_village-0.0.4.jar))
+ - hopo (jar(mods/HopoBetterMineshaft-[26.2]-1.3.7.jar))
+ - hoporp (jar(mods/HopoBetterRuinedPortals-[26.2]-1.5.1.jar))
+ - hopour (jar(mods/HopoBetterUnderwaterRuins-[26.2]-1.2.8.jar))
+ - incendium (jar(mods/Incendium_Legacy_26.2_v5.5.0.jar))
+ - kreno (jar(mods/kreno-neoforge-26.2-26.3.2-26.2.jar))
+ - ksyxis (jar(mods/Ksyxis-1.4.3.jar))
+ - letmedespawn (jar(mods/letmedespawn-neoforge-26.2-1.26.7.3.jar))
+ - lithium (jar(mods/lithium-neoforge-0.25.3+mc26.2.jar))
+ - lithostitched (jar(mods/lithostitched-1.8.0+beta3-neoforge-26.2.jar))
+ - mes (jar(mods/MoogsEndStructures-1.21-2.0.3.jar))
+ - minecraft (jar(~libraries/net/neoforged/minecraft-server-patched/26.2.0.59/minecraft-server-patched-26.2.0.59.jar))
+ - mixinextras.neoforge (jar(~libraries/net/neoforged/neoforge/26.2.0.59/neoforge-26.2.0.59-universal.jar > mixinextras-neoforge-0.5.4.jar))
+ - mixinsquared.neoforge.beta._1 (jar(mods/c2me-neoforge-mc26.2-0.4.2-alpha.0.96.jar > mixinsquared-neoforge-0.3.7-beta.1.jar))
+ - mmv (jar(mods/MoogsMissingVillages-1.21-2.1.2.jar))
+ - mns (jar(mods/MoogsNetherStructures-1.21-3.0.0.jar))
+ - modernfix (jar(mods/modernfix-neoforge-5.27.20+mc26.2.jar))
+ - moogs_structures (jar(mods/moogs_structures-neoforge-26.2-3.0.6.jar))
+ - moremobs (jar(mods/more_mobs-v1.5.10-mc1.14-26.2.9-mod.jar))
+ - mr_ati_structuresvanillaedition (jar(mods/ATi Structures Vanilla V1.4.5.jar))
+ - mr_better_trees (jar(mods/better-trees-1.9.3.jar))
+ - mr_deeper_dark (jar(mods/deeper_dark-4.4.1.jar))
+ - mr_dungeons (jar(mods/dungeons+-1.12.0.jar))
+ - mr_dungeons_andtavernsdeserttempleoverhaul (jar(mods/dungeons-and-taverns-desert-temple-overhaul-v2.1.jar))
+ - mr_dungeons_andtavernsjungletempleoverhaul (jar(mods/dungeons-and-taverns-jungle-temple-overhaul-v2.1.jar))
+ - mr_dungeons_andtavernsnetherfortressoverhaul (jar(mods/dungeons-and-taverns-nether-fortress-overhaul-v3.1.jar))
+ - mr_dungeons_andtavernspillageroutpostoverhaul (jar(mods/dungeons-and-taverns-pillager-outpost-overhaul-v3.3.jar))
+ - mr_dungeons_andtavernsstrongholdoverhaul (jar(mods/dungeons-and-taverns-stronghold-overhaul-v2.4.0.jar))
+ - mr_dungeons_andtavernswoodlandmansionoverhaul (jar(mods/dungeons-and-taverns-woodland-mansion-overhaul-2.1.jar))
+ - mr_epic_structuresdungeons (jar(mods/epic-structures-dungeons-1.2.4.jar))
+ - mr_epic_structuresvillages (jar(mods/Epic Villages 1.3.3.jar))
+ - mr_epic_structureswitchhuts (jar(mods/Epic Witch Huts v1.3.1.jar))
+ - mr_grim_kingdomsloststructuresruinsvanillaedition (jar(mods/grim-kingdoms-lost-structures-ruins-vanilla-edition-2.0.0.jar))
+ - mr_hybrid_beta (jar(mods/hybrid-beta-1.0.7.jar))
+ - mr_lithosphere (jar(mods/lithosphere-1.8.1.jar))
+ - mr_trek (jar(mods/trek-B0.6.2.jar))
+ - mss (jar(mods/MoogsSoaringStructures-1.21-2.1.2.jar))
+ - mvs (jar(mods/MoogsVoyagerStructures-1.21-5.0.11.jar))
+ - neoforge (jar(~libraries/net/neoforged/neoforge/26.2.0.59/neoforge-26.2.0.59-universal.jar))
+ - net.neoforged.fml.generated (empty(VirtualJar/net.neoforged.fml.generated))
+ - nullscape (jar(mods/Nullscape_26.2_v1.2.20.jar))
+ - org.incendo.cloud.minecraft.modded.common (jar(mods/Geyser-NeoForge.jar > cloud-neoforge-2.0.0-beta.17.jar > org.incendo.cloud-minecraft-modded-common-2.0.0-beta.17.jar))
+ - packetfixer (jar(mods/PacketFixer-neoforge-3.3.6.jar))
+ - puffish_biome_dither (jar(mods/puffish_biome_dither-1.0.0-26.2-neoforge.jar))
+ - puzzleslib (jar(mods/PuzzlesLib-v26.2.3-mc26.2.x-NeoForge.jar))
+ - repurposed_structures (jar(mods/repurposed_structures-7.7.5+26.2-neoforge.jar))
+ - resourcefulconfig (jar(mods/ResourcefulConfig-5.0.0neoforge.jar))
+ - scalablelux (jar(mods/ScalableLux-neoforge-0.3.0-alpha.0.16-all.jar))
+ - servercore (jar(mods/servercore-neoforge-1.5.19+26.2.jar))
+ - spiral_tower_village (jar(mods/spiral_tower_village-0.0.3.jar))
+ - springlotus (jar(mods/springlotus-neoforge-1.1.1+26.2.jar))
+ - stellarity (jar(mods/Stellarity-5.5.5.jar))
+ - structory (jar(mods/Structory_26.2_v1.3.7.jar))
+ - structory_towers (jar(mods/Structory_Towers_26.2_v1.0.17.jar))
+ - structure_layout_optimizer (jar(mods/structure_layout_optimizer-1.1.4+26.1-neoforge.jar))
+ - t_and_t (jar(mods/t_and_t-fabric-neoforge-1.13.11.jar))
+ - tectonic (jar(mods/tectonic-3.0.27-neoforge-26.2.jar))
+ - terralith (jar(mods/Terralith_26.2_v2.6.4_Neoforge.jar))
+ - villagespawnpoint (jar(mods/villagespawnpoint-26.2.0-4.7.jar))
+ - zfastnoise (jar(mods/zfastnoise-1.0.40+26.2+neoforge.jar))
+[15Aug2026 20:44:09.647] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Built game content classloader in 322ms
+[15Aug2026 20:44:09.745] [main/INFO] [mixin/]: Compatibility level set to JAVA_25
+[15Aug2026 20:44:09.956] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
+[15Aug2026 20:44:09.976] [main/INFO] [C2ME Config Updater/]: Updating config from 0 to 1
+[15Aug2026 20:44:09.977] [main/INFO] [C2ME Config Updater/]: Updating config from 1 to 2
+[15Aug2026 20:44:09.978] [main/INFO] [C2ME Config Updater/]: Updating config from 2 to 3
+[15Aug2026 20:44:09.981] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.threading.lighting.mixin
+[15Aug2026 20:44:09.982] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin
+[15Aug2026 20:44:09.983] [main/INFO] [C2ME Modules Manager/]: Disabling com.ishland.c2me.rewrites.chunk_serializer.mixin
+[15Aug2026 20:44:10.050] [main/INFO] [Lithium/]: Loaded configuration file for Lithium: 171 options available, 0 override(s) found.
+[15Aug2026 20:44:10.051] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.natives_math.mixin
+[15Aug2026 20:44:10.086] [main/INFO] [com.ishland.c2me.opts.natives_math.common.NativeLoader/]: Attempting to call native library. If your game crashes right after this point, native acceleration may not be available for your system.
+[15Aug2026 20:44:10.117] [main/INFO] [com.ishland.c2me.opts.natives_math.common.NativeLoader/]: Detected maximum supported ISA target: AVX2
+[15Aug2026 20:44:10.119] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
+[15Aug2026 20:44:10.191] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix [unknown]: 76 options available, 4 override(s) found
+[15Aug2026 20:44:10.192] [main/WARN] [ModernFix/]: Option 'mixin.perf.release_protochunks' overriden (by mods [c2me]) to 'false'
+[15Aug2026 20:44:10.192] [main/WARN] [ModernFix/]: Option 'mixin.bugfix.paper_chunk_patches' overriden (by mods [c2me]) to 'false'
+[15Aug2026 20:44:10.192] [main/WARN] [ModernFix/]: Option 'mixin.perf.cache_strongholds' overriden (by mods [c2me]) to 'false'
+[15Aug2026 20:44:10.193] [main/WARN] [ModernFix/]: Option 'mixin.bugfix.chunk_deadlock' overriden (by mods [c2me]) to 'false'
+[15Aug2026 20:44:10.194] [main/INFO] [ModernFix/]: Applying Nashorn fix
+[15Aug2026 20:44:10.197] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.math.mixin
+[15Aug2026 20:44:10.199] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.rewrites.chunksystem.mixin
+[15Aug2026 20:44:10.202] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.base.mixin
+[15Aug2026 20:44:10.239] [main/INFO] [C2ME Config System/]: Global Executor Parallelism: 3 configured, 3 evaluated, 3 default evaluated
+[15Aug2026 20:44:10.267] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
+[15Aug2026 20:44:10.268] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
+[15Aug2026 20:44:10.269] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.scheduling.mixin
+[15Aug2026 20:44:10.272] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
+[15Aug2026 20:44:10.274] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.client.uncapvd.mixin
+[15Aug2026 20:44:10.343] [main/INFO] [one.pkg.config.SewliaConfig/]: All configurations saved
+[15Aug2026 20:44:10.354] [main/INFO] [one.pkg.config.SewliaConfig/]: Reloaded configuration: SLConfig
+[15Aug2026 20:44:10.355] [main/INFO] [one.pkg.config.SewliaConfig/]: Successfully initialized configuration manager, loaded 1 configuration classes
+[15Aug2026 20:44:10.356] [main/WARN] [mixin/]: Reference map '' for springlotus.mixins.json could not be read. If this is a development environment you can ignore this message
+[15Aug2026 20:44:10.388] [main/INFO] [one.pkg.config.SewliaConfig/]: All configurations saved
+[15Aug2026 20:44:10.393] [main/INFO] [one.pkg.config.SewliaConfig/]: Reloaded configuration: ModConfig
+[15Aug2026 20:44:10.393] [main/INFO] [one.pkg.config.SewliaConfig/]: Successfully initialized configuration manager, loaded 1 configuration classes
+[15Aug2026 20:44:10.393] [main/WARN] [mixin/]: Reference map '' for kreno.mixins.json could not be read. If this is a development environment you can ignore this message
+[15Aug2026 20:44:10.394] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.server.utils.mixin
+[15Aug2026 20:44:10.438] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.dfc.mixin
+[15Aug2026 20:44:10.440] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.notickvd.mixin
+[15Aug2026 20:44:10.458] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
+[15Aug2026 20:44:10.459] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.chunkio.mixin
+[15Aug2026 20:44:10.476] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
+[15Aug2026 20:44:10.499] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.allocs.mixin
+[15Aug2026 20:44:11.314] [main/INFO] [C2ME Config System/]: Disabling config vanillaWorldGenOptimizations.useEndBiomeCache: Incompatible with biolith@3.7.0-alpha.2 (*) (defined in c2me)
+[15Aug2026 20:44:11.365] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/OptionInstance (java.lang.ClassNotFoundException: net.minecraft.client.OptionInstance)
+[15Aug2026 20:44:11.366] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.OptionInstance was not found c2me-client-uncapvd.mixins.json:ISimpleOption from mod c2me_client_uncapvd
+[15Aug2026 20:44:11.366] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/Options (java.lang.ClassNotFoundException: net.minecraft.client.Options)
+[15Aug2026 20:44:11.366] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.Options was not found c2me-client-uncapvd.mixins.json:MixinGameOptions from mod c2me_client_uncapvd
+[15Aug2026 20:44:11.367] [main/WARN] [mixin/]: Error loading class: net/vulkanmod/config/option/Options (java.lang.ClassNotFoundException: net.vulkanmod.config.option.Options)
+[15Aug2026 20:44:11.367] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/renderer/fog/FogRenderer (java.lang.ClassNotFoundException: net.minecraft.client.renderer.fog.FogRenderer)
+[15Aug2026 20:44:11.367] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.renderer.fog.FogRenderer was not found c2me-client-uncapvd.mixins.json:rendering.MixinFogRenderer from mod c2me_client_uncapvd
+[15Aug2026 20:44:11.427] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.accessor.ClientboundMoveEntityPacketAccessor enabled
+[15Aug2026 20:44:11.428] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.accessor.ConnectionAccessor enabled
+[15Aug2026 20:44:11.428] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.accessor.LevelChunkSectionAccessor enabled
+[15Aug2026 20:44:11.429] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.chunk.ServerEntityCullingMixin enabled
+[15Aug2026 20:44:11.430] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.chunk.TrackedEntityMixin enabled
+[15Aug2026 20:44:11.430] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.chunk.EntityCullingMixin enabled
+[15Aug2026 20:44:11.431] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.chunk.ServerLevelMixin enabled
+[15Aug2026 20:44:11.431] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.experimental.RconClientMixin disabled
+[15Aug2026 20:44:11.432] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.fix.ServerStatusPacketListenerImplMixin enabled
+[15Aug2026 20:44:11.433] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.microopt.PacketProcessorMixin enabled
+[15Aug2026 20:44:11.433] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.microopt.ServerEntityMixin enabled
+[15Aug2026 20:44:11.434] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.microopt.ServerEntitySendChanges disabled
+[15Aug2026 20:44:11.435] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.microopt.Utf8StringMixin enabled
+[15Aug2026 20:44:11.435] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.microopt.VarIntMixin enabled
+[15Aug2026 20:44:11.436] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.microopt.VarLongMixin enabled
+[15Aug2026 20:44:11.437] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.microopt.particle.EntityMixin enabled
+[15Aug2026 20:44:11.437] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.microopt.particle.LivingEntityMixin enabled
+[15Aug2026 20:44:11.438] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.microopt.particle.ServerEntityMixin enabled
+[15Aug2026 20:44:11.439] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.pipeline.LegacyQueryHandlerMixin enabled
+[15Aug2026 20:44:11.439] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.pipeline.Varint21FrameDecoderMixin enabled
+[15Aug2026 20:44:11.440] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.pipeline.compression.ConnectionMixin enabled
+[15Aug2026 20:44:11.441] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.pipeline.encryption.ConnectionMixin enabled
+[15Aug2026 20:44:11.441] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.pipeline.encryption.ServerLoginPacketListenerImplMixin enabled
+[15Aug2026 20:44:11.442] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.pipeline.prepender.ConnectionMixin enabled
+[15Aug2026 20:44:11.442] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.thread.ServerTextFilterMixin enabled
+[15Aug2026 20:44:11.443] [main/INFO] [KryptonReno MixinBootstrap/]: Mixin one.pkg.kreno.mixin.network.thread.UtilMixin enabled
+[15Aug2026 20:44:11.928] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
+[15Aug2026 20:44:12.517] [main/INFO] [net.minecraft.server.Bootstrap/]: ModernFix reached bootstrap stage (5.682 s after launch)
+[15Aug2026 20:44:19.450] [main/INFO] [net.minecraft.server.Bootstrap/]: Vanilla bootstrap took 6932 milliseconds
+[15Aug2026 20:44:19.525] [modloading-worker-0/INFO] [Almanac/]: Almanac NeoForge config initialized
+[15Aug2026 20:44:19.527] [modloading-worker-0/INFO] [Almanac/]: Almanac initialized
+[15Aug2026 20:44:19.575] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 26.2.0.59, for MC 26.2
+[15Aug2026 20:44:19.603] [modloading-worker-0/INFO] [Dungeon Crawl/]: Here we go! Launching Dungeon Crawl 2.3.17...
+[15Aug2026 20:44:19.646] [modloading-worker-0/INFO] [biolith/]: Biolith for NeoForge is initializing...
+[15Aug2026 20:44:19.826] [modloading-worker-0/INFO] [moremobs/]: [More Mobs] Registering server started event...
+[15Aug2026 20:44:19.827] [modloading-worker-0/INFO] [moremobs/]: [More Mobs] Loaded More Mobs by Tschipcraft successfully!
+[15Aug2026 20:44:19.965] [modloading-worker-0/INFO] [Ksyxis/MOD_KSYXIS]: Ksyxis: Loading... (platform: neoforge, version: 1.4.3, manual: false)
+[15Aug2026 20:44:19.966] [modloading-worker-0/INFO] [Ksyxis/MOD_KSYXIS]: Ksyxis: Ready to remove unneeded chunks. (mixinVersion: 0.8.7, time: 0 ms)
+[15Aug2026 20:44:19.967] [modloading-worker-0/INFO] [KryptonReno ModSharedBootstrap/]: KryptonReno is now accelerating your Minecraft server's networking stack 🚀
+[15Aug2026 20:44:19.973] [modloading-worker-0/INFO] [Puzzles Lib/]: Constructing components for climaterivers:common
+[15Aug2026 20:44:19.989] [modloading-worker-0/INFO] [KryptonReno ModSharedBootstrap/]: Compression will use libdeflate (Linux x86_64), encryption will use OpenSSL 3.x.x (Linux x86_64)
+[15Aug2026 20:44:20.030] [modloading-worker-0/INFO] [geyser/]: Loading extensions...
+[15Aug2026 20:44:20.047] [modloading-worker-0/INFO] [geyser/]: Loaded 0 extension(s)
+[15Aug2026 20:44:20.109] [modloading-worker-0/WARN] [mixin/]: @Inject(@At("INVOKE")) Shift.BY=2 on springlotus.neoforge.mixins.json:event.block.fireBreak.ServerPlayerGameModeMixin from mod springlotus::handler$bjl000$springlotus$onBlockBreak exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[15Aug2026 20:44:20.132] [modloading-worker-0/INFO] [me.wesley1808.servercore.common.ServerCore/]: [ServerCore] Loaded V1.5.19+26.2!
+[15Aug2026 20:44:20.139] [modloading-worker-0/INFO] [Collective/]: Loading Collective version 8.39.
+[15Aug2026 20:44:20.148] [modloading-worker-0/INFO] [Puzzles Lib/]: Constructing components for puzzleslib:common
+[15Aug2026 20:44:20.188] [modloading-worker-0/INFO] [Packet Fixer/]: Packet Fixer 3.3.6 NeoForge has been initialized!
+[15Aug2026 20:44:20.192] [modloading-worker-0/INFO] [LetMeDespawn/]: LetMeDespawn initializing on NeoForge (production)
+[15Aug2026 20:44:20.195] [modloading-worker-0/INFO] [Almanac/]: Config file letmedespawn.json does not exist, creating default
+[15Aug2026 20:44:21.654] [modloading-worker-0/INFO] [zfastnoise/]: Hello Fabric world!
+[15Aug2026 20:44:21.657] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernsnetherfortressoverhaul] Starting version check at https://api.modrinth.com/updates/8Dbnvm77/forge_updates.json?neoforge=only
+[15Aug2026 20:44:21.744] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernsnetherfortressoverhaul] Found status: AHEAD Current: 1-v3.1 Target: null
+[15Aug2026 20:44:21.744] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_epic_structuresvillages] Starting version check at https://api.modrinth.com/updates/4OeMBkiG/forge_updates.json?neoforge=only
+[15Aug2026 20:44:21.793] [main/WARN] [net.neoforged.neoforge.server.loading.ServerModLoader/LOADING]: Mods loaded with 1 issues
+[15Aug2026 20:44:21.793] [main/WARN] [net.neoforged.neoforge.server.loading.ServerModLoader/LOADING]: fml.modloadingissue.brokenfile.fabric [[]]
+[15Aug2026 20:44:21.814] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[15Aug2026 20:44:21.825] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_epic_structuresvillages] Found status: OUTDATED Current: 1.2.0 Target: 1.3.3
+[15Aug2026 20:44:21.826] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_better_trees] Starting version check at https://api.modrinth.com/updates/cfXIpi12/forge_updates.json?neoforge=only
+[15Aug2026 20:44:21.904] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_better_trees] Found status: OUTDATED Current: 1.9.3 Target: 1.9.3+mod
+[15Aug2026 20:44:21.904] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernswoodlandmansionoverhaul] Starting version check at https://api.modrinth.com/updates/3GfxWFCy/forge_updates.json?neoforge=only
+[15Aug2026 20:44:21.934] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernswoodlandmansionoverhaul] Found status: OUTDATED Current: 2.1 Target: 2.1+mod
+[15Aug2026 20:44:21.934] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_deeper_dark] Starting version check at https://api.modrinth.com/updates/nHr26oc2/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.005] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_deeper_dark] Found status: OUTDATED Current: 4.4.1 Target: 4.4.1+mod
+[15Aug2026 20:44:22.005] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_ati_structuresvanillaedition] Starting version check at https://api.modrinth.com/updates/YWVAO3wq/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.006] [main/INFO] [Ksyxis/MOD_KSYXIS]: Ksyxis: Enabled compatibility hack with ModernFix. (removeSpawnChunks: false)
+[15Aug2026 20:44:22.035] [main/WARN] [net.neoforged.neoforge.resource.ResourcePackLoader/]: Error reading optional pack metadata for mod/mmv, attempting fallback type
+com.google.gson.JsonParseException: Pack declares support for version newer than 81, but is missing mandatory fields min_format and max_format
+	at com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-10.0.21.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.packs.resources.ResourceMetadata$2.getSection(ResourceMetadata.java:38) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.packs.AbstractPackResources.getMetadataSection(AbstractPackResources.java:24) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/neoforge@26.2.0.59/net.neoforged.neoforge.resource.ResourcePackLoader.readMeta(ResourcePackLoader.java:202) ~[neoforge-26.2.0.59-universal.jar:?]
+	at TRANSFORMER/neoforge@26.2.0.59/net.neoforged.neoforge.resource.ResourcePackLoader.readWithOptionalMeta(ResourcePackLoader.java:193) ~[neoforge-26.2.0.59-universal.jar:?]
+	at TRANSFORMER/neoforge@26.2.0.59/net.neoforged.neoforge.resource.ResourcePackLoader.packFinder(ResourcePackLoader.java:134) ~[neoforge-26.2.0.59-universal.jar:?]
+	at TRANSFORMER/neoforge@26.2.0.59/net.neoforged.neoforge.resource.ResourcePackLoader.lambda$buildPackFinder$0(ResourcePackLoader.java:97) ~[neoforge-26.2.0.59-universal.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.packs.repository.PackRepository.discoverAvailable(PackRepository.java:45) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:35) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.MinecraftServer.configurePackRepository(MinecraftServer.java:1607) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.WorldLoader$PackConfig.createResourceManager(WorldLoader.java:107) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.util.Util.blockUntilDone(Util.java:1085) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.util.Util.blockUntilDone(Util.java:1074) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.Main.main(Main.java:173) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at net.neoforged.fml.startup.Server.main(Server.java:19) ~[loader-11.0.16.jar:11.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at net.neoforged.serverstarterjar.Main.mainLaunch(Main.java:306) [vanilla.jar:0.1.35]
+	at net.neoforged.serverstarterjar.Main.main(Main.java:76) [vanilla.jar:0.1.35]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at net.neoforged.serverstarterjar.Main8.main(Main8.java:19) [vanilla.jar:0.1.35]
+[15Aug2026 20:44:22.043] [main/WARN] [net.neoforged.neoforge.resource.ResourcePackLoader/]: Error reading optional pack metadata for mod/mns, attempting fallback type
+com.google.gson.JsonParseException: Pack declares support for format 48, but game versions supporting formats 17 to 81 require a supported_formats field. Add "supported_formats": [48, 81] or require a version greater or equal to 82.0.
+	at com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-10.0.21.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.packs.resources.ResourceMetadata$2.getSection(ResourceMetadata.java:38) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.packs.AbstractPackResources.getMetadataSection(AbstractPackResources.java:24) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/neoforge@26.2.0.59/net.neoforged.neoforge.resource.ResourcePackLoader.readMeta(ResourcePackLoader.java:202) ~[neoforge-26.2.0.59-universal.jar:?]
+	at TRANSFORMER/neoforge@26.2.0.59/net.neoforged.neoforge.resource.ResourcePackLoader.readWithOptionalMeta(ResourcePackLoader.java:193) ~[neoforge-26.2.0.59-universal.jar:?]
+	at TRANSFORMER/neoforge@26.2.0.59/net.neoforged.neoforge.resource.ResourcePackLoader.packFinder(ResourcePackLoader.java:134) ~[neoforge-26.2.0.59-universal.jar:?]
+	at TRANSFORMER/neoforge@26.2.0.59/net.neoforged.neoforge.resource.ResourcePackLoader.lambda$buildPackFinder$0(ResourcePackLoader.java:97) ~[neoforge-26.2.0.59-universal.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.packs.repository.PackRepository.discoverAvailable(PackRepository.java:45) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:35) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.MinecraftServer.configurePackRepository(MinecraftServer.java:1607) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.WorldLoader$PackConfig.createResourceManager(WorldLoader.java:107) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.util.Util.blockUntilDone(Util.java:1085) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.util.Util.blockUntilDone(Util.java:1074) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at TRANSFORMER/minecraft@26.2/net.minecraft.server.Main.main(Main.java:173) ~[minecraft-server-patched-26.2.0.59.jar:?]
+	at net.neoforged.fml.startup.Server.main(Server.java:19) ~[loader-11.0.16.jar:11.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at net.neoforged.serverstarterjar.Main.mainLaunch(Main.java:306) [vanilla.jar:0.1.35]
+	at net.neoforged.serverstarterjar.Main.main(Main.java:76) [vanilla.jar:0.1.35]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at net.neoforged.serverstarterjar.Main8.main(Main8.java:19) [vanilla.jar:0.1.35]
+[15Aug2026 20:44:22.050] [main/INFO] [net.minecraft.server.MinecraftServer/]: Found new data pack mod/tectonic:tectonic, loading it automatically
+[15Aug2026 20:44:22.073] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_ati_structuresvanillaedition] Found status: UP_TO_DATE Current: 1.4.5 Target: null
+[15Aug2026 20:44:22.073] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_epic_structureswitchhuts] Starting version check at https://api.modrinth.com/updates/7KOwcKlK/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.083] [main/WARN] [net.minecraft.server.packs.FilePackResources/]: Non [a-z0-9_.-] character in namespace .DS_Store in pack /workspaces/mtgfresafiio/servidor_minecraft/mods/hybrid-beta-1.0.7.jar, ignoring
+[15Aug2026 20:44:22.114] [main/WARN] [net.minecraft.server.packs.FilePackResources/]: Non [a-z0-9_.-] character in namespace .DS_Store in pack /workspaces/mtgfresafiio/servidor_minecraft/mods/hybrid-beta-1.0.7.jar, ignoring
+[15Aug2026 20:44:22.161] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_epic_structureswitchhuts] Found status: OUTDATED Current: 1.3.0 Target: 1.3.1
+[15Aug2026 20:44:22.161] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_lithosphere] Starting version check at https://api.modrinth.com/updates/iv9jp2k9/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.235] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_lithosphere] Found status: OUTDATED Current: 1.8.1 Target: 1.8.1+mod
+[15Aug2026 20:44:22.236] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_epic_structuresdungeons] Starting version check at https://api.modrinth.com/updates/t0YT91nL/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.312] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_epic_structuresdungeons] Found status: OUTDATED Current: 1.2.4 Target: 1.2.4+mod
+[15Aug2026 20:44:22.312] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernsjungletempleoverhaul] Starting version check at https://api.modrinth.com/updates/oHjYCS0f/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.351] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernsjungletempleoverhaul] Found status: AHEAD Current: 1-v2.1 Target: null
+[15Aug2026 20:44:22.351] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [moremobs] Starting version check at https://api.modrinth.com/updates/HJR6V0I2/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.391] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [moremobs] Found status: UP_TO_DATE Current: 1.5.10+mod Target: null
+[15Aug2026 20:44:22.392] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [kreno] Starting version check at https://mvnc.pkg.one/update/mod/krypton_fnp/forge_update.json
+[15Aug2026 20:44:22.451] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [kreno] Found status: BETA Current: 26.3.2-26.2 Target: null
+[15Aug2026 20:44:22.452] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [climaterivers] Starting version check at https://api.modrinth.com/updates/DzZWws4q/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.484] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [climaterivers] Found status: UP_TO_DATE Current: 26.2.1 Target: null
+[15Aug2026 20:44:22.484] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [ksyxis] Starting version check at https://raw.githubusercontent.com/VidTu/Ksyxis/main/updater_ksyxis_neoforge.json
+[15Aug2026 20:44:22.613] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [ksyxis] Found status: BETA Current: 1.4.3 Target: null
+[15Aug2026 20:44:22.613] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernspillageroutpostoverhaul] Starting version check at https://api.modrinth.com/updates/QIt10I7z/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.639] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernspillageroutpostoverhaul] Found status: AHEAD Current: 1-v3.3 Target: null
+[15Aug2026 20:44:22.640] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernsstrongholdoverhaul] Starting version check at https://api.modrinth.com/updates/rYocd2LE/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.717] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernsstrongholdoverhaul] Found status: AHEAD Current: 1-v2.4.0 Target: null
+[15Aug2026 20:44:22.717] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernsdeserttempleoverhaul] Starting version check at https://api.modrinth.com/updates/7JTDDmRT/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.747] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons_andtavernsdeserttempleoverhaul] Found status: AHEAD Current: 1-v2.1 Target: null
+[15Aug2026 20:44:22.747] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_grim_kingdomsloststructuresruinsvanillaedition] Starting version check at https://api.modrinth.com/updates/yclIRcrN/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.816] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_grim_kingdomsloststructuresruinsvanillaedition] Found status: OUTDATED Current: 2.0.0 Target: 2.0.0+mod
+[15Aug2026 20:44:22.817] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons] Starting version check at https://api.modrinth.com/updates/nHORcEHd/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.845] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_dungeons] Found status: OUTDATED Current: 1.12.0 Target: 1.12.0+mod
+[15Aug2026 20:44:22.845] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [puzzleslib] Starting version check at https://api.modrinth.com/updates/QAGBst4M/forge_updates.json?neoforge=only
+[15Aug2026 20:44:22.934] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [puzzleslib] Found status: UP_TO_DATE Current: 26.2.3 Target: null
+[15Aug2026 20:44:22.935] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [stellarity] Starting version check at https://api.modrinth.com/updates/bZgeDzN8/forge_updates.json
+[15Aug2026 20:44:23.022] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [stellarity] Found status: OUTDATED Current: 5.5.5 Target: 5.5.5+mod
+[15Aug2026 20:44:23.022] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_trek] Starting version check at https://api.modrinth.com/updates/h2jngREY/forge_updates.json?neoforge=only
+[15Aug2026 20:44:23.057] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_trek] Found status: BETA Current: 1-B0.6.2 Target: B0.6.2+mod
+[15Aug2026 20:44:23.057] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_hybrid_beta] Starting version check at https://api.modrinth.com/updates/Jmx5kJiS/forge_updates.json?neoforge=only
+[15Aug2026 20:44:23.138] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_hybrid_beta] Found status: OUTDATED Current: 1.0.7 Target: 1.0.7+mod
+[15Aug2026 20:44:27.446] [Worker-Main-2/WARN] [net.minecraft.world.level.levelgen.DensityFunctions$TwoArgumentSimpleFunction/]: Creating a MAX function between two non-overlapping inputs: dev.worldgen.lithostitched.impl.worldgen.densityfunction.marker.WrappedMarkerDensityFunction@71904ad4 and Constant[value=-0.49]
+[15Aug2026 20:44:27.884] [Worker-Main-1/INFO] [net.minecraft.server.Main/]: No existing world data, creating new world
+[15Aug2026 20:44:28.122] [Worker-Main-1/ERROR] [net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener/]: Couldn't parse data file 'minecraft:chests/mineral' from 'minecraft:loot_table/chests/mineral.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:chain': Optional[Optional[net.minecraft.world.level.storage.loot.LootTable@19cff78a]]]
+[15Aug2026 20:44:28.254] [Worker-Main-1/ERROR] [net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener/]: Couldn't parse data file 'formationsoverworld:stone_tower/smithing' from 'formationsoverworld:loot_table/stone_tower/smithing.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:chain': Optional[Optional[net.minecraft.world.level.storage.loot.LootTable@7ad4dd67]]]
+[15Aug2026 20:44:28.272] [Worker-Main-1/ERROR] [net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener/]: Couldn't parse data file 'formationsoverworld:witch_tower/smithing' from 'formationsoverworld:loot_table/witch_tower/smithing.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:chain': Optional[Optional[net.minecraft.world.level.storage.loot.LootTable@2dc5760d]]]
+[15Aug2026 20:44:32.760] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1606 recipes
+[15Aug2026 20:44:32.778] [main/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1965 advancements
+[15Aug2026 20:44:32.780] [ForkJoinPool.commonPool-worker-3/INFO] [Dungeon Crawl/]: Loading data...
+[15Aug2026 20:44:33.264] [ForkJoinPool.commonPool-worker-3/INFO] [Dungeon Crawl/]: Done.
+[15Aug2026 20:44:33.268] [main/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
+[15Aug2026 20:44:33.333] [main/WARN] [ModernFix/]: Initial datapack load took 11.33 s
+[15Aug2026 20:44:33.502] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 26.2
+[15Aug2026 20:44:33.502] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[15Aug2026 20:44:33.502] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[15Aug2026 20:44:33.502] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[15Aug2026 20:44:33.676] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[15Aug2026 20:44:33.774] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15Aug2026 20:44:33.774] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[15Aug2026 20:44:33.774] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[15Aug2026 20:44:33.774] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[15Aug2026 20:44:33.806] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:illusioner that was registered with MONSTER mob category but was added under CREATURE mob category for stellarity:amethyst_forest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[15Aug2026 20:44:33.808] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:illusioner that was registered with MONSTER mob category but was added under CREATURE mob category for stellarity:ashfall_deltas biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[15Aug2026 20:44:33.822] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:bat that was registered with AMBIENT mob category but was added under CREATURE mob category for deeper_dark:deep_oasis biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[15Aug2026 20:44:33.824] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:camel that was registered with CREATURE mob category but was added under AMBIENT mob category for terralith:desert_spires biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[15Aug2026 20:44:33.827] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:illusioner that was registered with MONSTER mob category but was added under CREATURE mob category for stellarity:end_shrubland biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[15Aug2026 20:44:33.827] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:illusioner that was registered with MONSTER mob category but was added under CREATURE mob category for stellarity:end_wilds biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[15Aug2026 20:44:33.843] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:illusioner that was registered with MONSTER mob category but was added under CREATURE mob category for stellarity:prismarine_forest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[15Aug2026 20:44:33.858] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:illusioner that was registered with MONSTER mob category but was added under CREATURE mob category for stellarity:the_hallow biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[15Aug2026 20:44:33.862] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:illusioner that was registered with MONSTER mob category but was added under CREATURE mob category for stellarity:warped_marsh biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[15Aug2026 20:44:33.876] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[15Aug2026 20:44:33.932] [Server thread/INFO] [CheckedThreadLocalRandom/]: Enforcing safe world random access
+[15Aug2026 20:44:34.477] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.lithostitched.AxisBindings/]: Bound to lithostitched dev.worldgen.lithostitched.impl.worldgen.densityfunction.AxisDensityFunction
+[15Aug2026 20:44:34.478] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.lithostitched.CeilBindings/]: Bound to lithostitched dev.worldgen.lithostitched.impl.worldgen.densityfunction.CeilDensityFunction
+[15Aug2026 20:44:34.479] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.lithostitched.CosBindings/]: Bound to lithostitched dev.worldgen.lithostitched.impl.worldgen.densityfunction.CosDensityFunction
+[15Aug2026 20:44:34.480] [Server thread/INFO] [com.ishland.c2me.base.common.integration.lithostitched.FastNoiseBindings/]: Bound to lithostitched dev.worldgen.lithostitched.impl.worldgen.densityfunction.FastNoiseDensityFunction
+[15Aug2026 20:44:34.481] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.lithostitched.FloorBindings/]: Bound to lithostitched dev.worldgen.lithostitched.impl.worldgen.densityfunction.FloorDensityFunction
+[15Aug2026 20:44:34.482] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.lithostitched.MixBindings/]: Bound to lithostitched dev.worldgen.lithostitched.impl.worldgen.densityfunction.MixDensityFunction
+[15Aug2026 20:44:34.484] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.lithostitched.SelectBindings/]: Bound to lithostitched dev.worldgen.lithostitched.impl.worldgen.densityfunction.SelectDensityFunction
+[15Aug2026 20:44:34.485] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.lithostitched.ShiftBindings/]: Bound to lithostitched dev.worldgen.lithostitched.impl.worldgen.densityfunction.ShiftDensityFunction
+[15Aug2026 20:44:34.486] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.lithostitched.SinBindings/]: Bound to lithostitched dev.worldgen.lithostitched.impl.worldgen.densityfunction.SinDensityFunction
+[15Aug2026 20:44:34.487] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.lithostitched.SqrtBindings/]: Bound to lithostitched dev.worldgen.lithostitched.impl.worldgen.densityfunction.SqrtDensityFunction
+[15Aug2026 20:44:34.488] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.tectonic.ConfigClampBindings/]: Bound to tectonic dev.worldgen.tectonic.worldgen.densityfunction.ConfigClamp
+[15Aug2026 20:44:34.490] [Server thread/INFO] [com.ishland.c2me.opts.dfc.common.ast.integration.tectonic.ConfigNoiseBindings/]: Bound to tectonic dev.worldgen.tectonic.worldgen.densityfunction.ConfigNoise
+[15Aug2026 20:44:36.335] [Server thread/INFO] [STDOUT/]: [net.minecraft.world.level.levelgen.RandomState:handler$boa000$c2me_opts_dfc$postCreate:599]: Density function compilation finished in 1.890 s
+[15Aug2026 20:44:36.393] [Server thread/INFO] [STDOUT/]: [ca.spottedleaf.starlight.common.thread.GlobalExecutors:<clinit>:20]: [ScalableLux] Lighting scaling is enabled in externally managed mode
+[15Aug2026 20:44:36.449] [Server thread/INFO] [TheSpeedyObjectFactory/]: Using TheSpeedyObjectFactory without Unsafe
+[15Aug2026 20:44:36.558] [Worker-Main-3/INFO] [com.ishland.c2me.base.common.integration.lithostitched.FNLBindings/]: Bound to FastNoiseLite dev.worldgen.lithostitched.api.worldgen.densityfunction.fastnoise.FNL
+[15Aug2026 20:44:36.721] [Server thread/INFO] [com.natamus.villagespawnpoint_common_neoforge.events.VillageSpawnEvent/]: [Village Spawn Point] Finding the nearest village. This might take a few seconds.
+[15Aug2026 20:44:59.314] [Server thread/INFO] [net.minecraft.server.commands.LocateCommand/]: Locating element #minecraft:village (towns_and_towers:village_forest) took 22562 ms
+[15Aug2026 20:45:04.220] [c2me-worker-0/WARN] [mixin/]: Static binding violation: PRIVATE @Overwrite method getBuryContribution in c2me-opts-worldgen-vanilla.mixins.json:structure_weight_sampler.MixinStructureWeightSampler from mod c2me_opts_worldgen_vanilla cannot reduce visibiliy of PROTECTED target method, visibility will be upgraded.
+[15Aug2026 20:45:14.288] [Server thread/INFO] [com.natamus.villagespawnpoint_common_neoforge.events.VillageSpawnEvent/]: [Village Spawn Point] Village found! The world will now generate.
+[15Aug2026 20:45:14.364] [Server thread/INFO] [STDOUT/]: [net.minecraft.world.level.levelgen.RandomState:handler$boa000$c2me_opts_dfc$postCreate:599]: Density function compilation finished in 35.40 ms
+[15Aug2026 20:45:14.370] [Server thread/INFO] [biolith/]: Ignoring world 'deeper_dark:deeper_dark'; unknown dimension type: deeper_dark:deeper_dark
+[15Aug2026 20:45:14.449] [Server thread/INFO] [STDOUT/]: [net.minecraft.world.level.levelgen.RandomState:handler$boa000$c2me_opts_dfc$postCreate:599]: Density function compilation finished in 65.22 ms
+[15Aug2026 20:45:14.544] [Server thread/INFO] [STDOUT/]: [net.minecraft.world.level.levelgen.RandomState:handler$boa000$c2me_opts_dfc$postCreate:599]: Density function compilation finished in 70.28 ms
+[15Aug2026 20:45:14.573] [Server thread/INFO] [Ksyxis/MinecraftServerMixin/MOD_KSYXIS]: Ksyxis: Speeding up the world loading... Delete the mod, if it got stuck after this message. (net.minecraft.server.dedicated.DedicatedServer prepareLevels)
+[15Aug2026 20:45:14.577] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 0 persistent chunks...
+[15Aug2026 20:45:14.578] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 100%
+[15Aug2026 20:45:14.612] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Time elapsed: 35 ms
+[15Aug2026 20:45:14.612] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (40.821s)! For help, type "help"
+[15Aug2026 20:45:14.627] [Server thread/INFO] [Alternate Current/]: saving Alternate Current config
+[15Aug2026 20:45:14.628] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15Aug2026 20:45:14.663] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/deeper_dark:deeper_dark
+[15Aug2026 20:45:14.677] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[15Aug2026 20:45:14.684] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[15Aug2026 20:45:14.717] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15Aug2026 20:45:14.717] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (deeper_dark): All chunks are saved
+[15Aug2026 20:45:14.718] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15Aug2026 20:45:14.718] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15Aug2026 20:45:14.719] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[15Aug2026 20:45:14.848] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[15Aug2026 20:45:14.949] [Server thread/INFO] [geyser/]: ******************************************
+[15Aug2026 20:45:14.949] [Server thread/INFO] [geyser/]: 
+[15Aug2026 20:45:14.950] [Server thread/INFO] [geyser/]: Loading Geyser version 2.11.1-b1223 (git-master-85fb46f)
+[15Aug2026 20:45:14.950] [Server thread/INFO] [geyser/]: 
+[15Aug2026 20:45:14.950] [Server thread/INFO] [geyser/]: ******************************************
+[15Aug2026 20:45:15.842] [Server thread/INFO] [geyser/]: Registered 199 custom block overrides.
+[15Aug2026 20:45:15.843] [Server thread/INFO] [geyser/]: Registered 2 custom block item overrides.
+[15Aug2026 20:45:15.843] [Server thread/INFO] [geyser/]: Registered 7 custom blocks.
+[15Aug2026 20:45:18.078] [Server thread/INFO] [geyser/]: Registered 1 custom items
+[15Aug2026 20:45:18.623] [GeyserServer-3-1/INFO] [geyser/]: Started Geyser on UDP port 19132
+[15Aug2026 20:45:18.630] [Server thread/INFO] [geyser/]: Done (3.681s)! Run /geyser help for help!
+[15Aug2026 20:45:18.682] [Server thread/WARN] [ModernFix/]: Dedicated server took 71.849 seconds to load
+[15Aug2026 20:45:18.684] [ForkJoinPool.commonPool-worker-1/INFO] [geyser/]: Downloading Minecraft JAR to extract required files, please wait... (this may take some time depending on the speed of your internet connection)
+[15Aug2026 20:45:20.246] [ForkJoinPool.commonPool-worker-1/INFO] [geyser/]: Minecraft JAR has been successfully downloaded and loaded!
+[15Aug2026 20:45:36.285] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] hola
+[15Aug2026 20:45:36.344] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 17609ms or 352 ticks behind
+[15Aug2026 20:45:40.343] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] hola
+[15Aug2026 20:45:44.988] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command. See below for error
+[15Aug2026 20:45:44.994] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: tps<--[HERE]
+[15Aug2026 20:46:36.234] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Server empty for 60 seconds, pausing
+[15Aug2026 20:50:48.784] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+[15Aug2026 20:50:48.834] [Server thread/INFO] [geyser/]: Shutting down Geyser.
+[15Aug2026 20:50:48.944] [Server thread/INFO] [geyser/]: Geyser shutdown successfully.
+[15Aug2026 20:50:50.972] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[15Aug2026 20:50:50.973] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[15Aug2026 20:50:50.973] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[15Aug2026 20:50:50.991] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ServerLevel[world]/minecraft:overworld: waiting for 729 chunks to unload
+[15Aug2026 20:50:50.991] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ServerLevel[world]/minecraft:the_end: waiting for 529 chunks to unload
+[15Aug2026 20:50:51.253] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15Aug2026 20:50:51.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/deeper_dark:deeper_dark
+[15Aug2026 20:50:51.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[15Aug2026 20:50:51.371] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[15Aug2026 20:50:51.422] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15Aug2026 20:50:51.423] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (deeper_dark): All chunks are saved
+[15Aug2026 20:50:51.423] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15Aug2026 20:50:51.423] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15Aug2026 20:50:51.423] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[15Aug2026 20:50:51.432] [C2ME Storage #3/INFO] [C2ME Storage/]: Storage thread Thread[#80,C2ME Storage #3,5,SERVER] stopped
+[15Aug2026 20:50:51.440] [C2ME Storage #2/INFO] [C2ME Storage/]: Storage thread Thread[#78,C2ME Storage #2,5,SERVER] stopped
+[15Aug2026 20:50:51.443] [C2ME Storage #1/INFO] [C2ME Storage/]: Storage thread Thread[#77,C2ME Storage #1,5,SERVER] stopped
+[15Aug2026 20:50:51.447] [C2ME Storage #6/INFO] [C2ME Storage/]: Storage thread Thread[#88,C2ME Storage #6,5,SERVER] stopped
+[15Aug2026 20:50:51.447] [C2ME Storage #5/INFO] [C2ME Storage/]: Storage thread Thread[#87,C2ME Storage #5,5,SERVER] stopped
+[15Aug2026 20:50:51.448] [C2ME Storage #4/INFO] [C2ME Storage/]: Storage thread Thread[#86,C2ME Storage #4,5,SERVER] stopped
+[15Aug2026 20:50:51.451] [C2ME Storage #9/INFO] [C2ME Storage/]: Storage thread Thread[#91,C2ME Storage #9,5,SERVER] stopped
+[15Aug2026 20:50:51.451] [C2ME Storage #8/INFO] [C2ME Storage/]: Storage thread Thread[#90,C2ME Storage #8,5,SERVER] stopped
+[15Aug2026 20:50:51.451] [C2ME Storage #7/INFO] [C2ME Storage/]: Storage thread Thread[#89,C2ME Storage #7,5,SERVER] stopped
+[15Aug2026 20:50:51.454] [C2ME Storage #12/INFO] [C2ME Storage/]: Storage thread Thread[#94,C2ME Storage #12,5,SERVER] stopped
+[15Aug2026 20:50:51.459] [C2ME Storage #11/INFO] [C2ME Storage/]: Storage thread Thread[#93,C2ME Storage #11,5,SERVER] stopped
+[15Aug2026 20:50:51.461] [C2ME Storage #10/INFO] [C2ME Storage/]: Storage thread Thread[#92,C2ME Storage #10,5,SERVER] stopped
+[15Aug2026 20:50:51.463] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Closing FML Loader 57dba9bf
+[15Aug2026 20:50:51.464] [main/INFO] [net.neoforged.fml.ModLoader/]: Clearing ModLoader

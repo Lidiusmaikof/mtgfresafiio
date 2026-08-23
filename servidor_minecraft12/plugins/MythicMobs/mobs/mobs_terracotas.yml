@@ -1,0 +1,50 @@
+# =============================================================================
+# ENEMIGO: FORJADO DE TERRACOTA (IA DIURNA Y ANTI-SOL)
+# =============================================================================
+ForjadoTerracota:
+  Type: HUSK
+  Display: '&6&lForjado de Terracota'
+  Health: 70
+  Damage: 6
+  Faction: Terracota
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.25
+    PreventSunburn: true         # Blindado contra el fuego del sol
+    KnockbackResistance: 0.5
+  # ---------------------------------------------------------------------------
+  # CEREBRO DE COMBATE MAESTRO: Hostilidad pura las 24 horas del día
+  # ---------------------------------------------------------------------------
+  AIGoalSelectors:
+    - clear
+    - float
+    - meleeattack
+    - wander
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - gold_chestplate CHEST      # Coraza dorada que simula los minerales del cañón
+    - gold_boots BOOTS
+    - orange_terracotta HAND     # El pesado bloque mineral con el que aplasta
+  Skills:
+    - skill{s=EfectoNacimientoTerracota} @Self ~onSpawn
+    - skill{s=AuraAmbienteTerracota} @Self ~onTimer:30
+    - skill{s=GolpeSismico} @Target ~onAttack
+
+# =============================================================================
+# ENTIDAD DE EFECTOS: NÚCLEO MINERAL FIJO (SPAWN MANUAL PERMANENTE)
+# =============================================================================
+AnclaVisualTerracota:
+  Type: ARMOR_STAND
+  Options:
+    Invisible: true
+    Marker: true
+    NoGravity: true
+    Invulnerable: true
+    ForceSpawn: true
+    Despawn: false               # Permanente en el mapa al invocarse manualmente
+    Persistent: true             # No se borra al reiniciar o vaciar chunks
+  Skills:
+    - skill{s=EfectoSpawnerTerracota} @Self ~onTimer:20

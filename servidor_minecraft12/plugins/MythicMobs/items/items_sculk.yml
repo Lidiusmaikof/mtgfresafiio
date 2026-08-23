@@ -1,0 +1,8 @@
+FragmentoDelVacio:
+  Id: NETHER_STAR
+  Display: '&1&lFragmento del Vacío'
+  Lore:
+    - '&7Un pedazo de materia oscura latente.'
+    - '&7Ofrécelo en el Altar para despertar al Titán.'
+  Options:
+    Glowing: true

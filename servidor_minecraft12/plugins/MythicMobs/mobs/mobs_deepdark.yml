@@ -1,0 +1,75 @@
+# =============================================================================
+# JINETE/MONSTRUO 1: VANGUARDIA DEL SCULK (CUERPO A CUERPO)
+# =============================================================================
+SculkVanguardia:
+  Type: WITHER_SKELETON
+  Display: '&1&lVanguardia del Sculk'
+  Health: 50
+  Damage: 4
+  Faction: DeepDarkAbyss
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.26
+    KnockbackResistance: 0.6
+    PreventSunburn: true
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - wander
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - netherite_chestplate CHEST
+    - netherite_boots BOOTS
+    - netherite_sword HAND
+  Skills:
+    - skill{s=NacimientoOscuro} @Self ~onSpawn
+    - skill{s=AuraOscuraConstante} @Self ~onTimer:20
+    - skill{s=GolpeResonante} @Target ~onAttack
+
+# =============================================================================
+# MONSTRUO 2: INVOCADOR DE ECOS (HECHICERO / DISTANCIA)
+# =============================================================================
+SculkInvocador:
+  Type: ZOMBIE
+  Display: '&3&lInvocador de Ecos'
+  Health: 60
+  Damage: 5
+  Faction: DeepDarkAbyss
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.22
+    PreventSunburn: true
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - wander
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - netherite_helmet HEAD
+    - echo_shard HAND           # Porta un fragmento de eco resonante en la mano
+  Skills:
+    - skill{s=NacimientoOscuro} @Self ~onSpawn
+    - skill{s=AuraOscuraConstante} @Self ~onTimer:20
+    - skill{s=AtaqueSonico} @Target ~onTimer:60  # Dispara ráfagas sónicas cada 3 segundos
+
+# =============================================================================
+# ENTIDAD DE EFECTOS: NÚCLEO DE ALMAS RESONANTE (ANCLA VISUAL)
+# =============================================================================
+AnclaVisualDeepDark:
+  Type: ARMOR_STAND
+  Options:
+    Invisible: true
+    Marker: true
+    NoGravity: true
+    Invulnerable: true
+    ForceSpawn: true
+    Despawn: false
+    Persistent: true
+  Skills:
+    - skill{s=EfectoCoreDeepDark} @Self ~onTimer:20

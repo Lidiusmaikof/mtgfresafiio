@@ -1,0 +1,20 @@
+# =============================================================================
+# GENERADOR B: EL INVOCADOR DE ECOS (ID ÚNICO / SIN COLISIONES)
+# =============================================================================
+GeneradorDeepDarkInvocador:
+  MobName: SculkInvocador
+  World: world
+  X: 207
+  Y: 77
+  Z: 3374
+  Radius: 15
+  UsePlayerRadius: true
+  PlayerRadius: 20
+  MaxMobs: 8 # Balanceado: 5 artilleros de sonido
+  MobsPerSpawn: 4
+  Cooldown: 20
+  ActivationRange: 25
+  CheckForPlayers: true
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 6

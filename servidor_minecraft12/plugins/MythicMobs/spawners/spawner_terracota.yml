@@ -1,0 +1,20 @@
+# =============================================================================
+# GENERADOR MAESTRO: LAS GRIETAS DE ARCILLA (CONSERVADO INTACTO)
+# =============================================================================
+GeneradorTerracotaCustom:
+  MobName: ForjadoTerracota
+  World: world # Modifica por el nombre de tu mundo
+  X: -239 # Tus coordenadas exactas de la estructura
+  Y: 130
+  Z: -137
+  Radius: 20 # Rango de 20 bloques de esparcimiento
+  UsePlayerRadius: true
+  PlayerRadius: 15 # Activación estricta a 15 bloques
+  MaxMobs: 10 # Límite absoluto de 10 esbirros activos
+  MobsPerSpawn: 2
+  Cooldown: 12
+  ActivationRange: 15
+  CheckForPlayers: true
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

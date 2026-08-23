@@ -1,0 +1,51 @@
+# =============================================================================
+# MECÁNICA DE ACOPLAMIENTO: FIJACIÓN EN PLENO VUELO
+# =============================================================================
+GarantizarMonturaAerea:
+  Skills:
+    - mount{mob=PhantomEstelar} @Self
+
+# =============================================================================
+# EFECTOS AL NACER: DESTELLO DE AURORA BOREAL
+# =============================================================================
+EfectoNacimientoFantasia:
+  Skills:
+    # Campanas astrales y conjuro de espejismo celestial
+    - sound{sound=entity.illusioner.prepare_mirror;volume=2;pitch=0.8} @Self
+    - sound{sound=block.amethyst_block.chime;volume=2;pitch=0.5} @Self
+    # Explosión de polvo de estrellas y destellos blancos flotantes
+    - particles{particle=end_rod;amount=50;speed=0.2;hS=2;vS=2} @Self
+    - particles{particle=enchanted_hit;amount=40;speed=0.1;hS=1.5;vS=1.5} @Self
+
+# =============================================================================
+# AURA PASIVA: BRILLO COSMOS CONSTANTE
+# =============================================================================
+AuraEstelarConstante:
+  Skills:
+    # Goteo de partículas de luz cósmica mientras vuela por los cielos
+    - particles{particle=end_rod;amount=3;speed=0.01;hS=0.8;vS=0.8} @Self
+    # Eco melódico ambiental (Sonido suave de Allay espiritual)
+    - sound{sound=entity.allay.ambient_with_item;volume=0.4;pitch=1.3} @Self ~onTimer:80
+
+# =============================================================================
+# COMBATE: CASTIGO ASTRAL (MOLDE MAESTRO ADAPTADO A DISTANCIA)
+# =============================================================================
+CastigoAstral:
+  Skills:
+    # Sonido de impacto de ráfaga mágica en la mesa de encantamientos
+    - sound{sound=block.enchantment_table.use;volume=1.2;pitch=1.4} @Target
+    # Destello de luz instantánea en el punto de impacto de la flecha
+    - particles{particle=instant_effect;amount=15;speed=0.1;hS=0.4;vS=0.4} @Target
+    - potion{type=SLOW;duration=60;lvl=4} @Target                               # Mantiene: Lentitud IV por 3s (Paraliza al objetivo)
+    - damage{amount=4;ignoreArmor=true} @Target                                 # Mantiene: 4 de daño de perforación mágica pura
+
+# =============================================================================
+# EFECTO DE NÚCLEO ACTIVO: VÓRTICE CELESTIAL
+# =============================================================================
+EfectoCoreFantasia:
+  Skills:
+    # Resonancia permanente de un faro mágico activo
+    - sound{sound=block.beacon.ambient;volume=1.0;pitch=1.1} @Self
+    # Espiral ascendente de destellos de luz brillantes y energía pura
+    - particles{particle=end_rod;amount=20;speed=0.02;hS=4;vS=4} @Self
+    - particles{particle=glow;amount=15;speed=0.02;hS=3;vS=3} @Self

@@ -1,0 +1,67 @@
+portals:
+  portal1:
+    currency: air
+    price: 0.0
+    safe-teleport: true
+    teleport-non-players: false
+    owner: VenaticWinner67
+    location: world:-251.0,124.0,-193.0:-229.0,146.0,-193.0
+    action-type: multiverse-destination
+    action: p:portal2
+    check-destination-safety: true
+    version: 1.2
+  portal2:
+    currency: air
+    price: 0.0
+    safe-teleport: true
+    teleport-non-players: false
+    owner: VenaticWinner67
+    location: world_nmr_astral_plane:-12.0,76.0,-15.0:10.0,98.0,-15.0
+    action-type: multiverse-destination
+    action: p:portal1
+    check-destination-safety: true
+    version: 1.2
+  portal3:
+    currency: air
+    price: 0.0
+    safe-teleport: true
+    teleport-non-players: false
+    owner: VenaticWinner67
+    location: world:1376.0,230.0,1155.0:1390.0,253.0,1155.0
+    action-type: multiverse-destination
+    action: p:portal4
+    check-destination-safety: true
+    version: 1.2
+  portal4:
+    currency: air
+    price: 0.0
+    safe-teleport: true
+    teleport-non-players: false
+    owner: VenaticWinner67
+    location: world_deeper_dark_deeper_dark:89.0,36.0,132.0:103.0,59.0,132.0
+    action-type: multiverse-destination
+    action: p:portal3
+    check-destination-safety: true
+    version: 1.2
+  portal5:
+    currency: air
+    price: 0.0
+    safe-teleport: true
+    teleport-non-players: false
+    owner: VenaticWinner67
+    location: world:3995.0,65.0,105.0:4007.0,88.0,105.0
+    action-type: multiverse-destination
+    action: p:portal6
+    check-destination-safety: true
+    version: 1.2
+  portal6:
+    currency: air
+    price: 0.0
+    safe-teleport: true
+    teleport-non-players: false
+    owner: VenaticWinner67
+    location: world_kattersstructures_deep_blue:-7.0,23.0,4.0:5.0,46.0,4.0
+    action-type: multiverse-destination
+    action: p:portal5
+    check-destination-safety: true
+    version: 1.2

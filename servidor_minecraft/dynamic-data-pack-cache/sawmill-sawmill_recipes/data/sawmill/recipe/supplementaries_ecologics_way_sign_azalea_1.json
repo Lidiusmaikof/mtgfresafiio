@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "ecologics:azalea_planks"
+  },
+  "result": {
+    "id": "supplementaries:ecologics/way_sign_azalea",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

@@ -1,0 +1,108 @@
+item:
+  uif:recipe_book: {}
+  dd:basic_coating_book: {}
+  dd:plague_cure:
+    recipes:
+      plague_cure_brewing_recipe:
+        type: brewing
+        brewingTime: 400
+        inputType: exact
+        input:
+        - ==: org.bukkit.inventory.ItemStack
+          v: 3955
+          type: POTION
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            potion-type: minecraft:awkward
+        ingredientType: material
+        ingredient:
+        - INK_SAC
+        - GLOW_INK_SAC
+  dd:splash_plague_cure:
+    recipes:
+      splash_plague_cure_recipe:
+        type: brewing
+        brewingTime: 400
+        inputType: exact
+        input:
+        - ==: org.bukkit.inventory.ItemStack
+          v: 3955
+          type: POTION
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            display-name: '{"text":"","extra":[{"text":"Plague Cure","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Cures one from the black plague","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            custom-model-data: 100006
+            ItemFlags:
+            - HIDE_ADDITIONAL_TOOLTIP
+            PublicBukkitValues: |-
+              {
+                  "uiframework:ui-key": "dd:plague_cure",
+                  "uiframework:uie-dkey": [I;]
+              }
+            custom-color:
+              ==: Color
+              ALPHA: 255
+              RED: 250
+              BLUE: 247
+              GREEN: 250
+        ingredientType: material
+        ingredient:
+        - GUNPOWDER
+      splash_plague_cure_direct_recipe:
+        type: brewing
+        brewingTime: 400
+        inputType: exact
+        input:
+        - ==: org.bukkit.inventory.ItemStack
+          v: 3955
+          type: SPLASH_POTION
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            potion-type: minecraft:awkward
+        ingredientType: material
+        ingredient:
+        - INK_SAC
+        - GLOW_INK_SAC
+  dd:plague_potion: {}
+  dd:splash_plague_potion:
+    recipes:
+      splash_plague_potion_recipe:
+        type: brewing
+        brewingTime: 400
+        inputType: exact
+        input:
+        - ==: org.bukkit.inventory.ItemStack
+          v: 3955
+          type: POTION
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            display-name: '{"text":"","extra":[{"text":"Plague Potion","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Inflicts the black plague","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false}]}'
+            custom-model-data: 100014
+            ItemFlags:
+            - HIDE_ADDITIONAL_TOOLTIP
+            PublicBukkitValues: |-
+              {
+                  "uiframework:ui-key": "dd:plague_potion",
+                  "uiframework:uie-dkey": [I;]
+              }
+            custom-color:
+              ==: Color
+              ALPHA: 255
+              RED: 0
+              BLUE: 0
+              GREEN: 0
+        ingredientType: material
+        ingredient:
+        - GUNPOWDER
+enchant:
+  dd:basic_coating:
+    id: 0
+itemData: {}

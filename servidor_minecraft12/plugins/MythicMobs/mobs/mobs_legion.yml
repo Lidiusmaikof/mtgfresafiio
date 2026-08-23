@@ -1,0 +1,47 @@
+# =============================================================================
+# EL MONSTRUO: PRETORIANO DEL VACÍO (GUERRERO MAESTRO DEL END)
+# =============================================================================
+PretorianoVacio:
+  Type: WITHER_SKELETON
+  Display: '&5&lPretoriano del Vacío'
+  Health: 80
+  Damage: 8
+  Faction: DraconicLegion
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.26
+    KnockbackResistance: 0.7
+    PreventSunburn: true
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - wander
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - dragon_head HEAD          # ¡Lleva la cabeza del mismísimo Dragón!
+    - netherite_chestplate CHEST
+    - netherite_boots BOOTS
+    - netherite_sword HAND
+  Skills:
+    - skill{s=DespertarDraconico} @Self ~onSpawn
+    - skill{s=AuraVacioConstante} @Self ~onTimer:20
+    - skill{s=FuriaDelDragonic} @Target ~onAttack
+
+# =============================================================================
+# ENTIDAD DE EFECTOS: EL NEXO DEL VACÍO (ANCLA VISUAL PERMANENTE)
+# =============================================================================
+AnclaVisualLegion:
+  Type: ARMOR_STAND
+  Options:
+    Invisible: true
+    Marker: true
+    NoGravity: true
+    Invulnerable: true
+    ForceSpawn: true
+    Despawn: false
+    Persistent: true
+  Skills:
+    - skill{s=EfectoCoreLegion} @Self ~onTimer:20

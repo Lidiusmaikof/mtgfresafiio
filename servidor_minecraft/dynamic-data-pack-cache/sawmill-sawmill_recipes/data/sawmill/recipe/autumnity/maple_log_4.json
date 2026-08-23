@@ -1,0 +1,11 @@
+{
+  "group": "log",
+  "ingredient": {
+    "item": "autumnity:maple_wood"
+  },
+  "result": {
+    "id": "autumnity:stripped_maple_wood",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

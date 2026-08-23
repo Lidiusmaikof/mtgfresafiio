@@ -1,0 +1,43 @@
+Events:
+  misionarmadura:
+    type: item_craft
+    enabled: false
+    conditions:
+    - '%item% == DIAMOND_HELMET execute casco'
+    - '%item% == DIAMOND_CHESTPLATE execute peto'
+    - '%item% == DIAMOND_LEGGINGS execute pantalones'
+    - '%item% == DIAMOND_BOOTS execute botas'
+    actions:
+      casco:
+      - 'console_command: svar set diamondhelmet 1 %player%'
+      - 'message: crafteaste un casco de diamante'
+      peto:
+      - 'console_command: svar set diamondchestplate 1 %player%'
+      - 'message: crafteaste un peto de diamante'
+      pantalones:
+      - 'console_command: svar set diamondleggins 1 %player%'
+      - 'message: crafteaste un pantalon de diamante'
+      botas:
+      - 'console_command: svar set diamondboots 1 %player%'
+      - 'message: crafteaste unas botas de diamante'
+  misionarmaduraentrega:
+    type: block_interact
+    enabled: false
+    one_time: true
+    conditions:
+    - '%block_x% == 1892'
+    - '%block_y% == 207'
+    - '%block_z% == 1984'
+    - '%block_world% == world'
+    - '%block% == CHISELED_QUARTZ_BLOCK'
+    - '%action_type% == RIGHT_CLICK'
+    - '%servervariables_value_otherplayer_{player}:diamondhelmet% == 1'
+    - '%servervariables_value_otherplayer_{player}:diamondchestplate% == 1'
+    - '%servervariables_value_otherplayer_{player}:diamondleggins% == 1'
+    - '%servervariables_value_otherplayer_{player}:diamondboots% == 1'
+    actions:
+      default:
+      - 'to_all: message: &l&e&l%player% &eha entregado la mision'
+      - 'give_item: id:DIAMOND;amount:20;'
+      one_time:
+      - 'message: &cYa haz entregado esta misi�n'

@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "ecologics:flowering_azalea_planks"
+  },
+  "result": {
+    "id": "ecologics:flowering_azalea_stairs",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

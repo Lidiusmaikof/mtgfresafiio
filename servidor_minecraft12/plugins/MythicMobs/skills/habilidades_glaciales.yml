@@ -1,0 +1,43 @@
+# =============================================================================
+# EFECTOS DE LOS MOBS AL NACER (CONSERVADO INTACTO)
+# =============================================================================
+EfectoNacimientoGlacial:
+  Skills:
+    - sound{sound=entity.player.hurt_freeze;volume=2;pitch=0.6} @Self
+    - sound{sound=block.glass.break;volume=2;pitch=0.5} @Self
+    - sound{sound=entity.generic.splash;volume=1.5;pitch=0.7} @Self
+    - particles{particle=snowflake;amount=40;speed=0.2;hS=1.5;vS=1.5} @Self
+    - particles{particle=splash;amount=50;speed=0.3;hS=2;vS=1} @Self
+    - particles{particle=dripping_water;amount=30;speed=0.1;hS=1;vS=2} @Self
+    - particles{particle=flash;amount=1;speed=0;hS=0.1;vS=0.1} @Self
+
+# =============================================================================
+# AURA PASIVA DE LOS MONSTRUOS (CONSERVADO INTACTO)
+# =============================================================================
+AuraAmbienteGlacial:
+  Skills:
+    - particles{particle=snowflake;amount=6;speed=0.01;hS=0.4;vS=0.8} @Self
+    - particles{particle=water_wake;amount=4;speed=0.02;hS=0.5;vS=0.5} @Self
+    - sound{sound=block.powder_snow.break;volume=0.4;pitch=1.2} @Self ~onTimer:90
+
+# =============================================================================
+# COMBATE: GOLPE CONGELANTE (CONSERVADO INTACTO)
+# =============================================================================
+GolpeCongelante:
+  Skills:
+    - sound{sound=block.powder_snow.step;volume=1.2;pitch=0.8} @Target
+    - particles{particle=snowflake;amount=15;speed=0.1;hS=0.5;vS=0.5} @Target
+    - potion{type=SLOW;duration=60;lvl=4} @Target
+    - damage{amount=4;ignoreArmor=true} @Target
+
+# =============================================================================
+# EFECTO DE NÚCLEO ACTIVO: ALREDEDOR DEL SPAWNER (CONSERVADO INTACTO)
+# =============================================================================
+EfectoSpawnerEncendido:
+  Skills:
+    - sound{sound=block.conduit.ambient;volume=1.5;pitch=1.6} @Self
+    - sound{sound=block.powder_snow.break;volume=0.6;pitch=0.5} @Self
+    - particles{particle=snowflake;amount=35;speed=0.05;hS=3;vS=2} @Self
+    - particles{particle=falling_water;amount=25;speed=0.1;hS=2.5;vS=3} @Self
+    - particles{particle=glow;amount=20;speed=0.02;hS=3;vS=1.5} @Self
+    - particles{particle=splash;amount=15;speed=0.05;hS=3.5;vS=0.5} @Self

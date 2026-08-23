@@ -1,0 +1,49 @@
+# =============================================================================
+# EFECTOS AL NACER: GRIETA INTERDIMENSIONAL
+# =============================================================================
+DespertarDraconico:
+  Skills:
+    # Rugido lejano del Dragón del End y aleteo de presión
+    - sound{sound=entity.ender_dragon.growl;volume=1.8;pitch=0.6} @Self
+    - sound{sound=entity.ender_dragon.flap;volume=1.5;pitch=0.5} @Self
+    # Estallido visual de partículas de partículas oscuras y aliento de dragón
+    - particles{particle=dragon_breath;amount=50;speed=0.1;hS=1.5;vS=1.5} @Self
+    - particles{particle=portal;amount=60;speed=0.2;hS=2;vS=2} @Self
+
+# =============================================================================
+# AURA PASIVA: ENERGÍA DEL END CORRUPTA
+# =============================================================================
+AuraVacioConstante:
+  Skills:
+    # Goteo constante de ceniza morada y distorsión espacial
+    - particles{particle=witch;amount=5;speed=0.01;hS=0.6;vS=1.2} @Self
+    - particles{particle=portal;amount=3;speed=0.01;hS=0.5;vS=1} @Self
+    # Zumbido sutil de teletransportación distorsionada
+    - sound{sound=entity.enderman.ambient;volume=0.3;pitch=0.5} @Self ~onTimer:60
+
+# =============================================================================
+# COMBATE: FURIA DRACÓNICA (MOLDE MATEMÁTICO ADAPTADO AL END)
+# =============================================================================
+FuriaDelDragonic:
+  Skills:
+    # Sonido salvaje de dragón recibiendo daño combinado con explosión
+    - sound{sound=entity.ender_dragon.hurt;volume=1.2;pitch=0.7} @Target
+    - sound{sound=entity.dragon_fireball.explode;volume=1.0;pitch=0.8} @Target
+    # Explosión de partículas de aliento morado en el pecho del jugador
+    - particles{particle=dragon_breath;amount=25;speed=0.15;hS=0.6;vS=0.6} @Target
+    - particles{particle=portal;amount=20;speed=0.1;hS=0.5;vS=0.5} @Target
+    # Efectos del Molde Maestro
+    - potion{type=SLOW;duration=60;lvl=4} @Target                               # Mantiene: Lentitud IV por 3s (Mutila el movimiento)
+    - damage{amount=4;ignoreArmor=true} @Target                                 # Mantiene: 4 de daño verdadero (Perforación de vacío)
+
+# =============================================================================
+# EFECTO DE NÚCLEO ACTIVO: EL NEXO DE LA OBSIDIANA
+# =============================================================================
+EfectoCoreLegion:
+  Skills:
+    # Resonancia magnética de los portales del End
+    - sound{sound=block.end_portal.ambient;volume=1.2;pitch=0.6} @Self
+    # Tormenta gravitacional: Un tornado denso de partículas de portales y aliento dracónico
+    - particles{particle=portal;amount=40;speed=0.02;hS=3;vS=3} @Self
+    - particles{particle=dragon_breath;amount=20;speed=0.03;hS=2.5;vS=2} @Self
+    - particles{particle=enchant;amount=15;speed=0.05;hS=3;vS=3} @Self          # Runas galácticas siendo absorbidas

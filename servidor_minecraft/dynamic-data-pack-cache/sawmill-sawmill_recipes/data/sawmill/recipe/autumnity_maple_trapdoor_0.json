@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "autumnity:maple_log"
+    },
+    {
+      "item": "autumnity:maple_wood"
+    },
+    {
+      "item": "autumnity:stripped_maple_log"
+    },
+    {
+      "item": "autumnity:stripped_maple_wood"
+    }
+  ],
+  "result": {
+    "id": "autumnity:maple_trapdoor",
+    "count": 2
+  },
+  "type": "sawmill:woodcutting"
+}

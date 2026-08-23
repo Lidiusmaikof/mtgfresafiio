@@ -1,0 +1,1058 @@
+[07:38:56] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.10+7-Ubuntu-124.04; Ubuntu null) on Linux 6.8.0-1052-azure (amd64)
+[07:38:56] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.1-133-ver/1.21.1@3cb8529 (2025-03-28T16:14:36Z) for Minecraft 1.21.1
+[07:38:57] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[07:38:57] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins/CustomPlayerModels-Paper-0.6.27a.jar'...
+[07:38:59] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins/CustomPlayerModels-Paper-0.6.27a.jar' in 1628ms.
+[07:39:00] [ServerMain/INFO]: [BeautyQuests] Loading 7 libraries using Paper plugin loader...
+[07:39:00] [ServerMain/INFO]: [PluginInitializerManager] Initialized 35 plugins
+[07:39:00] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (1):
+ - BeautyQuests (2.1.0+build.138)
+[07:39:00] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (34):
+ - AuraSkills (2.3.12), AxiomPaper (5.0.4+1.21.1), BuildPaste (1.11.1), Chunky (1.4.40), CommandPanels (3.23.4), CommunityQuests (2.11.5), ConditionalEvents (4.79.1), Craftorithm (1.12.0.0-20260721), CustomDiscs (0.9.125), CustomizablePlayerModels (0.6.27a), DeadlyDisasters (1.1.0), FastAsyncWorldEdit (2.15.2+e9ed0d1), Geyser-Spigot (2.11.0-SNAPSHOT), HeadDB (6.0.1), ImageFrame (2026.1.4.0), ItemEdit (3.7.10), LuckPerms (5.5.36), MagicSpells (4.0-Beta-16), Multiverse-Core (5.5.3), Multiverse-Portals (5.2.1), MythicMobs (5.12.1-46bae256), PlaceholderAPI (2.12.3), ProtocolLib (5.4.0), ServerVariables (3.7.2), Shopkeepers (2.24.0), Sit (1.7.2), StringDupersReturn (1.0.12), UIFramework (3.2.0), ViaVersion (5.11.0), WorldEvents (1.8.8), WorldGuard (7.0.12+829a4a4), floodgate (2.2.5-SNAPSHOT (b130-d73192f)), packetevents (2.13.0), voicechat (2.6.14)
+[07:39:05] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:39:05] [ServerMain/WARN]: Missing data pack file/spawnanimations-v1.11.3-mc1.17-1.21.11-datapack.zip
+[07:39:05] [ServerMain/INFO]: Found new data pack file/spawnanimations-v1.11.5-mc1.17-26.2.9-datapack.zip, loading it automatically
+[07:39:06] [ServerMain/ERROR]: Spawn data: Value must be positive: 0
+[07:39:08] [Worker-Main-1/ERROR]: Couldn't parse element minecraft:loot_table/minecraft:chests/tower1 - Failed to parse either. First: Unknown registry key in ResourceKey[minecraft:root / minecraft:loot_function_type]: minecraft:set_nbt; Second: Not a json array: {"function":"set_nbt","tag":"{Potion:slow_falling}"}
+[07:39:08] [Worker-Main-1/ERROR]: Couldn't parse element minecraft:loot_table/minecraft:chests/tower2 - Failed to parse either. First: Unknown registry key in ResourceKey[minecraft:root / minecraft:loot_function_type]: minecraft:set_nbt; Second: Not a json array: {"function":"set_nbt","tag":"{Potion:slow_falling}"}
+[07:39:10] [Worker-Main-1/WARN]: Invalid path in datapack: spellbound_weapons:advancement/magmus_charger copy.json, ignoring
+[07:39:13] [ServerMain/INFO]: Loaded 1406 recipes
+[07:39:13] [ServerMain/ERROR]: Failed to load function spawnanimations:internal/entity/ehs/pehkui/enderman/hide
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:97) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:39:13] [ServerMain/ERROR]: Failed to load function spawnanimations:internal/entity/ehs/pehkui/enderman/unhide
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:97) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:39:13] [ServerMain/ERROR]: Failed to load function spawnanimations:internal/entity/ehs/pehkui/check_installed
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:97) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:39:13] [ServerMain/ERROR]: Failed to load function spawnanimations:internal/entity/ehs/pehkui/hide
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:97) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:39:13] [ServerMain/ERROR]: Failed to load function spawnanimations:internal/entity/ehs/pehkui/unhide
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:86) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:97) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:39:13] [ServerMain/ERROR]: Couldn't load advancements: [minecraft:wander_add_map, minecraft:give_quest_trader_trade]
+[07:39:13] [ServerMain/INFO]: Loaded 2269 advancements
+[07:39:13] [Server thread/INFO]: Starting minecraft server version 1.21.1
+[07:39:13] [Server thread/INFO]: Loading properties
+[07:39:13] [Server thread/INFO]: This server is running Paper version 1.21.1-133-ver/1.21.1@3cb8529 (2025-03-28T16:14:36Z) (Implementing API version 1.21.1-R0.1-SNAPSHOT)
+[07:39:14] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[07:39:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[07:39:14] [Server thread/INFO]: Using 4 threads for Netty based IO
+[07:39:14] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and population gen parallelism of 1 threads
+[07:39:15] [Server thread/INFO]: Default game type: SURVIVAL
+[07:39:15] [Server thread/INFO]: Generating keypair
+[07:39:15] [Server thread/INFO]: Starting Minecraft server on *:25565
+[07:39:15] [Server thread/INFO]: Using epoll channel type
+[07:39:15] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[07:39:15] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loading 4 libraries... please wait
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[07:39:16] [Server thread/INFO]: [Community Quests] Using the legacy questing system for ID MythicQuest. Please check the docs and follow the new format for creating quests with the objectives option. This enables you to set multiple objectives per quest.
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loading 5 libraries... please wait
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-api/5.1.1/adventure-api-5.1.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-key/5.1.1/adventure-key-5.1.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/org/jetbrains/annotations/26.1.0/annotations-26.1.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.4.1/adventure-platform-bukkit-4.4.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.4.1/adventure-platform-api-4.4.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.4.1/adventure-text-serializer-bungeecord-4.4.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.21.0/adventure-nbt-4.21.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.21.0/adventure-text-serializer-gson-legacy-impl-4.21.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json-legacy-impl/4.21.0/adventure-text-serializer-json-legacy-impl-4.21.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.4.1/adventure-platform-facet-4.4.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.4.1/adventure-platform-viaversion-4.4.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/5.1.1/adventure-text-minimessage-5.1.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/5.1.1/adventure-text-serializer-gson-5.1.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/5.1.1/adventure-text-serializer-json-5.1.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/option/1.1.0/option-1.1.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/com/google/code/gson/gson/2.13.2/gson-2.13.2.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/com/google/errorprone/error_prone_annotations/2.41.0/error_prone_annotations-2.41.0.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-commons/5.1.1/adventure-text-serializer-commons-5.1.1.jar
+[07:39:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/5.1.1/adventure-text-serializer-legacy-5.1.1.jar
+[07:39:17] [Server thread/INFO]: [SpigotLibraryLoader] [HeadDB] Loading 1 libraries... please wait
+[07:39:17] [Server thread/INFO]: [SpigotLibraryLoader] [HeadDB] Loaded library /workspaces/mtgfresafiio/servidor_minecraft/libraries/org/xerial/sqlite-jdbc/3.47.0.0/sqlite-jdbc-3.47.0.0.jar
+[07:39:17] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.15.2+e9ed0d1
+[07:39:19] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@38ac8b66]
+[07:39:19] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.11.0
+[07:39:19] [Server thread/INFO]: [ViaVersion] ViaVersion 5.11.0 is now loaded. Registering protocol transformers and injecting...
+[07:39:19] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.12.3
+[07:39:19] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.12+829a4a4
+[07:39:19] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
+[07:39:20] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b130-d73192f)
+[07:39:20] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[07:39:20] [Server thread/INFO]: [floodgate] Took 632ms to boot Floodgate
+[07:39:20] [Server thread/INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.5.3
+[07:39:20] [Server thread/INFO]: [MagicSpells] Loading server plugin MagicSpells v4.0-Beta-16
+[07:39:20] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.11.0-SNAPSHOT
+[07:39:21] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[07:39:21] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[07:39:21] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.36
+[07:39:21] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[07:39:21] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.12.1-46bae256
+[07:39:21] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[07:39:21] [Server thread/INFO]: [MythicMobs] §x§f§f§0§0§0§0M§x§f§f§6§d§0§0y§x§f§f§d§a§0§0t§x§b§6§f§f§0§0h§x§4§8§f§f§0§0i§x§0§0§f§f§2§4c§x§0§0§f§f§9§1 §x§0§0§f§f§f§fL§x§0§0§9§1§f§fo§x§0§0§2§4§f§fa§x§4§8§0§0§f§fd§x§b§6§0§0§f§fe§x§f§f§0§0§d§ad§x§f§f§0§0§6§d!
+[07:39:21] [Server thread/INFO]: [UIFramework] Loading server plugin UIFramework v3.2.0
+[07:39:21] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.13.0
+[07:39:21] [Server thread/INFO]: [packetevents] Loading packetevents...
+[07:39:23] [Server thread/INFO]: [packetevents] Loaded packetevents v2.13.0
+[07:39:23] [Server thread/INFO]: [Multiverse-Portals] Loading server plugin Multiverse-Portals v5.2.1
+[07:39:23] [Server thread/INFO]: [AuraSkills] Loading server plugin AuraSkills v2.3.12
+[07:39:23] [Server thread/INFO]: [BeautyQuests] Loading server plugin BeautyQuests v2.1.0+build.138
+[07:39:23] [Server thread/INFO]: [CommunityQuests] Loading server plugin CommunityQuests v2.11.5
+[07:39:23] [Server thread/INFO]: [DeadlyDisasters] Loading server plugin DeadlyDisasters v1.1.0
+[07:39:23] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.14
+[07:39:23] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.7.10
+[07:39:23] [Server thread/INFO]: [BuildPaste] Loading server plugin BuildPaste v1.11.1
+[07:39:23] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+[07:39:23] [Server thread/INFO]: [Sit] Loading server plugin Sit v1.7.2
+[07:39:23] [Server thread/INFO]: [CommandPanels] Loading server plugin CommandPanels v3.23.4
+[07:39:23] [Server thread/INFO]: [ConditionalEvents] Loading server plugin ConditionalEvents v4.79.1
+[07:39:23] [Server thread/INFO]: [ServerVariables] Loading server plugin ServerVariables v3.7.2
+[07:39:23] [Server thread/INFO]: [Shopkeepers] Loading server plugin Shopkeepers v2.24.0
+[07:39:24] [Server thread/INFO]: [Shopkeepers] Loaded all plugin classes (653 ms).
+[07:39:24] [Server thread/INFO]: [Shopkeepers] Compatibility provider loaded: 1_21_R2
+[07:39:24] [Server thread/INFO]: [Shopkeepers] Loading config.
+[07:39:24] [Server thread/INFO]: [Shopkeepers] Loading language file: language-en-default.yml
+[07:39:24] [Server thread/INFO]: [Shopkeepers] Registering WorldGuard flag 'allow-shop'.
+[07:39:24] [Server thread/INFO]: [Shopkeepers] Registering defaults.
+[07:39:24] [Server thread/INFO]: [StringDupersReturn] Loading server plugin StringDupersReturn v1.0.12
+[07:39:24] [Server thread/INFO]: [WorldEvents] Loading server plugin WorldEvents v1.8.8
+[07:39:24] [Server thread/INFO]: [CustomDiscs] Loading server plugin CustomDiscs v0.9.125
+[07:39:24] [Server thread/INFO]: [Craftorithm] Loading server plugin Craftorithm v1.12.0.0-20260721
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: config.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/creator/anvil.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/creator/vanilla_brewing.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/creator/vanilla_shaped.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/creator/vanilla_shapeless.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/creator/vanilla_smelting_blast.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/creator/vanilla_smelting_campfire.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/creator/vanilla_smelting_furnace.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/creator/vanilla_smelting_smoker.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/creator/vanilla_smithing_transform.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/creator/vanilla_stonecutting.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/display/anvil.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/display/vanilla_brewing.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/display/vanilla_shaped.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/display/vanilla_shapeless.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/display/vanilla_smelting_blast.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/display/vanilla_smelting_campfire.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/display/vanilla_smelting_furnace.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/display/vanilla_smelting_smoker.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/display/vanilla_smithing_transform.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/display/vanilla_stonecutting.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/editor/anvil.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/editor/vanilla_brewing.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/editor/vanilla_shaped.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/editor/vanilla_shapeless.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/editor/vanilla_smelting_blast.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/editor/vanilla_smelting_campfire.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/editor/vanilla_smelting_furnace.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/editor/vanilla_smelting_smoker.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/editor/vanilla_smithing_transform.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/editor/vanilla_stonecutting.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/recipeBook/recipe_list.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] [DEBUG] | Loaded config file: menus/internal/recipeBook/type_select.yml
+[07:39:24] [Server thread/INFO]: [Craftorithm] Server Type: PAPER, Version: 12101
+[07:39:24] [Server thread/INFO]: [HeadDB] Loading server plugin HeadDB v6.0.1
+[07:39:24] [Server thread/INFO]: [ImageFrame] Loading server plugin ImageFrame v2026.1.4.0
+[07:39:24] [Server thread/INFO]: [CustomizablePlayerModels] Loading server plugin CustomizablePlayerModels v0.6.27a
+[07:39:24] [Server thread/INFO]: [AxiomPaper] Loading server plugin AxiomPaper v5.0.4+1.21.1
+[07:39:24] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[07:39:24] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.15.2+e9ed0d1
+[07:39:24] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[07:39:24] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[07:39:24] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[07:39:24] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[07:39:24] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_R1.PaperweightFaweAdapter as the Bukkit adapter
+[07:39:25] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
+[07:39:25] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.36
+[07:39:25] [ForkJoinPool.commonPool-worker-1/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] A new release for FastAsyncWorldEdit is available: 2.15.3. You are currently on 2.15.2.
+Download from https://modrinth.com/plugin/fastasyncworldedit or https://hangar.papermc.io/IntellectualSites/FastAsyncWorldEdit
+[07:39:26] [Server thread/INFO]:         __    
+[07:39:26] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.36
+[07:39:26] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[07:39:26] [Server thread/INFO]: 
+[07:39:26] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[07:39:26] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[07:39:26] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[07:39:27] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1584ms)
+[07:39:27] [Server thread/INFO]: [UIFramework] Enabling UIFramework v3.2.0
+[07:39:27] [Server thread/INFO]: [DeadlyDisasters] Enabling DeadlyDisasters v1.1.0
+[07:39:27] [Server thread/INFO]: [DeadlyDisasters]: There is an optional dependency UltimateContent, that adds some really cool custom items to DeadlyDisasters such as custom mobs, items, enchants, and more! Get UltimateContent here: https://www.spigotmc.org/resources/ultimatecontent.118256/
+[07:39:27] [Server thread/INFO]: [DeadlyDisasters] Successfully hooked into World Guard
+[07:39:27] [Server thread/INFO]: [DeadlyDisasters]: ERROR no such block type or category named 'terracottas' in the 'blocks.yml' file at 'terracottas' ! This value will be omitted and not protected.
+[07:39:27] [Server thread/INFO]: [DeadlyDisasters] Checking for update...
+[07:39:27] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[07:39:27] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[07:39:27] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[07:39:27] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[07:39:27] [Server thread/INFO]: Preparing level "world"
+[07:39:29] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[07:39:30] [Server thread/INFO]: Time elapsed: 859 ms
+[07:39:30] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[07:39:30] [Server thread/INFO]: Time elapsed: 213 ms
+[07:39:30] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[07:39:30] [Server thread/INFO]: Time elapsed: 107 ms
+[07:39:30] [Server thread/INFO]: Preparing start region for dimension kattersstructures:deep_blue
+[07:39:30] [Server thread/INFO]: Time elapsed: 192 ms
+[07:39:30] [Server thread/INFO]: Preparing start region for dimension nmr:astral_plane
+[07:39:30] [Server thread/INFO]: Time elapsed: 189 ms
+[07:39:30] [Server thread/INFO]: Preparing start region for dimension deeper_dark:deeper_dark
+[07:39:31] [Server thread/INFO]: Time elapsed: 138 ms
+[07:39:31] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.11.0
+[07:39:31] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21-1.21.1 (767)
+[07:39:31] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.12.3
+[07:39:31] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[07:39:31] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.12+829a4a4
+[07:39:31] [Server thread/INFO]: No TreeType mapping for TreeGenerator.TreeType.PALE_OAK
+[07:39:31] [Server thread/INFO]: The above message is displayed because your FAWE version is newer than 1.21.1-133-3cb8529 (MC: 1.21.1) and contains features of future minecraft versions which do not exist in 1.21.1-133-3cb8529 (MC: 1.21.1) hence the tree type PALE_OAK is not available. This is not an error. This version of FAWE will work on your version of  Minecraft. This is an informative message only.
+[07:39:31] [Server thread/INFO]: No TreeType mapping for TreeGenerator.TreeType.PALE_OAK_CREAKING
+[07:39:31] [Server thread/INFO]: The above message is displayed because your FAWE version is newer than 1.21.1-133-3cb8529 (MC: 1.21.1) and contains features of future minecraft versions which do not exist in 1.21.1-133-3cb8529 (MC: 1.21.1) hence the tree type PALE_OAK_CREAKING is not available. This is not an error. This version of FAWE will work on your version of  Minecraft. This is an informative message only.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_kattersstructures_deep_blue) TNT ignition is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_kattersstructures_deep_blue) Lighters are PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_kattersstructures_deep_blue) Lava fire is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_kattersstructures_deep_blue) Fire spread is UNRESTRICTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_kattersstructures_deep_blue'
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_nmr_astral_plane) TNT ignition is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_nmr_astral_plane) Lighters are PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_nmr_astral_plane) Lava fire is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_nmr_astral_plane) Fire spread is UNRESTRICTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nmr_astral_plane'
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_deeper_dark_deeper_dark) TNT ignition is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_deeper_dark_deeper_dark) Lighters are PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_deeper_dark_deeper_dark) Lava fire is PERMITTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] (world_deeper_dark_deeper_dark) Fire spread is UNRESTRICTED.
+[07:39:31] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_deeper_dark_deeper_dark'
+[07:39:31] [Server thread/INFO]: [WorldGuard] Loading region data...
+[07:39:31] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b130-d73192f)
+[07:39:32] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.5.3
+[07:39:32] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: multiverse-core [5.5.3]
+[07:39:32] [Server thread/INFO]: [Multiverse-Core] API service loaded!
+[07:39:32] [Server thread/INFO]: [Multiverse-Core] Version 5.5.3 (API v5.5) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71
+[07:39:32] [Server thread/INFO]: [Multiverse-Core] Loving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse
+[07:39:32] [Server thread/INFO]: [MagicSpells] Enabling MagicSpells v4.0-Beta-16
+[07:39:33] [Server thread/INFO]: [MagicSpells] [ACF] Enabled Asynchronous Tab Completion Support!
+[07:39:33] [Server thread/INFO]: [MagicSpells] Found volatile code handler for 1.21.1.
+[07:39:33] [Server thread/INFO]: [MagicSpells] Initializing permissions
+[07:39:33] [Server thread/INFO]: [MagicSpells] Loading magic items...
+[07:39:33] [Server thread/INFO]: [MagicSpells] ...0 magic items loaded
+[07:39:33] [Server thread/INFO]: [MagicSpells] Loading recipes...
+[07:39:33] [Server thread/INFO]: [MagicSpells] ...0 recipes loaded
+[07:39:33] [Server thread/INFO]: [MagicSpells] Loading spells...
+[07:39:33] [Server thread/WARN]: [MagicSpells] Need help? Check out our discord: https://discord.magicspells.dev/
+[07:39:33] [Server thread/INFO]: [MagicSpells] ...spells loaded: 89
+[07:39:33] [Server thread/INFO]: [MagicSpells] Finalizing perms...
+[07:39:33] [Server thread/INFO]: [MagicSpells] ...done
+[07:39:33] [Server thread/INFO]: [MagicSpells] Initializing storage handler...
+[07:39:33] [Server thread/INFO]: [MagicSpells] ...done
+[07:39:33] [Server thread/INFO]: [MagicSpells] Loading online player spellbooks...
+[07:39:33] [Server thread/INFO]: [MagicSpells] ...done
+[07:39:33] [Server thread/INFO]: [MagicSpells] Restored cooldowns
+[07:39:33] [Server thread/INFO]: [MagicSpells] Enabling mana system...
+[07:39:33] [Server thread/INFO]: [MagicSpells] ...done
+[07:39:33] [Server thread/INFO]: [MagicSpells] Loading cast listeners...
+[07:39:33] [Server thread/INFO]: [MagicSpells] ...done
+[07:39:33] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.11.0-SNAPSHOT
+[07:39:34] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.12.1-46bae256
+[07:39:34] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.21.1)...
+[07:39:34] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
+[07:39:36] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythic [5.0.0]
+[07:39:37] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
+[07:39:37] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
+[07:39:39] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[07:39:41] [Server thread/INFO]: [MythicMobs] Loading Items...
+[07:39:41] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[07:39:41] [Server thread/INFO]: [MythicMobs] All items loaded after 54ms!
+[07:39:41] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[07:39:42] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[07:39:42] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[07:39:42] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[07:39:42] [Server thread/INFO]: [MythicMobs] Second passes loaded after 23ms!
+[07:39:42] [Server thread/INFO]: [MythicMobs] ✓ Loaded 31 mobs.
+[07:39:42] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[07:39:42] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[07:39:42] [Server thread/INFO]: [MythicMobs] ✓ Loaded 44 skills.
+[07:39:42] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[07:39:42] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mythic items.
+[07:39:42] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[07:39:42] [Server thread/INFO]: [MythicMobs] ✓ Loaded 10 mob spawners.
+[07:39:42] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
+[07:39:42] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
+[07:39:42] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs v5.12.1 ( build 46bae256 ) has been successfully loaded!
+[07:39:42] [Server thread/INFO]: [packetevents] Enabling packetevents v2.13.0
+[07:39:42] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[07:39:42] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v5.2.1
+[07:39:43] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release: 2.13.0
+[07:39:43] [Server thread/INFO]: [Multiverse-Portals] 6 - Portals(s) loaded
+[07:39:43] [Server thread/INFO]: [Multiverse-Portals] Found FastAsyncWorldEdit. Using it for selections.
+[07:39:43] [Server thread/INFO]: [Multiverse-Portals] Version 5.2.1 (API v5.2) Enabled - By Rigby, fernferret and benwoo1110
+[07:39:43] [Server thread/INFO]: [AuraSkills] Enabling AuraSkills v2.3.12
+[07:39:44] [Server thread/INFO]: [AuraSkills] Loaded 21 message files
+[07:39:44] [Server thread/INFO]: [AuraSkills] Successfully registered hook LuckPerms
+[07:39:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: auraskills [2.3.12]
+[07:39:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: aureliumskills [2.3.12]
+[07:39:44] [Server thread/INFO]: [AuraSkills] Successfully registered hook PlaceholderAPI
+[07:39:44] [Server thread/INFO]: [AuraSkills] Successfully registered hook ProtocolLib
+[07:39:44] [Server thread/INFO]: [AuraSkills] Successfully registered hook WorldGuard
+[07:39:44] [Server thread/INFO]: [AuraSkills] Successfully registered hook MythicMobs
+[07:39:44] [Server thread/INFO]: [AuraSkills] Loaded 160 config options in 60 ms
+[07:39:44] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.1! Trying to find NMS support
+[07:39:44] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R1' loaded!
+[07:39:44] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'AuraSkills' to create a bStats instance!
+[07:39:44] [Server thread/INFO]: [AuraSkills] Loaded 3 blocked/disabled worlds
+[07:39:44] [Server thread/INFO]: [AuraSkills] [ACF] Enabled Asynchronous Tab Completion Support!
+[07:39:45] [Server thread/INFO]: [BeautyQuests] Enabling BeautyQuests v2.1.0+build.138
+[07:39:45] [Server thread/INFO]: [BeautyQuests] ------------ BeautyQuests ------------
+[07:39:45] [Server thread/INFO]: [BeautyQuests] Full integration with version 1.21.1!
+[07:39:45] [Server thread/INFO]: [BeautyQuests] Loaded language en_US (0.051s)!
+[07:39:46] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: beautyquests [2.1.0+build.138]
+[07:39:46] [Server thread/INFO]: [BeautyQuests] Placeholders registered !
+[07:39:46] [Server thread/INFO]: [WorldGuard] Registering session handler fr.skytasul.quests.integrations.worldguard.WorldGuardEntryHandler
+[07:39:46] [Server thread/INFO]: [CommunityQuests] Enabling CommunityQuests v2.11.5
+[07:39:46] [Server thread/INFO]: [CommunityQuests] Warning! No economy plugin found, a cash reward can not be added to a quest in Community Quests.
+[07:39:46] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: communityquests [1.3.4]
+[07:39:46] [Server thread/INFO]: [CommunityQuests] Warning! DecentHolograms not found, holograms will not work.
+[07:39:46] [Server thread/INFO]: [CommunityQuests] Plugin is enabled
+[07:39:46] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.14
+[07:39:46] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.21.1-R0.1
+[07:39:46] [Server thread/INFO]: [voicechat] Compatibility version 20
+[07:39:46] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[07:39:46] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: voicechat [2.6.14]
+[07:39:46] [Server thread/INFO]: [voicechat] Successfully registered PlaceholderAPI expansion
+[07:39:46] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[07:39:46] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.7.10
+[07:39:47] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[07:39:47] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[07:39:47] [Server thread/INFO]: [ItemEdit] Hooking into PlaceHolderAPI
+[07:39:47] [Server thread/INFO]: [ItemEdit] placeholders:
+[07:39:47] [Server thread/INFO]: [ItemEdit]   %itemedit_amount_<{itemid}>_[{slot}]_[{player}]%
+[07:39:47] [Server thread/INFO]: [ItemEdit]     shows how many itemid player has on slot
+[07:39:47] [Server thread/INFO]: [ItemEdit]     <{itemid}> for item id on serveritem
+[07:39:47] [Server thread/INFO]: [ItemEdit]     [{slot}] for the slot where the item should be counted, by default inventory
+[07:39:47] [Server thread/INFO]: [ItemEdit]       Values: inventory (include offhand), equip (include offhand), inventoryandequip (include offhand), hand, offhand, head, chest, legs, feet
+[07:39:47] [Server thread/INFO]: [ItemEdit]     [{player}] for the player, by default self
+[07:39:47] [Server thread/INFO]: [ItemEdit]     example: %itemedit_amount_{my_item_id}_{hand}%
+[07:39:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: itemedit [1.0]
+[07:39:47] [Server thread/INFO]: [ItemEdit] Hooking into MythicMobs
+[07:39:47] [Server thread/INFO]: [ItemEdit] # Enabled (took 256 ms)
+[07:39:47] [Server thread/INFO]: [BuildPaste] Enabling BuildPaste v1.11.1
+[07:39:47] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.40
+[07:39:47] [Server thread/INFO]: [Sit] Enabling Sit v1.7.2
+[07:39:47] [Server thread/INFO]: [CommandPanels] Enabling CommandPanels v3.23.4
+[07:39:47] [Server thread/INFO]: [CommandPanels] RockyHawk's CommandPanels v3.23.4 Plugin Loading...
+[07:39:47] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.1! Trying to find NMS support
+[07:39:47] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R1' loaded!
+[07:39:47] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'CommandPanels' to create a bStats instance!
+[07:39:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: commandpanels [3.23.4]
+[07:39:47] [Server thread/INFO]: [CommandPanels] RockyHawk's CommandPanels v3.23.4 Plugin Loaded!
+[07:39:47] [Server thread/INFO]: [ConditionalEvents] Enabling ConditionalEvents v4.79.1
+[07:39:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: conditionalevents [4.79.1]
+[07:39:47] [Server thread/INFO]: [ConditionalEvents] Has been enabled! Version: 4.79.1
+[07:39:47] [Server thread/INFO]: [ConditionalEvents] Thanks for using my plugin!   ~Ajneb97
+[07:39:47] [Server thread/INFO]: [ServerVariables] Enabling ServerVariables v3.7.2
+[07:39:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: servervariables [3.7.2]
+[07:39:47] [Server thread/INFO]: [ServerVariables] Has been enabled! Version: 3.7.2
+[07:39:47] [Server thread/INFO]: [ServerVariables] Thanks for using my plugin!   ~Ajneb97
+[07:39:47] [Server thread/INFO]: [Shopkeepers] Enabling Shopkeepers v2.24.0
+[07:39:47] [Server thread/INFO]: [StringDupersReturn] Enabling StringDupersReturn v1.0.12
+[07:39:47] [Server thread/INFO]: [WorldEvents] Enabling WorldEvents v1.8.8
+[07:39:47] [Server thread/INFO]: [WorldEvents] Running on Paper - WorldEvents Core
+[07:39:47] [Server thread/INFO]: [WorldEvents] First run detected. Creating default configuration files...
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loading scheduling configuration from /workspaces/mtgfresafiio/servidor_minecraft/plugins/WorldEvents/config.yml
+[07:39:47] [Server thread/INFO]: [WorldEvents] Scheduling enabled: false
+[07:39:47] [Server thread/INFO]: [WorldEvents] Scheduling interval: 30-60 minutes
+[07:39:47] [Server thread/INFO]: [WorldEvents] Using legacy interval: 30 minutes
+[07:39:47] [Server thread/INFO]: [WorldEvents] Max concurrent events: 3
+[07:39:47] [Server thread/INFO]: [WorldEvents] Event cooldown: 60 minutes
+[07:39:47] [Server thread/INFO]: [WorldEvents] Events per cycle: 3
+[07:39:47] [Server thread/INFO]: [WorldEvents] Start delay: 5 seconds
+[07:39:47] [Server thread/INFO]: [WorldEvents] Language set to: en
+[07:39:47] [Server thread/INFO]: [WorldEvents] Boss Bar enabled: true
+[07:39:47] [Server thread/INFO]: [WorldEvents] Countdown warnings enabled: true (at [30, 10, 5] seconds)
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loaded scheduling configuration: SchedulingConfig{enabled=false, intervalMinutes=30, minIntervalMinutes=30, maxIntervalMinutes=30, maxConcurrentEvents=3, cooldownMinutes=60, eventsPerCycle=3, startDelaySeconds=5, preStartAnnouncementEnabled=false, preStartAnnouncementSeconds=10}
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loading events from 7 file(s) in events/ folder...
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loaded 11 event(s) from special.yml
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loaded 9 event(s) from horror.yml
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loaded 14 event(s) from buffs.yml
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loaded 15 event(s) from weather.yml
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loaded 10 event(s) from farming.yml
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loaded 21 event(s) from mining.yml
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loaded 26 event(s) from combat.yml
+[07:39:47] [Server thread/INFO]: [WorldEvents] Total events loaded: 106
+[07:39:47] [Server thread/INFO]: [WorldEvents] Loaded messages from messages_en.yml
+[07:39:48] [Server thread/INFO]: [WorldEvents] Loaded messages from messages_en.yml
+[07:39:48] [Server thread/INFO]: [WorldEvents] YamlStorage initialized
+[07:39:48] [Server thread/INFO]: [WorldEvents] No player preferences found in player_preferences.yml (file is empty or new)
+[07:39:48] [Server thread/INFO]: [WorldEvents] Loaded 0 player preference(s) from YAML
+[07:39:48] [Server thread/INFO]: [WorldEvents] PlaceholderAPI detected! Placeholder support enabled.
+[07:39:48] [Server thread/INFO]: [WorldEvents] [MythicMobs] Integration enabled! Custom mob spawning is active.
+[07:39:48] [Server thread/INFO]: [WorldEvents] WorldGuard hook enabled - protected regions will be respected
+[07:39:48] [Server thread/INFO]: [WorldEvents] Floodgate hook enabled - Bedrock player detection available
+[07:39:48] [Server thread/INFO]: [WorldEvents] Vault not found - economy rewards disabled
+[07:39:48] [Server thread/INFO]: [WorldEvents] Set max simultaneous events to: 3
+[07:39:48] [Server thread/INFO]: [WorldEvents] Updated scheduling configuration: enabled=false, interval=30min, maxEvents=3, cooldown=60min
+[07:39:48] [Server thread/INFO]: [WorldEvents] Loaded 6 loot pool(s)
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: POTION_EFFECT
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: MODIFY_BLOCK_DROPS
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: BUFF_SPAWNED_MOBS
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: CONSOLE_COMMAND
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: XP_MULTIPLIER
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: DURABILITY_PROTECTION
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: VAMPIRISM
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: MOB_LOOT_MULTIPLIER
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: DAMAGE_IMMUNITY
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: AUTO_SMELT
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: BUMPER_HARVEST
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: TREE_FELLER
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: FISHING_FORTUNE
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: GRAVITY_TREES
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: SILENT_MOBS
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: ACID_RAIN
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: SOLAR_FLARE
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: PARANOIA
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: THE_MIST
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: METEOR_SHOWER
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: RAMPANT_GROWTH
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: MOB_SPAWN_MULTIPLIER
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: MOB_WAVE
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: EXPLODING_MOBS
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: LOW_GRAVITY
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: VOLATILE_CHICKENS
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: THE_FLOOR_IS_LAVA
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: TREASURE_HUNT
+[07:39:48] [Server thread/INFO]: [WorldEvents] LuckPerms integration enabled for TEMPORARY_PERMISSION events
+[07:39:48] [Server thread/INFO]: [WorldEvents] Registered effect handler and listener for type: TEMPORARY_PERMISSION
+[07:39:48] [Server thread/INFO]: [WorldEvents] LuckPerms detected - TemporaryPermissionHandler registered.
+[07:39:48] [Server thread/INFO]: [WorldEvents] Event scheduling is disabled
+[07:39:48] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: worldevents [1.8.8]
+[07:39:48] [Server thread/INFO]: [WorldEvents] PlaceholderAPI expansion registered successfully.
+[07:39:48] [Server thread/INFO]: [WorldEvents] bStats metrics initialized
+[07:39:48] [Server thread/INFO]: [WorldEvents] WorldEvents Core v1.8.8 enabled!
+[07:39:48] [Server thread/INFO]: [CustomDiscs] Enabling CustomDiscs v0.9.125
+[07:39:48] [Server thread/INFO]: [Craftorithm] Enabling Craftorithm v1.12.0.0-20260721
+[07:39:48] [Server thread/INFO]: [Craftorithm] Loaded menu: example_recipe_list
+[07:39:48] [Server thread/INFO]: [HeadDB] Enabling HeadDB v6.0.1
+[07:39:48] [Server thread/INFO]: [HeadDB] Done! Database is loading...
+[07:39:48] [Server thread/INFO]: [ImageFrame] Enabling ImageFrame v2026.1.4.0
+[07:39:48] [Server thread/INFO]: [ImageFrame] ImageFrame has hooked into ViaVersion!
+[07:39:52] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: imageframe [1.0.0]
+[07:39:52] [Server thread/INFO]: [ImageFrame] Registered ImageMapLoader imageframe:url_static
+[07:39:52] [Server thread/INFO]: [ImageFrame] Registered ImageMapLoader imageframe:url_animated
+[07:39:52] [Server thread/INFO]: [ImageFrame] Registered ImageMapLoader imageframe:url_static_overlay
+[07:39:52] [Server thread/INFO]: [ImageFrame] Registered ImageMapLoader imageframe:non_updatable_static
+[07:39:52] [Server thread/INFO]: [ImageFrame] Registered MediaLoader imageframe:gif_reader to ImageMapLoader imageframe:url_animated
+[07:39:52] [Server thread/INFO]: [ImageFrame] Registered MediaLoader imageframe:imageio to ImageMapLoader imageframe:url_static
+[07:39:52] [Server thread/INFO]: [ImageFrame] Registered MediaLoader imageframe:imageio to ImageMapLoader imageframe:url_static_overlay
+[07:39:52] [Server thread/INFO]: [ImageFrame] ImageFrame has been Enabled!
+[07:39:52] [Server thread/INFO]: [CustomizablePlayerModels] Enabling CustomizablePlayerModels v0.6.27a
+[07:39:52] [Server thread/INFO]: [CustomizablePlayerModels] Attribute not found, skipping: CAMERA_DISTANCE
+[07:39:52] [Server thread/INFO]: [CustomizablePlayerModels] Customizable Player Models Initialized
+[07:39:52] [Server thread/INFO]: [AxiomPaper] Enabling AxiomPaper v5.0.4+1.21.1
+[07:39:53] [Server thread/INFO]: [AxiomPaper] LuckPerms integration enabled
+[07:39:53] [Server thread/INFO]: [spark] Starting background profiler...
+[07:39:54] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[07:39:54] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[07:39:54] [Server thread/INFO]: [Geyser-Spigot] 
+[07:39:54] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.11.0-b1196 (git-master-f9e6a6c)
+[07:39:54] [Server thread/INFO]: [Geyser-Spigot] 
+[07:39:54] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[07:39:56] [Server thread/INFO]: [Geyser-Spigot] Registered 199 custom block overrides.
+[07:39:56] [Server thread/INFO]: [Geyser-Spigot] Registered 2 custom block item overrides.
+[07:39:56] [Server thread/INFO]: [Geyser-Spigot] Registered 7 custom blocks.
+[07:39:58] [Server thread/WARN]: [Geyser-Spigot] Custom item geysermc:furnace_minecart overrides the vanilla item model minecraft:furnace_minecart without additional predicates!
+[07:39:58] [Server thread/INFO]: [Geyser-Spigot] Registered 1 custom items
+[07:39:59] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[07:39:59] [Server thread/INFO]: [Geyser-Spigot] Done (4.563s)! Run /geyser help for help!
+[07:39:59] [Server thread/INFO]: Done preparing level "world" (31.433s)
+[07:39:59] [Server thread/INFO]: Running delayed init tasks
+[07:39:59] [Craft Scheduler Thread - 6 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[07:39:59] [Server thread/INFO]: [com.fastasyncworldedit.bukkit.regions.WorldGuardFeature] Plugin 'WorldGuard' found. Using it now.
+[07:39:59] [Server thread/INFO]: [com.fastasyncworldedit.bukkit.FaweBukkit] Attempting to use plugin 'WorldGuard'
+[07:39:59] [Craft Scheduler Thread - 10 - ImageFrame/INFO]: [ImageFrame] Data loading completed! Loaded 0 ImageMaps!
+[07:39:59] [Craft Scheduler Thread - 6 - WorldEvents/INFO]: [WorldEvents] A new version is available: 1.8.30 (Current: 1.8.8)
+[07:39:59] [Server thread/INFO]: [BeautyQuests] 1 quests and 0 pools loaded (0.073s)!
+[07:39:59] [Server thread/INFO]: [BeautyQuests] Periodic saves task started (18000 ticks). Task ID: 85
+[07:39:59] [Server thread/INFO]: [Craftorithm] Found MythicMobs, hooked successfully.
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.worldevents.managers.GuiManager
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.nisovin.shopkeepers.ui.lib.UIListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.github.jewishbanana.uiframework.listeners.menus.MenuManager
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.sk89q.worldguard.bukkit.listener.BlacklistListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.sk89q.worldguard.bukkit.listener.BlacklistListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: fr.skytasul.quests.gui.GuiManagerImplementation
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: me.knighthat.apis.menus.MenuEvents
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: me.rockyhawk.commandpanels.interaction.click.InteractionHandler
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: me.rockyhawk.commandpanels.manager.session.SessionUtils
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: me.rockyhawk.commandpanels.openwithitem.events.HotbarEvents
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: ce.ajneb97.libs.itemselectevent.ItemSelectListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: ce.ajneb97.libs.offhandevent.OffHandListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.github.thesilentpro.grim.listener.PageListeners
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.github.jewishbanana.uiframework.listeners.AbilityListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.github.jewishbanana.uiframework.listeners.ItemListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.nisovin.shopkeepers.ui.lib.UIListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: fr.skytasul.quests.QuestsListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.github.jewishbanana.uiframework.listeners.BrewingRecipeListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: dev.aurelium.auraskills.slate.inv.InventoryManager$InvListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: dev.aurelium.auraskills.slate.inv.InventoryManager$InvListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: emanondev.itemedit.gui.GuiHandler
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: ce.ajneb97.listeners.PlayerEventsListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: ce.ajneb97.listeners.ItemEventsListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: ce.ajneb97.listeners.ItemEventsListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: ce.ajneb97.libs.armorequipevent.ArmorListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: ce.ajneb97.libs.repairevent.RepairListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: ce.ajneb97.libs.repairevent.RepairListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.loohp.imageframe.listeners.Events
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: me.wonka01.ServerQuests.events.CraftItemQuestEvent
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.nisovin.shopkeepers.debug.trades.TradingCountListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: fr.skytasul.quests.QuestsListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: fr.skytasul.quests.QuestsListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.github.jewishbanana.uiframework.listeners.ItemListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.nisovin.shopkeepers.shopcreation.CreateListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.github.jewishbanana.uiframework.listeners.ItemListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.github.jewishbanana.uiframework.listeners.menus.MenuManager
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.github.jewishbanana.uiframework.listeners.ItemListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.loohp.imageframe.invisibleframe.InvisibleFrameManager
+[07:39:59] [Server thread/INFO]: [Craftorithm] Converted listener: com.github.jewishbanana.uiframework.listeners.ItemListener
+[07:39:59] [Server thread/INFO]: [Craftorithm] Found packetevents, hooked successfully.
+[07:39:59] [Server thread/INFO]: [Craftorithm] Found ProtocolLib, hooked successfully.
+[07:39:59] [Server thread/INFO]: [Craftorithm] Support potion mix: true
+[07:39:59] [Server thread/INFO]: [Craftorithm] Loaded 0 trigger(s)
+[07:39:59] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:39:59] [Server thread/INFO]: [HeadDB] Loaded 86248 heads!
+[07:40:02] [Server thread/INFO]: [HeadDB] Preloading heads... 25%
+[07:40:04] [Server thread/INFO]: [HeadDB] Preloading heads... 50%
+[07:40:05] [Server thread/INFO]: [HeadDB] Preloading heads... 75%
+[07:40:05] [Server thread/INFO]: [HeadDB] Preloading heads... 100%
+[07:40:05] [Server thread/INFO]: [MagicSpells] Loading external data...
+[07:40:05] [Server thread/INFO]: [MagicSpells] Initializing spells...
+[07:40:05] [Server thread/INFO]: [MagicSpells] ...done
+[07:40:05] [Server thread/INFO]: [MagicSpells] Loading variables...
+[07:40:05] [Server thread/INFO]: [MagicSpells] ...variable meta types loaded: 117
+[07:40:05] [Server thread/INFO]: [MagicSpells] ...variable types loaded: 6
+[07:40:05] [Server thread/INFO]: [MagicSpells] ...variables loaded: 0
+[07:40:05] [Server thread/INFO]: [MagicSpells] Loading spell effect types...
+[07:40:05] [Server thread/INFO]: [MagicSpells] ...spell effect types loaded: 32
+[07:40:05] [Server thread/INFO]: [MagicSpells] Loading conditions...
+[07:40:05] [Server thread/INFO]: [MagicSpells] ...conditions loaded: 145
+[07:40:05] [Server thread/INFO]: [MagicSpells] Loading passive listeners...
+[07:40:05] [Server thread/INFO]: [MagicSpells] ...passive listeners loaded: 80
+[07:40:05] [Server thread/INFO]: [MagicSpells] ...done
+[07:40:05] [Server thread/INFO]: [MagicSpells] MagicSpells loading complete!
+[07:40:06] [Server thread/INFO]: [AuraSkills] Loaded 11 skills with 314 total sources
+[07:40:06] [Server thread/INFO]: [AuraSkills] Loaded 9 stats and 17 traits
+[07:40:06] [Server thread/INFO]: [AuraSkills] Loaded 22 pattern rewards and 0 level rewards
+[07:40:06] [Server thread/INFO]: [AuraSkills] Loaded 53 loot entries in 4 pools and 2 tables
+[07:40:06] [Server thread/INFO]: [AuraSkills] Loaded 7 menus
+[07:40:06] [Server thread/INFO]: [Craftorithm] Plugin loaded successfully.
+[07:40:08] [Server thread/INFO]: Done (71.977s)! For help, type "help"
+[07:40:08] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 8628ms or 172 ticks behind
+[07:40:08] [Server thread/INFO]: Timings Reset
+[07:40:08] [Server thread/INFO]: [voicechat] Loading plugins
+[07:40:08] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[07:40:08] [Server thread/INFO]: [voicechat] Initializing plugins
+[07:40:08] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[07:40:08] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[07:40:08] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.9]
+[07:40:08] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: sbtags [1.0.1]
+[07:40:08] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 24454
+[07:40:08] [Server thread/INFO]: 2 placeholder hook(s) registered!
+[07:40:08] [Server thread/INFO]: [Craftorithm] Recipe system reset complete
+[07:40:08] [Server thread/INFO]: [Craftorithm] Loaded 0 recipes in 0 ms.
+[07:40:08] [Server thread/INFO]: [Craftorithm] Loaded 0 recipes in 1 ticks(0ms)
+[07:40:08] [Server thread/INFO]: [MythicMobs] Loaded 3 dialog definition(s)
+[07:40:10] [Server thread/WARN]: [MythicMobs] Dialog 'QuestOffer': could not find skill 'ExampleQuestAccepted'
+[07:40:10] [Server thread/WARN]: [MythicMobs] Dialog 'QuestOffer': could not find skill 'ExampleQuestDeclined'
+[07:40:10] [Server thread/WARN]: [MythicMobs] Dialog 'CharacterSetup': could not find skill 'ExampleCharacterConfirmed'
+[07:42:21] [Server thread/INFO]: TPS from last 1m, 5m, 15m: 20.0, 20.0, 20.0
+[07:42:24] [Server thread/INFO]: Server Plugins (35):
+[07:42:24] [Server thread/INFO]: Paper Plugins:
+[07:42:24] [Server thread/INFO]:  - BeautyQuests
+[07:42:24] [Server thread/INFO]: Bukkit Plugins:
+[07:42:24] [Server thread/INFO]:  - AuraSkills, AxiomPaper, BuildPaste, Chunky, CommandPanels, CommunityQuests, ConditionalEvents, Craftorithm, CustomDiscs, CustomizablePlayerModels
+[07:42:24] [Server thread/INFO]:  DeadlyDisasters, FastAsyncWorldEdit, floodgate, Geyser-Spigot, HeadDB, ImageFrame, ItemEdit, LuckPerms, MagicSpells, Multiverse-Core
+[07:42:24] [Server thread/INFO]:  Multiverse-Portals, MythicMobs, packetevents, PlaceholderAPI, ProtocolLib, ServerVariables, Shopkeepers, Sit, StringDupersReturn, UIFramework
+[07:42:24] [Server thread/INFO]:  ViaVersion, voicechat, WorldEvents, WorldGuard
+[07:55:07] [Craft Scheduler Thread - 13 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[07:56:59] [Server thread/INFO]: TPS from last 1m, 5m, 15m: 20.0, 20.0, 20.0
+[07:57:08] [User Authenticator #0/INFO]: UUID of player VenaticWinner67 is 27624550-5762-38db-a0a7-5ccd77095ef1
+[07:57:09] [Netty Epoll Server IO #2/INFO]: [packetevents] Loading block mappings for V_1_20_5/15...
+[07:57:09] [Netty Epoll Server IO #2/INFO]: [packetevents] Finished loading block mappings for V_1_20_5/15 in 386.843063ms
+[07:57:12] [Server thread/INFO]: VenaticWinner67[/100.99.110.10:55929] logged in with entity id 248 at ([world]1901.2769669188124, 206.0625, 1983.9398566446766)
+[07:57:13] [Server thread/INFO]: [voicechat] Received secret request of VenaticWinner67 (20)
+[07:57:13] [Server thread/INFO]: [voicechat] Sent secret to VenaticWinner67
+[07:57:15] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 27624550-5762-38db-a0a7-5ccd77095ef1
+[07:57:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 27624550-5762-38db-a0a7-5ccd77095ef1
+[07:57:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player VenaticWinner67 (27624550-5762-38db-a0a7-5ccd77095ef1) successfully connected to voice chat
+[07:57:35] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[07:57:35] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[07:58:24] [Server thread/INFO]: VenaticWinner67 issued server command: //wand
+[07:58:58] [Server thread/INFO]: VenaticWinner67 issued server command: /ruleta roja @a title por fin!
+[07:58:58] [Server thread/INFO]: Added tag 'anim.ruleta.roja' to VenaticWinner67
+[07:59:49] [Server thread/INFO]: VenaticWinner67 lost connection: Disconnected
+[07:59:49] [Server thread/INFO]: [voicechat] Disconnecting client VenaticWinner67
+[08:04:05] [Server thread/INFO]: [Mythic] Reloading plugin...
+[08:04:05] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[08:04:05] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[08:04:05] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[08:04:06] [Server thread/INFO]: [MythicMobs] Loading Items...
+[08:04:06] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[08:04:06] [Server thread/INFO]: [MythicMobs] All items loaded after 8ms!
+[08:04:06] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[08:04:06] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[08:04:06] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[08:04:06] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[08:04:06] [Server thread/INFO]: [MythicMobs] Second passes loaded after 5ms!
+[08:04:06] [Server thread/INFO]: [MythicMobs] ✓ Loaded 33 mobs.
+[08:04:06] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[08:04:06] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[08:04:06] [Server thread/INFO]: [MythicMobs] ✓ Loaded 50 skills.
+[08:04:06] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[08:04:06] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mythic items.
+[08:04:06] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[08:04:06] [Server thread/INFO]: [MythicMobs] ✓ Loaded 10 mob spawners.
+[08:04:06] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[08:04:06] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[08:04:15] [User Authenticator #1/INFO]: UUID of player VenaticWinner67 is 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:04:16] [Server thread/INFO]: VenaticWinner67[/100.99.110.10:55948] logged in with entity id 310 at ([world]1897.261373517307, 206.0, 1983.8703183264815)
+[08:04:16] [Server thread/INFO]: [voicechat] Received secret request of VenaticWinner67 (20)
+[08:04:16] [Server thread/INFO]: [voicechat] Sent secret to VenaticWinner67
+[08:04:17] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:04:18] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:04:18] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player VenaticWinner67 (27624550-5762-38db-a0a7-5ccd77095ef1) successfully connected to voice chat
+[08:04:20] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[08:04:20] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[08:04:45] [Server thread/INFO]: VenaticWinner67 issued server command: /time set 0
+[08:04:45] [Server thread/INFO]: [VenaticWinner67: Set the time to 0]
+[08:05:14] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs spawn LeviatanAbisal
+[08:05:58] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs spawn LeviatanAbisal
+[08:06:24] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode survival
+[08:06:24] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Survival Mode]
+[08:07:18] [Server thread/INFO]: VenaticWinner67 was slain by ! LEVIATÁN ABISAL !
+[08:07:18] [Server thread/INFO]: Added tag 'anim.muerte' to VenaticWinner67
+[08:07:24] [Server thread/INFO]: Banned VenaticWinner67: Has sido baneado por morir.
+[08:07:24] [Server thread/INFO]: VenaticWinner67 lost connection: You are banned from this server
+[08:07:24] [Server thread/INFO]: [voicechat] Disconnecting client VenaticWinner67
+[08:07:24] [Server thread/INFO]: No player was found
+[08:07:57] [Server thread/INFO]: Unbanned VenaticWinner67
+[08:08:11] [User Authenticator #2/INFO]: UUID of player VenaticWinner67 is 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:08:13] [Server thread/INFO]: No entity was found
+[08:08:13] [Server thread/INFO]: VenaticWinner67[/100.99.110.10:55961] logged in with entity id 1317 at ([world]0.024444554459260914, 68.0, -7.040428899433947)
+[08:08:14] [Server thread/INFO]: [voicechat] Received secret request of VenaticWinner67 (20)
+[08:08:14] [Server thread/INFO]: [voicechat] Sent secret to VenaticWinner67
+[08:08:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:08:17] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:08:17] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player VenaticWinner67 (27624550-5762-38db-a0a7-5ccd77095ef1) successfully connected to voice chat
+[08:08:25] [Server thread/INFO]: Named entity Zombie['⚔ Thalia Skyweaver'/10, uuid='07411904-86f3-439c-bd9d-81d2037a518c', l='ServerLevel[world]', x=32.16, y=92.00, z=-24.18, cpos=[2, -2], tl=391, v=true] died: ⚔ Thalia Skyweaver burned to death
+[08:08:25] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[08:08:25] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[08:08:38] [Server thread/INFO]: VenaticWinner67 issued server command: /tp @s -241 124.5 -136
+[08:08:38] [Server thread/INFO]: [VenaticWinner67: Teleported VenaticWinner67 to -240.500000, 124.500000, -135.500000]
+[08:09:11] [Server thread/INFO]: VenaticWinner67 issued server command: /tp 2000 100 2000
+[08:09:11] [Server thread/INFO]: [VenaticWinner67: Teleported VenaticWinner67 to 2000.500000, 100.000000, 2000.500000]
+[08:10:05] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2593ms or 51 ticks behind
+[08:10:18] [Craft Scheduler Thread - 5 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[08:10:25] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5433ms or 108 ticks behind
+[08:10:46] [Server thread/INFO]: Named entity Skeleton['⚔ Aelar Pickaxeborn'/6201, uuid='b70ed849-f276-4d3d-8fee-3181ff330a8a', l='ServerLevel[world]', x=1930.50, y=-45.00, z=2223.50, cpos=[120, 138], tl=507, v=true] died: ⚔ Aelar Pickaxeborn suffocated in a wall
+[08:12:26] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs kill LeviatanAbisal
+[08:14:06] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant protection 10
+[08:14:08] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant protection 10
+[08:14:10] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant protection 10
+[08:14:12] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant protection 10
+[08:14:23] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant unbreaking 10
+[08:14:25] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant unbreaking 10
+[08:14:27] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant unbreaking 10
+[08:14:28] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant unbreaking 10
+[08:14:44] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/6285, uuid='6d77ae20-e0fa-46ab-af5d-e36deeb0cef3', l='ServerLevel[world]', x=1955.50, y=22.00, z=2243.50, cpos=[122, 140], tl=991, v=true] died: Skeletal Knight suffocated in a wall
+[08:16:00] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant unbreaking 10
+[08:16:06] [Server thread/INFO]: VenaticWinner67 issued server command: /time set 0
+[08:16:06] [Server thread/INFO]: [VenaticWinner67: Set the time to 0]
+[08:16:18] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant sharpness 10
+[08:16:46] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode survival
+[08:16:46] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Survival Mode]
+[08:17:02] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs spawn LeviatanAbisal
+[08:19:35] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/6398, uuid='e3d35ba1-a296-4818-b869-7bd989f6fccd', l='ServerLevel[world]', x=1921.50, y=-47.00, z=2242.50, cpos=[120, 140], tl=992, v=true] died: Skeletal Knight suffocated in a wall
+[08:20:48] [Server thread/INFO]: Named entity Drowned['! LEVIATÁN ABISAL !'/6357, uuid='468fdea1-4540-4c14-af80-1d48fa563229', l='ServerLevel[world]', x=1947.42, y=30.38, z=2251.38, cpos=[121, 140], tl=4527, v=true] died: ! LEVIATÁN ABISAL ! was slain by VenaticWinner67
+[08:21:01] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[08:21:01] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[08:23:22] [Server thread/INFO]: VenaticWinner67 lost connection: Disconnected
+[08:23:22] [Server thread/INFO]: [voicechat] Disconnecting client VenaticWinner67
+[08:25:15] [Craft Scheduler Thread - 5 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[08:33:51] [Server thread/INFO]: [Mythic] Reloading plugin...
+[08:33:51] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[08:33:51] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[08:33:51] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[08:33:53] [Server thread/INFO]: [MythicMobs] Loading Items...
+[08:33:53] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[08:33:53] [Server thread/INFO]: [MythicMobs] All items loaded after 3ms!
+[08:33:53] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[08:33:53] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[08:33:53] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[08:33:53] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[08:33:53] [Server thread/INFO]: [MythicMobs] Second passes loaded after 5ms!
+[08:33:53] [Server thread/INFO]: [MythicMobs] ✓ Loaded 34 mobs.
+[08:33:53] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[08:33:53] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[08:33:53] [Server thread/INFO]: [MythicMobs] ✓ Loaded 52 skills.
+[08:33:53] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[08:33:53] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mythic items.
+[08:33:53] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[08:33:53] [Server thread/INFO]: [MythicMobs] ✓ Loaded 10 mob spawners.
+[08:33:53] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[08:33:53] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[08:34:06] [User Authenticator #3/INFO]: UUID of player VenaticWinner67 is 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:34:08] [Server thread/INFO]: VenaticWinner67[/100.99.110.10:56034] logged in with entity id 6739 at ([world]2100.5201107489665, 81.0, 2211.300000011921)
+[08:34:08] [Server thread/INFO]: [voicechat] Received secret request of VenaticWinner67 (20)
+[08:34:08] [Server thread/INFO]: [voicechat] Sent secret to VenaticWinner67
+[08:34:08] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:34:09] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:34:09] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player VenaticWinner67 (27624550-5762-38db-a0a7-5ccd77095ef1) successfully connected to voice chat
+[08:34:15] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[08:34:15] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[08:34:45] [Server thread/INFO]: VenaticWinner67 issued server command: /time set 0
+[08:34:45] [Server thread/INFO]: [VenaticWinner67: Set the time to 0]
+[08:35:22] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs spawn LeviatanAbisal
+[08:35:24] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode survival
+[08:35:24] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Survival Mode]
+[08:36:39] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[08:36:39] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[08:37:16] [Paper Common Worker #0/WARN]: Empty height range: biased[-10 absolute--15 absolute inner: 1]
+[08:37:16] [Paper Common Worker #0/WARN]: Empty height range: biased[-10 absolute--15 absolute inner: 1]
+[08:37:26] [Server thread/INFO]: VenaticWinner67 issued server command: /ie enchant sharpness 200
+[08:37:55] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs kill LeviatanAbisal
+[08:38:05] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs spawn LeviatanAbisal
+[08:38:20] [Server thread/INFO]: Named entity Drowned['Escudero Abisal'/8063, uuid='4efc958c-5665-4413-899f-7797118a1bf1', l='ServerLevel[world]', x=2005.72, y=44.00, z=2480.11, cpos=[125, 155], tl=292, v=true] died: Escudero Abisal was slain by VenaticWinner67
+[08:38:46] [Server thread/INFO]: Named entity Drowned['! LEVIATÁN ABISAL !'/8056, uuid='63d5dd44-2fa2-44a3-8640-887b8be6f5b1', l='ServerLevel[world]', x=2001.96, y=44.00, z=2476.61, cpos=[125, 154], tl=822, v=true] died: ! LEVIATÁN ABISAL ! was slain by VenaticWinner67
+[08:39:03] [Server thread/INFO]: VenaticWinner67 issued server command: /tps
+[08:39:32] [Server thread/INFO]: VenaticWinner67 lost connection: Disconnected
+[08:39:32] [Server thread/INFO]: [voicechat] Disconnecting client VenaticWinner67
+[08:40:15] [Craft Scheduler Thread - 5 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[08:45:44] [Server thread/INFO]: [Mythic] Reloading plugin...
+[08:45:44] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[08:45:44] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[08:45:44] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[08:45:46] [Server thread/INFO]: [MythicMobs] Loading Items...
+[08:45:46] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[08:45:46] [Server thread/INFO]: [MythicMobs] All items loaded after 3ms!
+[08:45:46] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[08:45:46] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[08:45:46] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[08:45:46] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[08:45:46] [Server thread/INFO]: [MythicMobs] Second passes loaded after 3ms!
+[08:45:46] [Server thread/INFO]: [MythicMobs] ✓ Loaded 34 mobs.
+[08:45:46] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[08:45:46] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[08:45:46] [Server thread/INFO]: [MythicMobs] ✓ Loaded 52 skills.
+[08:45:46] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[08:45:46] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mythic items.
+[08:45:46] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[08:45:46] [Server thread/INFO]: [MythicMobs] ✓ Loaded 10 mob spawners.
+[08:45:46] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[08:45:46] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[08:46:04] [User Authenticator #4/INFO]: UUID of player VenaticWinner67 is 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:46:05] [Server thread/INFO]: VenaticWinner67[/100.99.110.10:56059] logged in with entity id 8323 at ([world]1888.6605354183398, 16.335799417698055, 2277.4076531571695)
+[08:46:06] [Server thread/INFO]: [voicechat] Received secret request of VenaticWinner67 (20)
+[08:46:06] [Server thread/INFO]: [voicechat] Sent secret to VenaticWinner67
+[08:46:06] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:46:07] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:46:07] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player VenaticWinner67 (27624550-5762-38db-a0a7-5ccd77095ef1) successfully connected to voice chat
+[08:46:09] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[08:46:09] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[08:46:12] [Paper Common Worker #0/WARN]: Empty height range: biased[-3 absolute--5 absolute inner: 1]
+[08:46:43] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs spawn LeviatanAbisal
+[08:47:45] [Server thread/INFO]: Named entity Drowned['! LEVIATÁN TITÁNICO !'/8551, uuid='416d65aa-f077-4471-90d5-df935b6329e1', l='ServerLevel[world]', x=1859.21, y=14.00, z=2280.83, cpos=[116, 142], tl=1246, v=true] died: ! LEVIATÁN TITÁNICO ! was slain by VenaticWinner67
+[08:49:50] [Server thread/INFO]: VenaticWinner67 lost connection: Disconnected
+[08:49:50] [Server thread/INFO]: [voicechat] Disconnecting client VenaticWinner67
+[08:51:05] [User Authenticator #5/INFO]: UUID of player VenaticWinner67 is 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:51:07] [Server thread/INFO]: VenaticWinner67[/100.99.110.10:56074] logged in with entity id 8923 at ([world]1847.9147631536273, 26.357433998749023, 2334.606285112785)
+[08:51:08] [Server thread/INFO]: [voicechat] Received secret request of VenaticWinner67 (20)
+[08:51:08] [Server thread/INFO]: [voicechat] Sent secret to VenaticWinner67
+[08:51:09] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:51:10] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 27624550-5762-38db-a0a7-5ccd77095ef1
+[08:51:10] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player VenaticWinner67 (27624550-5762-38db-a0a7-5ccd77095ef1) successfully connected to voice chat
+[08:51:11] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[08:51:11] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[08:51:28] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs spawn LeviatanAbisal
+[08:51:59] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs kill LeviatanAbisal
+[08:52:12] [Server thread/INFO]: VenaticWinner67 issued server command: /weather clear
+[08:52:12] [Server thread/INFO]: [VenaticWinner67: Set the weather to clear]
+[08:52:22] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2614ms or 52 ticks behind
+[08:52:41] [Server thread/INFO]: VenaticWinner67 issued server command: /tp @s 2111 91.5 2457
+[08:52:41] [Server thread/INFO]: [VenaticWinner67: Teleported VenaticWinner67 to 2111.500000, 91.500000, 2457.500000]
+[08:52:52] [Server thread/INFO]: VenaticWinner67 issued server command: /mm mobs spawn LeviatanAbisal
+[08:53:22] [Server thread/INFO]: Named entity Drowned['Escudero Abisal'/9754, uuid='37eedba3-514e-47f8-9921-2abbf55e641a', l='ServerLevel[world]', x=2153.58, y=104.00, z=2450.20, cpos=[134, 153], tl=43, v=true] died: Escudero Abisal was slain by VenaticWinner67
+[08:53:29] [Server thread/INFO]: Named entity Drowned['! LEVIATÁN TITÁNICO !'/9691, uuid='ba708098-e113-4a53-acb3-03b0765db1bc', l='ServerLevel[world]', x=2152.66, y=104.00, z=2449.51, cpos=[134, 153], tl=743, v=true] died: ! LEVIATÁN TITÁNICO ! was slain by VenaticWinner67
+[08:54:21] [Server thread/INFO]: VenaticWinner67 issued server command: /region list
+[08:54:27] [Server thread/INFO]: VenaticWinner67 issued server command: /rg tp -c -w "world" jefe_sculk
+[08:54:31] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode spectator
+[08:54:31] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Spectator Mode]
+[08:54:35] [Server thread/INFO]: VenaticWinner67 issued server command: /rg tp -c -w "world" jefe_sculk
+[08:55:02] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[08:55:02] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[08:55:18] [Craft Scheduler Thread - 25 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[08:55:19] [Server thread/INFO]: VenaticWinner67 issued server command: /mm items give VenaticWinner67 FragmentoDelVacio
+[08:55:27] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode spectator
+[08:55:27] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Spectator Mode]
+[08:55:28] [Server thread/INFO]: VenaticWinner67 issued server command: /gamemode creative
+[08:55:28] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[08:56:40] [Server thread/INFO]: Named entity WitherSkeleton['Eco del Vacío'/10013, uuid='e89c3adc-27b9-4248-ac63-7db1455e7259', l='ServerLevel[world]', x=197.60, y=-55.00, z=3503.10, cpos=[12, 218], tl=744, v=true] died: Eco del Vacío was slain by VenaticWinner67
+[08:57:10] [Server thread/INFO]: Teleported VenaticWinner67 to 1383.500000, 230.000000, 1182.500000
+[08:57:11] [Server thread/WARN]: [MythicMobs] AI pathfinder players is not valid for mob type PHANTOM
+[08:57:11] [Server thread/WARN]: [MythicMobs] AI pathfinder attacker is not valid for mob type PHANTOM
+[08:57:11] [Server thread/WARN]: [MythicMobs] AI pathfinder players is not valid for mob type PHANTOM
+[08:57:11] [Server thread/WARN]: [MythicMobs] AI pathfinder attacker is not valid for mob type PHANTOM
+[08:57:11] [Server thread/WARN]: [MythicMobs] AI pathfinder players is not valid for mob type PHANTOM
+[08:57:11] [Server thread/WARN]: [MythicMobs] AI pathfinder attacker is not valid for mob type PHANTOM
+[08:57:11] [Server thread/WARN]: [MythicMobs] AI pathfinder players is not valid for mob type PHANTOM
+[08:57:11] [Server thread/WARN]: [MythicMobs] AI pathfinder attacker is not valid for mob type PHANTOM
+[08:57:11] [Server thread/WARN]: [MythicMobs] AI pathfinder players is not valid for mob type PHANTOM
+[08:57:11] [Server thread/WARN]: [MythicMobs] AI pathfinder attacker is not valid for mob type PHANTOM
+[08:57:33] [Server thread/WARN]: [MythicMobs] AI pathfinder players is not valid for mob type PHANTOM
+[08:57:33] [Server thread/WARN]: [MythicMobs] AI pathfinder attacker is not valid for mob type PHANTOM
+[08:57:33] [Server thread/WARN]: [MythicMobs] AI pathfinder players is not valid for mob type PHANTOM
+[08:57:33] [Server thread/WARN]: [MythicMobs] AI pathfinder attacker is not valid for mob type PHANTOM
+[08:57:33] [Server thread/WARN]: [MythicMobs] AI pathfinder players is not valid for mob type PHANTOM
+[08:57:33] [Server thread/WARN]: [MythicMobs] AI pathfinder attacker is not valid for mob type PHANTOM
+[08:57:33] [Server thread/WARN]: [MythicMobs] AI pathfinder players is not valid for mob type PHANTOM
+[08:57:33] [Server thread/WARN]: [MythicMobs] AI pathfinder attacker is not valid for mob type PHANTOM
+[08:57:33] [Server thread/WARN]: [MythicMobs] AI pathfinder players is not valid for mob type PHANTOM
+[08:57:33] [Server thread/WARN]: [MythicMobs] AI pathfinder attacker is not valid for mob type PHANTOM
+[08:57:51] [Server thread/INFO]: VenaticWinner67 issued server command: /tp 2000 100 2000
+[08:57:51] [Server thread/INFO]: [VenaticWinner67: Teleported VenaticWinner67 to 2000.500000, 100.000000, 2000.500000]
+[08:57:57] [Server thread/INFO]: VenaticWinner67 issued server command: /tp @s 1835 63.5 2220
+[08:57:58] [Server thread/INFO]: [VenaticWinner67: Teleported VenaticWinner67 to 1835.500000, 63.500000, 2220.500000]
+[08:58:07] [Server thread/INFO]: VenaticWinner67 lost connection: Disconnected
+[08:58:07] [Server thread/INFO]: [voicechat] Disconnecting client VenaticWinner67
+[09:02:10] [Server thread/INFO]: Stopping the server
+[09:02:10] [Server thread/INFO]: Stopping server
+[09:02:10] [Server thread/INFO]: [AxiomPaper] Disabling AxiomPaper v5.0.4+1.21.1
+[09:02:10] [Server thread/INFO]: [CustomizablePlayerModels] Disabling CustomizablePlayerModels v0.6.27a
+[09:02:10] [Server thread/INFO]: [ImageFrame] Disabling ImageFrame v2026.1.4.0
+[09:02:10] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion imageframe
+[09:02:10] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin ImageFrame was disabled.
+[09:02:10] [Server thread/INFO]: [ImageFrame] ImageFrame has been Disabled!
+[09:02:10] [Server thread/INFO]: [HeadDB] Disabling HeadDB v6.0.1
+[09:02:10] [Server thread/INFO]: [Craftorithm] Disabling Craftorithm v1.12.0.0-20260721
+[09:02:10] [Server thread/INFO]: [CustomDiscs] Disabling CustomDiscs v0.9.125
+[09:02:10] [Server thread/INFO]: [WorldEvents] Disabling WorldEvents v1.8.8
+[09:02:10] [Server thread/INFO]: [WorldEvents] WorldEvents Core disabled
+[09:02:10] [Server thread/INFO]: [StringDupersReturn] Disabling StringDupersReturn v1.0.12
+[09:02:10] [Server thread/INFO]: [Shopkeepers] Disabling Shopkeepers v2.24.0
+[09:02:10] [Server thread/INFO]: [ServerVariables] Disabling ServerVariables v3.7.2
+[09:02:10] [Server thread/INFO]: [ServerVariables] Has been disabled! Version: 3.7.2
+[09:02:10] [Server thread/INFO]: [ConditionalEvents] Disabling ConditionalEvents v4.79.1
+[09:02:10] [Server thread/INFO]: [ConditionalEvents] Has been disabled! Version: 4.79.1
+[09:02:10] [Server thread/INFO]: [CommandPanels] Disabling CommandPanels v3.23.4
+[09:02:10] [Server thread/INFO]: RockyHawk's CommandPanels Plugin Disabled, aww man.
+[09:02:10] [Server thread/INFO]: [Sit] Disabling Sit v1.7.2
+[09:02:10] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.40
+[09:02:10] [Server thread/INFO]: [BuildPaste] Disabling BuildPaste v1.11.1
+[09:02:10] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.7.10
+[09:02:10] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion itemedit
+[09:02:10] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin ItemEdit was disabled.
+[09:02:10] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.14
+[09:02:10] [Server thread/INFO]: [DeadlyDisasters] Disabling DeadlyDisasters v1.1.0
+[09:02:10] [Server thread/INFO]: [CommunityQuests] Disabling CommunityQuests v2.11.5
+[09:02:10] [Server thread/INFO]: [CommunityQuests] Plugin is disabled
+[09:02:10] [Server thread/INFO]: [BeautyQuests] Disabling BeautyQuests v2.1.0+build.138
+[09:02:10] [Server thread/INFO]: [BeautyQuests] Periodic saves task stopped.
+[09:02:10] [Server thread/INFO]: [WorldGuard] Unregistering session handler fr.skytasul.quests.integrations.worldguard.WorldGuardEntryHandler
+[09:02:10] [Server thread/INFO]: [AuraSkills] Disabling AuraSkills v2.3.12
+[09:02:10] [Server thread/INFO]: [Multiverse-Portals] Disabling Multiverse-Portals v5.2.1
+[09:02:10] [Server thread/INFO]: [Multiverse-Portals] - Disabled
+[09:02:10] [Server thread/INFO]: [packetevents] Disabling packetevents v2.13.0
+[09:02:10] [Server thread/INFO]: [UIFramework] Disabling UIFramework v3.2.0
+[09:02:10] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.12.1-46bae256
+[09:02:10] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[09:02:10] [Server thread/INFO]: [MythicMobs] - 
+[09:02:10] [Server thread/INFO]: [MythicMobs] - Unloading Mythic...
+[09:02:10] [Server thread/INFO]: [MythicMobs] - 
+[09:02:10] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[09:02:10] [Server thread/INFO]: [MythicMobs] - Spawners saved and unloaded...
+[09:02:10] [Server thread/INFO]: [MythicMobs] - Mobs saved and unloaded...
+[09:02:10] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[09:02:10] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[09:02:10] [Server thread/INFO]: [MythicMobs] - Variables saved...
+[09:02:10] [Server thread/INFO]: [MythicMobs] - All active settings have been saved!
+[09:02:10] [Server thread/INFO]: [MythicMobs] - Mythic has been unloaded!
+[09:02:10] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[09:02:10] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[09:02:10] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[09:02:10] [Server thread/WARN]: io.lumine.mythic.bukkit.utils.terminable.composite.CompositeClosingException: Exception(s) occurred whilst closing: [java.lang.NullPointerException: Cannot invoke "java.util.concurrent.ConcurrentHashMap.clear()" because "this.lastStateByPlayer" is null]
+[09:02:10] [Server thread/WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.terminable.composite.AbstractCompositeTerminable.close(AbstractCompositeTerminable.java:38)
+[09:02:10] [Server thread/WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.terminable.composite.CompositeTerminable.closeAndReportException(CompositeTerminable.java:63)
+[09:02:10] [Server thread/WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.close(LuminePlugin.java:100)
+[09:02:10] [Server thread/WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.onDisable(LuminePlugin.java:95)
+[09:02:10] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[09:02:10] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[09:02:10] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161)
+[09:02:10] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97)
+[09:02:10] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541)
+[09:02:10] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:610)
+[09:02:10] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1045)
+[09:02:10] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:847)
+[09:02:10] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1351)
+[09:02:10] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:329)
+[09:02:10] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:02:10] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.ConcurrentHashMap.clear()" because "this.lastStateByPlayer" is null
+[09:02:10] [Server thread/WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.listeners.triggers.PlayerInputTriggerListener.unload(PlayerInputTriggerListener.java:63)
+[09:02:10] [Server thread/WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.plugin.PluginModule.close(PluginModule.java:50)
+[09:02:10] [Server thread/WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.terminable.composite.AbstractCompositeTerminable.close(AbstractCompositeTerminable.java:31)
+[09:02:10] [Server thread/WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.terminable.composite.CompositeTerminable.closeAndReportException(CompositeTerminable.java:63)
+[09:02:10] [Server thread/WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.close(LuminePlugin.java:100)
+[09:02:10] [Server thread/WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.onDisable(LuminePlugin.java:95)
+[09:02:10] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[09:02:10] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[09:02:10] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161)
+[09:02:10] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97)
+[09:02:10] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541)
+[09:02:10] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:610)
+[09:02:10] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1045)
+[09:02:10] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:847)
+[09:02:10] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1351)
+[09:02:10] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:329)
+[09:02:10] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:02:10] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.36
+[09:02:10] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[09:02:10] [Server thread/INFO]: [LuckPerms] Closing storage...
+[09:02:10] [Server thread/INFO]: [LuckPerms] Goodbye!
+[09:02:10] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.11.0-SNAPSHOT
+[09:02:10] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[09:02:10] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[09:02:10] [Server thread/INFO]: [MagicSpells] Disabling MagicSpells v4.0-Beta-16
+[09:02:10] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v5.5.3
+[09:02:10] [Server thread/INFO]: [Multiverse-Core] - Disabled
+[09:02:10] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b130-d73192f)
+[09:02:10] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
+[09:02:10] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.12+829a4a4
+[09:02:10] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[09:02:10] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.12.3
+[09:02:10] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.11.0
+[09:02:10] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[09:02:10] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.15.2+e9ed0d1
+[09:02:10] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[09:02:10] [Server thread/INFO]: Saving players
+[09:02:10] [WebSocketConnectReadThread-165/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[09:02:10] [Server thread/INFO]: Saving worlds
+[09:02:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 82 entity chunks, 0 poi chunks in world 'world' in 0.03s
+[09:02:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 1 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[09:02:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 1 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[09:02:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_kattersstructures_deep_blue]'/kattersstructures:deep_blue
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_kattersstructures_deep_blue'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_kattersstructures_deep_blue'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_kattersstructures_deep_blue'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 34 entity chunks, 0 poi chunks in world 'world_kattersstructures_deep_blue' in 0.02s
+[09:02:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nmr_astral_plane]'/nmr:astral_plane
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nmr_astral_plane'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nmr_astral_plane'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nmr_astral_plane'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 34 entity chunks, 0 poi chunks in world 'world_nmr_astral_plane' in 0.01s
+[09:02:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_deeper_dark_deeper_dark]'/deeper_dark:deeper_dark
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_deeper_dark_deeper_dark'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_deeper_dark_deeper_dark'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_deeper_dark_deeper_dark'
+[09:02:10] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_deeper_dark_deeper_dark' in 0.00s
+[09:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[09:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (deep_blue): All chunks are saved
+[09:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (astral_plane): All chunks are saved
+[09:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (deeper_dark): All chunks are saved
+[09:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

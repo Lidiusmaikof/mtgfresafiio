@@ -1,0 +1,23 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "ecologics:coconut_log"
+    },
+    {
+      "item": "ecologics:coconut_wood"
+    },
+    {
+      "item": "ecologics:stripped_coconut_log"
+    },
+    {
+      "item": "ecologics:stripped_coconut_wood"
+    }
+  ],
+  "result": {
+    "id": "ecologics:coconut_chest_boat",
+    "count": 1
+  },
+  "ingredient_count": 3,
+  "type": "sawmill:woodcutting"
+}

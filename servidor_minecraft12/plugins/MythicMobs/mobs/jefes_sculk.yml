@@ -1,0 +1,79 @@
+# =============================================================================
+# EL ALTAR DE INVOCACIÓN
+# =============================================================================
+AltarDelVacio:
+  Type: ARMOR_STAND
+  Display: '&b&lAltar del Vacío &7[Clic Derecho]'
+  Options:
+    Invisible: true
+    Marker: false
+    NoGravity: true
+    Invulnerable: true
+    Persistent: true
+  Skills:
+    - skill{s=InicializarFrag} @Self ~onSpawn
+    - skill{s=InteractuarAltar} @Self ~onInteract
+
+# =============================================================================
+# EL JEFE FINAL
+# =============================================================================
+EcoDelVacio:
+  Type: WITHER_SKELETON
+  Display: '&1&lEco del Vacío'
+  Health: 8000
+  Damage: 12
+  Faction: Sculk
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.22
+    PreventSunburn: true
+    FollowRange: 80
+    KnockbackResistance: 1.0
+    Size: 10
+  BossBar:
+    Enabled: true
+    Title: '&1&lTitán del Vacío'
+    Color: BLUE
+    Style: NOTCHED_20
+    Range: 60
+  Equipment:
+    - netherite_hoe HAND
+  Skills:
+    - skill{s=InfeccionSilenciosa} @PlayersInRadius{r=25} ~onTimer:160
+    - skill{s=TrampaGritos} @Target ~onTimer:240
+    - skill{s=GestoFatidicoPotenciado} @PlayersInRadius{r=30} ~onTimer:500
+    - summon{mob=EcoDelVacio_Anchor;amount=1;radius=0;force=true} @Self ~onDeath
+
+# =============================================================================
+# ANCLA DE EVACUACIÓN
+# =============================================================================
+EcoDelVacio_Anchor:
+  Type: ARMOR_STAND
+  Options:
+    Invisible: true
+    Marker: true
+    NoGravity: true
+    Invulnerable: true
+  Skills:
+    - skill{s=SecuenciaMuerteYEvacuacion} @Self ~onSpawn
+
+# =============================================================================
+# ESBIRROS DEL RITUAL (CONSERVADOS)
+# =============================================================================
+ZombiDelVacíoRitual:
+  Type: ZOMBIE
+  Display: '&1&lCadáver Corrompido'
+  Faction: Sculk
+  Equipment:
+    - netherite_sword HAND
+  Options:
+    PreventSunburn: true
+
+EsqueletoDelVacíoRitual:
+  Type: SKELETON
+  Display: '&b&lArquero del Vacío'
+  Faction: Sculk
+  Equipment:
+    - netherite_sword HAND
+  Options:
+    PreventSunburn: true

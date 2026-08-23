@@ -1,0 +1,1060 @@
+# ##############################################################################################################################################################################
+#
+# WORLD
+#
+# This section controls the settings for worlds linked to this config! This is where you can modify the naturally occurring disasters and tweak it exactly how you want it
+# for your world. The default settings in this config are set up for a speedrun challenge plugin! So if you are using this for casual survival or your own event this is the
+# most important section to modify. You can change how common disasters are, timings, severity, etc.
+#
+# Remember to use CTRL + F to find what you are looking for. Just search for the disaster command name!
+#
+# ##############################################################################################################################################################################
+
+world:
+  # ##########################################################################################################################################################################
+  #
+  # This section below is highlighted specifically because these are the most crucial settings you will want to modify!
+  #
+  # ##########################################################################################################################################################################
+
+    # Targeting controls how the world will naturally spawn disasters on players. After a disaster occurs the player or world timer will be reset to a random number between
+  # the minimum time and maximum time. There are a few different targeting options listed below:
+  #
+  #   "DISABLED" - This just simply disables disasters from naturally occurring in the world. Use this if you only intend to spawn them via commands or don't want them active.
+  #                This is also the fallback setting in case you make a typo in the targeting setting to prevent unwanted damage.
+  #
+  #   "INDIVIDUAL" - Every player has their own count down timer which persists even when they leave, or the server closes. When this timer reaches 0 a disaster will very
+  #                  likely occur on the player, if conditions around are suitable. This is the default targeting and means that disasters will be equally active for everyone!
+  #
+  #   "GLOBAL" - This targeting means that the entire world uses a global count down and when the timer reaches 0 a designated amount of players will each have a single
+  #              disaster occur around them. This is not ideal for servers with lots of players as it may be very rare to see a disaster happen.
+
+  targeting: INDIVIDUAL
+  
+  # The global disaster count setting is a special setting that will only apply if you have the 'targeting' setting above set to "GLOBAL" This controls the maximum number of disasters
+  # that can occur when the global timer reaches 0. Only 1 disaster can spawn per player, so if you have a higher value set here then there are players on the server, this will
+  # spawn just 1 disaster on each player in the server. If you have it set to 1, then only a single disaster will occur on 1 random player.
+
+  global_disaster_count: 1
+  
+  # This is a string list and controls what disasters are disabled in this world. By default the setting is set to 'NONE' which means all disasters are enabled on the world.
+  # You can simply set this section to 'ALL' and it will disable all disasters within the world from happening naturally. This list only controls disasters that spawn
+  # naturally, so disasters spawned via commands or by other plugins can still happen! You can simply add to the list a category of disasters to disable, or you can also add
+  # each disaster by its command name individually into the list to disable them. The available categories you can list are:
+  #
+  #   "ALL" - Represents all disasters that exist. Adding this to the list will simply disable all disasters in the world.
+  #
+  #   "NONE" - Just a blank placeholder for the list. Leave this here to enable all disasters in the world.
+  #
+  #   "DESTRUCTIVE_DISASTERS" - This category represents all disasters that can destroy large areas such as sinkholes, earthquakes, tornados, etc.
+  #
+  #   "WEATHER_DISASTERS" - This category represents all weather type disasters such as acid storms, blizzards, sand storms, etc.
+  #
+  #   "MOB_DISASTERS" - This category represents all disasters that directly effect mobs or players such as the black plague, purges, etc.
+
+  disabled_disasters:
+  - NONE
+  
+  # The minimum time is the time IN SECONDS that a disaster can happen. The way the count down works is when it is reset it will pick a random number between the minimum
+  # time and the maximum time. If you modify the times, you can reset everyones current timers via the command '/disasters timers reset [world]'
+
+  minimum_time: 600
+  
+  # The maximum times is the time IN SECONDS that a disaster is guaranteed to happen. If this number is lower than the minimum time it will auto set to the minimum time.
+
+  maximum_time: 1800
+  
+  # The disaster offset represents the maximum offset in blocks that the disaster can occur at from the player. When a disaster begins at a player, it will pick a random
+  # distance between 0, to the disaster offset, away from the players position on the X and Z axis. This gives some randomness to where the disaster starts near the player.
+
+  disaster_offset: 20.0
+  
+  # The shared disaster radius is the range in where if multiple players are present and a disaster occurs on one of them, all other players within this range of that disaster
+  # will also have their timers reset. If you are using the global timer this will also share disasters with players within this range of each other, this prevents disasters
+  # from cluttering together in places where many players are near each other. This value is distance in blocks.
+
+  shared_disaster_radius: 75.0
+  
+  # The level probability table is the odds of each disaster level occurring when a disaster naturally occurs at a player. By default this is set to NORMAL difficulty odds.
+
+  level_probabilities:
+    level_1: 30.0
+    level_2: 25.0
+    level_3: 20.0
+    level_4: 14.0
+    level_5: 9.0
+    level_6: 2.0
+  
+  # When a disaster starts if it should broadcast a message in the chat to all players in the world. The message varies depending on the disaster and can be found and modified in the translations file!
+  broadcast_disasters: true
+  
+  # ##########################################################################################################################################################################
+  #
+  # This is the END of the very important settings section!
+  #
+  # ##########################################################################################################################################################################
+
+    # If disaster tips is set to true then disaster broadcasts will include the disasters tip.
+  disaster_tips: true
+  # Make a sound play when a disaster message is broadcasted as an extra indicator, set to NONE for no sound. All sound names can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  start_sound:
+    sound: NONE
+    volume: 1.0
+    pitch: 1.0
+    # The target option is the players to play the disaster start sound to. The different targeting options are listed below:
+    # "ALL" - Plays for all players in the world.
+    # "NEARBY" - Plays the sound to all nearby players in the range of the disaster.
+    # "TARGET" - Plays the sound for just the target player of the disaster.
+    target: ALL
+  forecast:
+    # Allow the disaster forecast message to be sent to players about the worlds disaster settings when they enter this world. The message can be found and modified in the language file!
+    allow_world_messages: true
+    # Show the forecast message to non operator players.
+    show_world_messages_to_not_opped: false
+    # If a quiet note block pling sound should play to the player when they receive the message.
+    play_pling_sound: true
+
+# ##############################################################################################################################################################################
+#
+# PROTECTION SETTINGS
+#
+# This section has all the settings for region protection plugins, and protecting certain entities.
+#
+# ##############################################################################################################################################################################
+
+protection_settings:
+  # This sub section controls settings for region protection plugins. The following region protection plugins are supported by DeadlyDisasters:
+  #
+  #   - World Guard (Supports flags)
+  #   - Core Protect (Blocks modified under the user "deadly-disasters")
+  #   - Towny (Supports flags)
+  #   - Grief Prevention
+  #   - Lands
+  #   - KingdomsX
+  #   - Field Zone
+  #   - Plot Squared
+  #   - Ultimate Clans
+  #   - FactionsUUID
+  #
+  # ONLY these plugins regions will be protected! If your plugin is not listed you can request it on the discord and when I have time I can add it. Also do keep in mind that
+  # for every one of these plugins you have, the performance may decline. This is because it has to run region checks through these plugins if they are on the server every time a
+  # block is modified, this can be millions within the span of a few seconds. If you are getting bad TPS, consider disabling region protection if it is unnecessary for your use case.
+  region_plugins:
+    # If regions from the list of plugins above should be respected and no block modifications by disasters should happen in these regions.
+    protect_region_from_damage: true
+    # If disaster effects should apply to entities within protected regions (e.g. earthquake pulling, supernova entity damage, acid rain damage, blizzard freezing).
+    allow_disaster_effects_in_regions: true
+    # If the black plague should be automatically cured when an entity enters a protected region.
+    cure_plague_in_regions: false
+
+# ##############################################################################################################################################################################
+#
+# DISASTERS
+#
+# This section has all the disaster settings for the world. Each disaster has its own section and settings, most settings are commented with their functionality. There is also
+# a global settings section that has shared settings for every disaster, these act as a simple way of modifying behavior for all disasters in one section. If you want a specific
+# disaster to have a different global setting you can override any global setting by manually adding the setting to the disasters section, this will override the global setting.
+#
+# ##############################################################################################################################################################################
+
+disasters:
+  # ##########################################################################################################################################################################
+  #
+  # GLOBAL SETTINGS
+  #
+  # This is the global disaster settings section. All of the disasters have these settings preset to these values. You can manually override any of these settings by placing any
+  # of them directly into the disasters section and that setting will take priority over these for that specific disaster.
+  #
+  # ##########################################################################################################################################################################
+  global:
+    # This controls the max level disasters can reach. The max level is 6, any higher value will have no effect.
+    max_level: 6
+    # The volume multiplier for disaster related sound effects.
+    volume: 1.0
+    # The start delay is the delay in seconds till the disaster begins after it is broadcasted to the world (If disaster broadcasts are off this will still delay the disasters start).
+    # Keep in mind that disasters started via commands will ignore the start delay!
+    start_delay: 0.0
+    # The disaster frequency affects how often a disaster can happen, it can be any value between 0.0 meaning it will never happen and 1.0 meaning it will always have a chance to happen.
+    frequency: 1.0
+    # When true, every disaster automatically includes this global blacklisted_mob_types list in addition to its own.
+    # Set to false in a specific disaster's section to make that disaster ignore the global list entirely.
+    respect_global_mob_blacklist: true
+    # Mob types listed here are shared across all disasters (when respect_global_mob_blacklist is true).
+    # Add per-disaster exclusions under that disaster's own blacklisted_mob_types key instead.
+    blacklisted_mob_types:
+    - ender_dragon
+    - wither
+    - elder_guardian
+    - warden
+    - end_crystal
+    - item_frame
+  # ##########################################################################################################################################################################
+  #
+  # Destructive Disasters
+  #
+  # This sub-section holds all of the destructive type disaster settings. Destructive disasters are isolated disasters that usually damage very large areas.
+  #
+  # ##########################################################################################################################################################################
+  destructive:
+    # ######################################################################################################################################################################
+    #
+    # Sinkhole
+    #
+    # ######################################################################################################################################################################
+    sinkhole:
+      # Size multiplier, this amplifies the size for all levels!
+      size: 1.0
+      # The speed multiplier affects how fast the sinkhole expands from the center to its outer edges.
+      speed: 1.0
+      # The maximum Y block axis height that lava can generate at in sinkholes (Lava is never generated in sinkholes on end type worlds). Set to -65 or lower to disable lava entirely.
+      lava_depth: 0
+      # The minimum height on the Y block axis that this disaster can start at.
+      minimum_height: 50
+    # ######################################################################################################################################################################
+    #
+    # Earthquake
+    #
+    # ######################################################################################################################################################################
+    earthquake:
+      # Size multiplier, this amplifies the size for all levels!
+      size: 1.0
+      # Force multiplier for how strong earthquakes can throw nearby entities.
+      force_multiplier: 1.0
+      # If lava should be placed at the bottom of earthquakes.
+      place_lava: true
+      # The minimum height on the Y block axis that this disaster can start at.
+      minimum_height: 50
+    # ######################################################################################################################################################################
+    #
+    # Tornado
+    #
+    # ######################################################################################################################################################################
+    tornado:
+      # Size multiplier, this amplifies the size for all levels!
+      size: 1.0
+      # Speed controls how fast the tornado itself moves
+      speed: 1.0
+      # Force multiplier for how strong tornados can pull nearby entities.
+      force_multiplier: 1.0
+      # Multiplier for how long tornados last for. Higher levels will last longer.
+      life_multiplier: 1.0
+      # Multiplier for how often blocks get picked up in tornados
+      block_pickup_rate: 1.0
+      # Block pickup range is the multiplier for how far blocks from the tornado can be picked up.
+      block_pickup_range_multiplier: 1.0
+      # The maximum amount of entities that can be within a tornado (mobs, blocks, etc.). Alive entities will always take priority.
+      max_entities:
+        level_1: 200
+        level_2: 300
+        level_3: 500
+        level_4: 800
+        level_5: 1000
+        level_6: 2000
+      # Multiplier for how many particles are spawned in tornados.
+      particle_multiplier: 1.0
+      # The minimum height on the Y block axis that this disaster can start at.
+      minimum_height: 60
+    # ######################################################################################################################################################################
+    #
+    # Cave-In
+    #
+    # ######################################################################################################################################################################
+    cavein:
+      # Size multiplier, this amplifies the size for all levels!
+      size: 1.0
+      # Damage dealt by falling cave-in blocks.
+      damage: 7.0
+      # The speed multiplier affects how fast the cave-in expands from the center to its outer edges.
+      speed: 1.0
+      # The maximum amount of falling cave-in blocks that can exist at a time. For very large cave-ins smaller numbers could make cave-ins take a very long time to finish.
+      max_falling_blocks: 1000
+      # The maximum height on the Y block axis that this disaster can start at. NOTE this is maximum, not minimum height!
+      maximum_height: 50
+    # ######################################################################################################################################################################
+    #
+    # Water Geyser
+    #
+    # ######################################################################################################################################################################
+    water_geyser:
+      # Size multiplier, this amplifies the size for all levels!
+      size: 1.0
+      # Damage dealt to entities caught within water geysers per damage tick.
+      damage: 1.5
+      # The speed multiplier affects how fast the water geyser rises to the surface.
+      speed: 1.0
+      # The radius from the outer edge of the geyser that blocks are damaged around.
+      damage_radius: 2.0
+      # How many seconds the leftover boiling pool keeps bubbling (and scalding players) after the column subsides.
+      # The disaster is considered ongoing until this finishes; afterwards the pool is left for the regen system.
+      boiling_duration: 60
+      # The minimum height on the Y block axis that this disaster can start at.
+      minimum_height: -50
+    # ######################################################################################################################################################################
+    #
+    # Lava Geyser
+    #
+    # ######################################################################################################################################################################
+    lava_geyser:
+      # Size multiplier, this amplifies the size for all levels!
+      size: 1.0
+      # The speed multiplier affects how fast the lava geyser rises to the surface.
+      speed: 1.0
+      # The radius from the outer edge of the geyser that blocks are damaged around.
+      damage_radius: 2.0
+      # The minimum height on the Y block axis that this disaster can start at.
+      minimum_height: 10
+    # ######################################################################################################################################################################
+    #
+    # Supernova
+    #
+    # ######################################################################################################################################################################
+    supernova:
+      # Size multiplier, this amplifies the size for all levels!
+      size: 1.0
+      # If supernova explosions should destroy items on the ground.
+      destroy_items: true
+      # Affects the fall speed of the crystal falling from the sky to the point of explosion.
+      fall_speed_multiplier: 1.0
+      # Places the blocks in the debris list randomly around the perimeter of supernova blast zones.
+      debris:
+      - obsidian
+      - black_concrete
+      - fire
+      # Multiplier for how many explosion particles are spawned in supernovas.
+      particle_multiplier: 1.0
+      # If set to true then explosion particles can be seen very far away by players but this drastically affects client performance.
+      far_particles: true
+      # If players should see flashing effects in the direction of supernovas.
+      flashing: true
+      # The minimum height on the Y block axis that this disaster can start at.
+      minimum_height: 60
+      # Global override on the frequency to make this disaster happen less frequently.
+      frequency: 0.3
+    # ######################################################################################################################################################################
+    #
+    # Tsunami
+    #
+    # ######################################################################################################################################################################
+    tsunami:
+      # The minimum depth of water needed for a tsunami to occur above.
+      minimum_water_depth: 15
+      # Size multiplier, this amplifies the size for all levels!
+      size: 1.0
+      # The damage done to entities that are caught inside the tsunami. This scales with the level and is a multiplier for all levels.
+      damage_multiplier: 1.0
+      # Multiplier on the random debris spawn chance. Higher disaster levels already spawn debris more often; this scales that rate further.
+      debris_multiplier: 1.0
+      # The max amount of falling block debris that can exist at a given time during a tsunami.
+      max_falling_blocks: 200
+      # How many seconds per disaster level the wave water remains before dissolving (e.g. value of 5 means a level 5 tsunami's water persists for 25 seconds).
+      water_persist_seconds_per_level: 5.0
+      # The minimum height on the Y block axis that this disaster can start at.
+      minimum_height: 60
+      blacklisted_mob_types:
+      - drowned
+      - guardian
+      - elder_guardian
+      - axolotl
+      - salmon
+      - cod
+      - tropical_fish
+      - pufferfish
+      - turtle
+      - squid
+      - glow_squid
+      - dolphin
+      - nautilus
+  # ##########################################################################################################################################################################
+  #
+  # Weather Disasters
+  #
+  # This sub-section holds all of the weather type disaster settings. Weather disasters have their own layer of global settings below that apply to all weather disasters in
+  # this section. Remember, you can override any one of these settings for specific disasters by copying the setting and placing it directly into the disasters section!
+  #
+  # ##########################################################################################################################################################################
+  weather:
+    # Global settings for all shared weather disaster settings. Each of these can be overridden in the specific disasters section by just adding them manually.
+    global_weather:
+      # Time in seconds that each level of a weather disaster lasts for.
+      time:
+        level_1: 90.0
+        level_2: 150.0
+        level_3: 200.0
+        level_4: 300.0
+        level_5: 480.0
+        level_6: 600.0
+      # Radius in blocks for how large each weather disaster level is on the X and Z axis.
+      range:
+        level_1: 100.0
+        level_2: 150.0
+        level_3: 200.0
+        level_4: 250.0
+        level_5: 350.0
+        level_6: 500.0
+      # All weather disasters scale in all stats and settings by the given scaler amount. Keep in mind that only some select settings scale!
+      scaling:
+        level_1: 1.0
+        level_2: 1.5
+        level_3: 2.0
+        level_4: 2.5
+        level_5: 3.0
+        level_6: 5.0
+      # The particle multiplier is the multiplier for particles that are in the given disaster. Lower this for less particles if you are getting bad performance.
+      particle_multiplier: 1.0
+      # The particle render distance is the distance in blocks from players that weather effect particles are displayed. Lower if you are getting poor TPS during weather disasters.
+      particle_render_distance: 15.0
+      # Override the global disaster start delay to have weather disasters by default start a little later.
+      start_delay: 8.0
+    # ######################################################################################################################################################################
+    #
+    # Acid Storm
+    #
+    # ######################################################################################################################################################################
+    acid_storm:
+      # Damage dealt to entities which are exposed to acid rain per storm tick (1 storm tick = 5 minecraft ticks).
+      damage_per_storm_tick: 1.0
+      # If entities with metal armor such as iron, gold, chainmail should take extra damage to their armor in exposed acid rain.
+      dissolve_entity_armor: true
+      # If metal items that are dropped and exposed to acid rain should be dissolved immediately, or take damage over time if applicable.
+      dissolve_dropped_items: true
+      # Crops that are exposed to acid rain have a chance of getting poisoned and yielding no harvest when broken, they also eventually wilt away on their own.
+      poison_crops: true
+      # Controls how many acid storm related mobs spawn near players in acid storms. By default slimes can spawn near players.
+      mob_spawn_multiplier: 1.0
+      # The block damage rate is a multiplier that controls how many blocks are effected by acid rain (e.g. crops, stone, etc.).
+      block_damage_rate: 1.0
+      # Controls what effects are applied to vulnerable entities exposed to acid rain. Effects are applied every storm tick. You can add or remove any effect you wish with its in game name.
+      entity_effects:
+        blindness:
+          ticks: 20
+          level: 1
+        poison:
+          ticks: 11
+          level: 2
+      # Control block changes to blocks that are exposed to acid rain. The format is as follows: "BLOCK_MATERIAL: NEW_BLOCK_MATERIAL"
+      # Block changes are done at random, to control how many blocks get changed modify the setting "block_damage_rate" multiplier. Bukkit and custom tags can be used here too!
+      block_changes:
+        iron_block: air
+        iron_bars: air
+        iron_door: air
+        iron_trapdoor: air
+        gold_block: air
+        rail: air
+        powered_rail: air
+        activator_rail: air
+        detector_rail: air
+        hopper: air
+        cauldron: air
+        heavy_weighted_pressure_plate: air
+        light_weighted_pressure_plate: air
+        stone: cobblestone
+        stone_stairs: cobblestone_stairs
+        stone_slab: cobblestone_slab
+        stone_bricks: cracked_stone_bricks
+        cracked_stone_bricks: cobblestone
+        mossy_stone_bricks: mossy_cobblestone
+        mossy_stone_brick_slab: mossy_cobblestone_slab
+        mossy_stone_brick_stairs: mossy_cobblestone_stairs
+        cobblestone: air
+        cobblestone_stairs: air
+        cobblestone_slab: air
+        mossy_cobblestone: air
+        mossy_cobblestone_slab: air
+        mossy_cobblestone_stairs: air
+        iron_ore: cobblestone
+        deepslate_iron_ore: deepslate
+        gold_ore: cobblestone
+        deepslate_gold_ore: deepslate
+        copper_ore: cobblestone
+        deepslate_copper_ore: deepslate
+      # The minimum height on the Y block axis that this disaster can start at.
+      min_height: 55
+      # The disaster frequency affects how often a disaster can happen, it can be any value between 0.0 meaning it will never happen and 1.0 meaning it will always have a chance to happen.
+      frequency: 0.6
+      blacklisted_mob_types:
+      - slime
+    # ######################################################################################################################################################################
+    #
+    # Sandstorm
+    #
+    # ######################################################################################################################################################################
+    sandstorm:
+      # Damage dealt to entities which are exposed to sandstorms. Entities in sandstorms will randomly get damaged by this amount.
+      damage: 1.0
+      # This controls how often entities which are exposed to sandstorms get damaged.
+      damage_multiplier: 1.0
+      # Controls how many sandstorm related mobs spawn near players in sandstorms. By default unarmed skeletons and husks can spawn. If you are using UltimateContent then Ancient Skeletons and Ancient Mummies can also spawn!
+      mob_spawn_multiplier: 1.0
+      # The rate of which skeleton skulls can spawn on the surface of the desert during sandstorms. Set to 0.0 to disable entirely.
+      skull_spawn_multiplier: 1.0
+      # Controls what effects are applied to vulnerable entities exposed to sandstorms. Effects are applied every storm tick. You can add or remove any effect you wish with its in game name.
+      entity_effects:
+        blindness:
+          ticks: 40
+          level: 1
+        slowness:
+          ticks: 40
+          level: 1
+      # The minimum Y axis level entities must be for sandstorms to affect them. This is to prevent false positives of players in large caves.
+      minimum_entity_Y_level: 50
+      # The minimum height on the Y block axis that this disaster can start at.
+      min_height: 55
+      blacklisted_mob_types:
+      - skeleton
+      - husk
+      - stray
+    # ######################################################################################################################################################################
+    #
+    # Blizzard
+    #
+    # ######################################################################################################################################################################
+    blizzard:
+      # Damage dealt to entities which are exposed to blizzards. Entities in blizzards will randomly get damaged by this amount.
+      damage: 0.75
+      # This controls how often entities which are exposed to blizzards get damaged.
+      damage_multiplier: 1.0
+      # If entities that freeze to death in blizzards should turn into solid ice.
+      freeze_entities: true
+      # If entities that were frozen in blizzards should despawn when unloaded. This will also remove the ice with them.
+      despawn_frozen_entities: false
+      # If leather armor should reduce damage taken by blizzards. Each piece of armor will nullify 1/4 of the damage meaning a full set nullifies damage entirely.
+      leather_armor_reduction: true
+      # Controls how many blizzard related mobs spawn near players in blizzards. By default unarmed strays can spawn. If you are using UltimateContent then Yetis can also spawn!
+      mob_spawn_multiplier: 1.0
+      # Multiplier for raising snow layer blocks to higher snow levels building them up over time in blizzards.
+      raise_snow_layer_multiplier: 1.0
+      # Controls what effects are applied to vulnerable entities exposed to blizzards. Effects are applied every storm tick. You can add or remove any effect you wish with its in game name.
+      entity_effects:
+        slowness:
+          ticks: 40
+          level: 2
+      # If entities in blizzards should get freeze ticks applied to them.
+      give_entities_freeze_ticks: true
+      # The minimum Y axis level entities must be for blizzards to affect them. This is to prevent false positives of players in large caves.
+      minimum_entity_Y_level: 50
+      # The minimum height on the Y block axis that this disaster can start at.
+      min_height: 55
+      blacklisted_mob_types:
+      - rabbit
+      - stray
+      - polar_bear
+    # ######################################################################################################################################################################
+    #
+    # Extreme Winds
+    #
+    # ######################################################################################################################################################################
+    extreme_winds:
+      # The force variable for the wind strength. This will affect how strong wind is on entities.
+      wind_force: 0.06
+      # The minimum wind force level for blocks to break near entities.
+      wind_damage_threshold: 0.09
+      # Multiplier for how many blocks get swept away in the wind.
+      block_damage_rate: 1.0
+      # The minimum Y axis level entities must be for winds to affect them. This is to prevent false positives of players in large caves.
+      minimum_entity_Y_level: 50
+      # The minimum height on the Y block axis that this disaster can start at.
+      min_height: 55
+    # ######################################################################################################################################################################
+    #
+    # Meteor Shower
+    #
+    # ######################################################################################################################################################################
+    meteor_shower:
+      # If players should have their in-game time set to night during the meteor shower.
+      set_to_night: true
+      # Controls how often meteors spawn near players.
+      meteor_spawn_multiplier: 1.0
+      # Size multiplier for meteors spawned in the meteor shower.
+      meteor_size_multiplier: 1.0
+      # Multiplier for the speed meteors fall from the sky.
+      meteor_speed_multiplier: 1.0
+      # The maximum amount of meteors that can exist at a time during the meteor shower (This impacts performance).
+      maximum_meteors: 20
+      # How long in seconds smoke will emit from fallen meteors and explosions.
+      smoke_time: 15.0
+      # If true, meteor blocks are placed through the disaster block handler so protection/resistance rules apply.
+      # If false, meteor blocks are embedded directly into the terrain and remain as debris.
+      regenerate_meteors: true
+      # The minimum height on the Y block axis that this disaster can start at.
+      min_height: 55
+      # The disaster frequency affects how often a disaster can happen, it can be any value between 0.0 meaning it will never happen and 1.0 meaning it will always have a chance to happen.
+      frequency: 0.6
+    # ######################################################################################################################################################################
+    #
+    # Solar Storm
+    #
+    # ######################################################################################################################################################################
+    solar_storm:
+      # If players should have their in-game time set to dawn during the solar storm.
+      set_to_dawn: true
+      # The chance from 0-100 in percent, of entities that are near heat sources and exposed to solar storms catching on fire every storm tick. This value scales with the scale factor.
+      entity_ignite_chance: 5.0
+      # The multiplier for burnable blocks that are exposed to solar storms catching on fire. This value scales with the scale factor.
+      block_ignite_multiplier: 1.0
+      # The multiplier for how much falling fire spawns near players in solar storms.
+      fire_spawn_multiplier: 1.0
+      # The size in blocks of explosions from falling fire balls.
+      fireball_explosion_size: 3.0
+      # Controls how many solar storm related mobs spawn near players in solar storms. By default no mobs spawn. If you are using UltimateContent then fire phantoms can spawn!
+      mob_spawn_multiplier: 1.0
+      # The block damage rate is a multiplier that controls how many blocks are damaged by solar storms.
+      block_damage_rate: 1.0
+      # Controls what effects are applied to vulnerable entities exposed to solar storms. Effects are applied every storm tick. You can add or remove any effect you wish with its in game name.
+      entity_effects:
+        slowness:
+          ticks: 40
+          level: 1
+        nausea:
+          ticks: 69
+          level: 1
+        weakness:
+          ticks: 40
+          level: 1
+      # Control block changes to blocks that are exposed to solar storms. The format is as follows: "BLOCK_MATERIAL: NEW_BLOCK_MATERIAL"
+      # Block changes are done at random, to control how many blocks get changed modify the setting "block_damage_rate" multiplier. Bukkit and custom tags can be used here too!
+      block_changes:
+        leaves: air
+        dirt: coarse_dirt
+        farmland: coarse_dirt
+        crops: air
+        sugar_cane: air
+      # The minimum height on the Y block axis that this disaster can start at.
+      min_height: 55
+      # The disaster frequency affects how often a disaster can happen, it can be any value between 0.0 meaning it will never happen and 1.0 meaning it will always have a chance to happen.
+      frequency: 1.0
+      blacklisted_mob_types:
+      - blaze
+    # ######################################################################################################################################################################
+    #
+    # Soul Storm
+    #
+    # ######################################################################################################################################################################
+    soul_storm:
+      # Controls how many soul storm related mobs spawn near players in soul storms. By default vexes can spawn. If you are using UltimateContent then lost souls and soul reapers will spawn instead!
+      mob_spawn_multiplier: 1.0
+      # Controls what effects are applied to vulnerable entities exposed in soul storms. Effects are applied every storm tick. You can add or remove any effect you wish with its in game name.
+      entity_effects:
+        darkness:
+          ticks: 60
+          level: 1
+        slowness:
+          ticks: 40
+          level: 2
+      # The disaster frequency affects how often a disaster can happen, it can be any value between 0.0 meaning it will never happen and 1.0 meaning it will always have a chance to happen.
+      frequency: 0.6
+      blacklisted_mob_types:
+      - vex
+    # ######################################################################################################################################################################
+    #
+    # End Storm
+    #
+    # ######################################################################################################################################################################
+    end_storm:
+      # Controls how often entities are randomly teleported within end storms.
+      teleport_rate_multiplier: 1.0
+      # The maximum range that a player can be teleported randomly when caught in an end storm. This value scales with the scale factor.
+      max_teleport_range: 24.0
+      # Controls how often unstable rifts spawn near players in end storms. This value scales with the scale factor.
+      rift_spawn_multiplier: 1.0
+      # The damage dealt to entities that are caught in unstable rifts.
+      rift_damage_rate: 4.0
+      # If rifts will destroy items that get pulled into them.
+      rift_destroys_items: true
+      # If rifts should be able to pick up blocks which can contain items such as chests, brewing stands, barrels, etc.
+      rift_destroy_item_containers: true
+      # Controls how many end storm related mobs spawn near players in end storms. By default endermen can spawn. If you are using UltimateContent then end type entities will spawn instead!
+      mob_spawn_multiplier: 1.0
+      # Controls what effects are applied to vulnerable entities exposed in end storms. Effects are applied every storm tick. You can add or remove any effect you wish with its in game name.
+      entity_effects:
+        darkness:
+          ticks: 60
+          level: 1
+        slowness:
+          ticks: 40
+          level: 2
+      # The disaster frequency affects how often a disaster can happen, it can be any value between 0.0 meaning it will never happen and 1.0 meaning it will always have a chance to happen.
+      frequency: 1.0
+      blacklisted_mob_types:
+      - enderman
+      - endermite
+    # ######################################################################################################################################################################
+    #
+    # Hurricane
+    #
+    # ######################################################################################################################################################################
+    hurricane:
+      # The force variable for the wind strength. This controls how hard gusts shove entities around.
+      wind_force: 0.07
+      # The strength of the cyclonic swirl that pushes entities tangentially around the storm center.
+      swirl_force: 0.04
+      # The minimum wind force for blocks to be ripped/shattered near exposed entities.
+      wind_damage_threshold: 0.09
+      # Multiplier for how many blocks get torn from shelters in the wind.
+      block_damage_rate: 1.0
+      # Chance (0.0-1.0) that a brittle block (see shatter_blocks) shatters rather than being torn into a falling block.
+      glass_shatter_chance: 1.0
+      # How exposed to the open sky a player must be (0.0 sealed - 1.0 fully open) before the wind and debris affect
+      # them. Below this they are considered sheltered and are completely safe; partial cover gives partial wind.
+      shelter_safe_threshold: 0.4
+      # How often lightning strikes within the storm. Strikes are weighted toward the center.
+      lightning_frequency: 1.0
+      # Controls how many drowned (and the occasional cursed diver escort) are swept in near exposed players.
+      mob_spawn_multiplier: 1.0
+      # Buffet damage dealt to heavily exposed entities in the inner bands. Set to 0 to disable direct damage.
+      damage: 1.0
+      # Controls how often that buffet damage is applied (higher = more frequent).
+      damage_multiplier: 1.0
+      # Multiplier for how often hurricane puddles are seeded and how many separate puddles may form.
+      puddle_spawn_rate: 1.0
+      # Multiplier for how quickly existing hurricane puddles spread outward.
+      puddle_grow_rate: 1.0
+      # Multiplier for how fast those puddles dry up once the storm ends.
+      puddle_dry_rate: 1.0
+      # Multiplier for how often the mini sweeping water waves form once the storm intensifies. 0 disables them.
+      wave_multiplier: 1.0
+      # The realistic calm "eye" at the dead center. When enabled the very center is calm and the violent eyewall
+      # ring just outside it becomes the worst conditions; when disabled the geometric center itself is the worst.
+      eye:
+        enabled: false
+        # Fraction of the radius (0.0-0.14) taken up by the calm eye when enabled.
+        radius_fraction: 0.07
+      # Effects applied to vulnerable entities heavily exposed to the hurricane.
+      entity_effects:
+        slowness:
+          ticks: 40
+          level: 1
+      # Brittle block types that shatter (with breaking particles + sound, no drop) instead of becoming falling blocks.
+      shatter_blocks:
+      - glass_blocks
+      - glass_panes
+      # The minimum Y axis level entities must be for the hurricane to affect them. This prevents false positives of
+      # players in large caves.
+      minimum_entity_Y_level: 50
+      # The minimum height on the Y block axis that this disaster can start at.
+      min_height: 55
+      blacklisted_mob_types:
+      - drowned
+  # ##########################################################################################################################################################################
+  #
+  # Mob Disasters
+  #
+  # This sub-section holds all of the mob type disaster settings. This section is mainly just for sorting convenience as these disasters are each very unique and there are
+  # no global settings for them.
+  #
+  # ##########################################################################################################################################################################
+  mob:
+    # ######################################################################################################################################################################
+    #
+    # Black Plague
+    #
+    # ######################################################################################################################################################################
+    black_plague:
+      # How long the plague actively follows the target player and seeds new nearby outbreaks.
+      duration_seconds:
+        level_1: 90
+        level_2: 120
+        level_3: 180
+        level_4: 240
+        level_5: 300
+        level_6: 420
+      # Warning phase before the first active outbreak pulse.
+      omen_seconds: 10
+      # If the wither-spawn omen sound should play around the target when the plague begins.
+      play_omen_sound: true
+      # How often the timed outbreak checks the target player's area and reinforces nearby infection pressure.
+      outbreak_pulse_seconds:
+        level_1: 12
+        level_2: 10
+        level_3: 8
+        level_4: 7
+        level_5: 6
+        level_6: 4
+      # Radius around the target player used by timed outbreak pulses.
+      outbreak_radius: 42.0
+      # Patient zero candidates are strongly limited to this vertical distance from the target player.
+      vertical_preference: 14.0
+      # Mobs selected as patient zero or pulse seeds must be at least this far from every non-immune player.
+      patient_zero_min_player_distance: 15.0
+      # Nearby infected pressure the timed outbreak tries to maintain while active.
+      nearby_infected_target:
+        level_1: 2
+        level_2: 3
+        level_3: 5
+        level_4: 7
+        level_5: 10
+        level_6: 16
+      # Maximum new patient-zero style infections a single outbreak pulse can add.
+      pulse_infections:
+        level_1: 1
+        level_2: 1
+        level_3: 2
+        level_4: 2
+        level_5: 3
+        level_6: 5
+      # Maximum infected entities at one time in the affected world for this outbreak.
+      max_infected_mobs:
+        level_1: 18
+        level_2: 28
+        level_3: 42
+        level_4: 60
+        level_5: 85
+        level_6: 140
+      # Percent chance that a newly infected mob starts as a carrier. Carriers have stronger particles and stronger spread pulses.
+      carrier_chance:
+        level_1: 5.0
+        level_2: 8.0
+        level_3: 12.0
+        level_4: 16.0
+        level_5: 22.0
+        level_6: 35.0
+      # How long an infection lasts before it becomes fatal.
+      infection_duration_seconds: 300
+      # Undead mobs do not suffer symptoms or die from plague; they carry it for this many seconds.
+      undead_carrier_seconds: 300
+      # Rare natural recovery chance when a non-player infected mob enters a new plague phase.
+      natural_recovery_chance:
+        level_1: 5.0
+        level_2: 3.5
+        level_3: 2.0
+        level_4: 1.0
+        level_5: 0.5
+        level_6: 0.0
+      # Percent chance that a hit from an infected entity or close-contact exposure infects the victim.
+      infection_transmission_chance:
+        level_1: 30.0
+        level_2: 40.0
+        level_3: 50.0
+        level_4: 60.0
+        level_5: 80.0
+        level_6: 100.0
+      # How often infected entities roll close-contact infection attempts.
+      proximity_spread_interval_seconds: 2
+      # Extra distance added around the infected entity's bounding box for close-contact exposure.
+      proximity_spread_margin: 1.0
+      # Damage dealt by passive mobs and villagers that become rabid when UltimateContent is installed.
+      rabid_damage: 4.0
+      # Infected mobs killed by the plague or combat release a final spread pulse.
+      corpse_burst:
+        enabled: true
+        radius: 3.5
+        chance:
+          level_1: 12.6
+          level_2: 15.3
+          level_3: 18.0
+          level_4: 21.6
+          level_5: 26.1
+          level_6: 36.0
+      # UltimateContent plague rats act as fast plague carriers that bite, disengage, and retarget.
+      plague_rats:
+        enabled: true
+        min_level: 1
+        # Plague rats spawned by this disaster are infected; bites use infection_transmission_chance above.
+        lifetime_seconds: 40
+        spawn_min_player_distance: 12.0
+        spawn_max_player_distance: 30.0
+        underground_spawn_min_player_distance: 12.0
+        underground_spawn_max_player_distance: 26.0
+        # Percent of ordinary pulse rats locked onto the disaster target player; the rest target nearby entities normally.
+        player_target_chance: 15.0
+        pulse_spawn_count:
+          level_1: 1
+          level_2: 1
+          level_3: 2
+          level_4: 2
+          level_5: 3
+          level_6: 5
+        # Larger swarms that spawn in all directions; part pressure the disaster player while the rest attack local entities.
+        player_swarms:
+          # Percent of a scheduled swarm locked directly onto the disaster player. Other swarm rats target local entities.
+          direct_target_percent: 15.0
+          interval_seconds:
+            level_1: 120
+            level_2: 105
+            level_3: 95
+            level_4: 85
+            level_5: 75
+            level_6: 60
+          min_count:
+            level_1: 1
+            level_2: 2
+            level_3: 4
+            level_4: 5
+            level_5: 7
+            level_6: 11
+          max_count:
+            level_1: 3
+            level_2: 4
+            level_3: 6
+            level_4: 8
+            level_5: 14
+            level_6: 20
+        max_near_player:
+          level_1: 2
+          level_2: 3
+          level_3: 5
+          level_4: 6
+          level_5: 9
+          level_6: 14
+      # UltimateContent plague bats circle above a target, swoop once to bite, and retreat before choosing another target.
+      plague_bats:
+        enabled: true
+        min_level: 1
+        lifetime_seconds: 45
+        spawn_min_player_distance: 22.0
+        spawn_max_player_distance: 28.0
+        # Multiplies bat spawn chance, group size, and the nearby cap while the target is underground.
+        cave_spawn_multiplier: 2.0
+        # Percent of bats locked onto the disaster target player. Other bats target nearby entities normally.
+        player_target_chance: 15.0
+        # Percent chance for an outbreak pulse to spawn a bat group.
+        pulse_spawn_chance: 23.0
+        pulse_spawn_count:
+          level_1: 1
+          level_2: 1
+          level_3: 2
+          level_4: 2
+          level_5: 3
+          level_6: 4
+        max_near_player:
+          level_1: 1
+          level_2: 1
+          level_3: 1
+          level_4: 1
+          level_5: 2
+          level_6: 2
+      # If drinking vanilla milk cures plague. Plague Cure items always cure when UIFramework is installed.
+      milk_cures_plague: false
+      # Controls plague coughing sounds independently for each affected entity category.
+      player_coughing_sounds: true
+      villager_coughing_sounds: true
+      animal_coughing_sounds: true
+      # The disaster frequency affects how often a disaster can happen, it can be any value between 0.0 meaning it will never happen and 1.0 meaning it will always have a chance to happen.
+      frequency: 0.35
+      # Overridden from global disaster settings.
+      start_delay: 8.0
+    # ######################################################################################################################################################################
+    #
+    # Purge
+    #
+    # ######################################################################################################################################################################
+    purge:
+      # If a boss bar should be displayed for nearby players. Without the boss bar, players will not have the dark fog effect. You can change the text in the language file.
+      display_boss_bar: true
+      # The minimum spawn distance from players that horde entities can spawn from. Do not set this value too high or the entities will just despawn immediately!
+      entity_spawn_distance: 35.0
+      # The rate at which entities spawn during the purge. This value scales with the level.
+      entity_spawn_rate: 1.0
+      # The max horde size controls how many horde entities can be spawned in at a single time during the horde for the level.
+      max_horde_size:
+        level_1: 7
+        level_2: 12
+        level_3: 17
+        level_4: 23
+        level_5: 30
+        level_6: 40
+      # The horde vanquish threshold is the amount of horde entities that must be slain for the corresponding level to end.
+      horde_vanquish_threshold:
+        level_1: 10
+        level_2: 18
+        level_3: 25
+        level_4: 32
+        level_5: 40
+        level_6: 70
+      # This section controls the entities that spawn in purges. You can easily add or remove any entities with their in game name as the "type" Also, if you are using UltimateContent, then you can also add any custom entity by using the "uc:" prefix!
+      # There are custom settings for entities that you can add in each entity section, below are the listed settings that can be applied:
+      #
+      #  * "type" - This is a mandatory field and is the minecraft entity command name. You can also list UltimateContent entities here with the "uc:" prefix.
+      #
+      #    "chance" - This is the chance of this mob spawning from the mob pool when a purge mob is being spawned. This will accumulate to all the mobs you have in the pool and DOES NOT affect the mob spawn rate of purges! Default value will be 5.
+      #
+      #    "health" - The health the entity will have. Will use the entity types default value if not added.
+      #
+      #    "damage" - The damage the entity will deal. Will use the entity types default value if not added.
+      #
+      #    "speed" - The movement speed the entity will have. Will use the entity types default value if not added.
+      #
+      #    "randomize" - This is a true/false value and will affect if the mob spawns with random equipment vanilla behavior or not. By default this is set to true.
+      #
+      #    "main_hand" - The item that the entity will have in its main hand slot.
+      #
+      #    "off_hand" - The item that the entity will have in its off hand slot.
+      #
+      #    "head" - The item that the entity will have in its head slot.
+      #
+      #    "chest" - The item that the entity will have in its chest slot.
+      #
+      #    "legs" - The item that the entity will have in its legs slot.
+      #
+      #    "feet" - The item that the entity will have in its feet slot.
+      #
+      #    "charged" - Unique to creeper mobs only. Sets whether they are charged or not.
+      entity_spawns:
+      - type: zombie
+        health: 25.0
+        damage: 6.0
+        speed: 0.35
+        head: chainmail_helmet
+        chance: 5.0
+      - type: skeleton
+        health: 25.0
+        speed: 0.35
+        head: chainmail_helmet
+        chance: 4.0
+      - type: slime
+        health: 15.0
+        damage: 6.0
+        speed: 0.35
+        chance: 5.0
+      - type: pillager
+        speed: 0.35
+        chance: 3.0
+      - type: vindicator
+        speed: 0.35
+        chance: 3.0
+      - type: ravager
+        speed: 0.35
+        chance: 3.0
+      - type: phantom
+        chance: 3.0
+      - type: spider
+        chance: 4.0
+      - type: cave_spider
+        chance: 3.0
+      - type: enderman
+        chance: 4.0
+      - type: creeper
+        chance: 5.0
+      - type: creeper
+        charged: true
+        chance: 3.0
+      - type: uc:undead_miner
+        chance: 8.0
+      - type: uc:skeleton_knight
+        chance: 6.0
+      - type: uc:dark_mage
+        chance: 2.0
+      - type: uc:shadow_leech
+        chance: 3.0
+      - type: uc:swamp_beast
+        chance: 3.0
+      - type: uc:zombie_knight
+        chance: 4.0
+      breach:
+        enabled: true
+        trigger_seconds: 6
+        cooldown_seconds: 12
+        reach_distance: 6.0
+        scan_radius: 24
+        scan_cap: 1200
+        miner_retention_range: 64.0
+        max_miners: 4
+        miners_per_squad: 1
+        escort_size: 3
+        flyer_count: 2
+        cap_bonus: 4
+        spawn_rate_multiplier: 1.5
+        miners_per_squad_max: 2
+        escort_size_max: 6
+        flyer_count_max: 4
+      frequency: 0.3
+      start_delay: 10.0

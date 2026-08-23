@@ -1,0 +1,20 @@
+# =============================================================================
+# GENERADOR A: LA VANGUARDIA DEL SCULK (ID ÚNICO / SIN COLISIONES)
+# =============================================================================
+GeneradorDeepDarkVanguardia:
+  MobName: SculkVanguardia
+  World: world # Modifica por el nombre de tu mundo del Deep Dark
+  X: 207 # Coordenadas de tu altar oscuro
+  Y: 77
+  Z: 3374
+  Radius: 15
+  UsePlayerRadius: true
+  PlayerRadius: 20
+  MaxMobs: 8 # Balanceado: 5 de infantería pesada
+  MobsPerSpawn: 4
+  Cooldown: 20
+  ActivationRange: 25
+  CheckForPlayers: true
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 4

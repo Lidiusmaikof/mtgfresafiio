@@ -1,0 +1,98 @@
+# =============================================================================
+# JINETE 1: TRITÓN DE LAS MAREAS (VERSION MAESTRA DEFINITIVA)
+# =============================================================================
+TritonMareas:
+  Type: DROWNED
+  Display: '&3&lTritón de las Mareas'
+  Health: 50
+  Damage: 5
+  Faction: OceanAbyss
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.25
+    PreventSunburn: true         # Blindado si sale a la superficie
+    KnockbackResistance: 0.5
+  AIGoalSelectors:
+    - clear
+    - meleeattack                # Concentrado puramente en atacar desde su montura
+    - wander
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - diamond_chestplate CHEST
+    - diamond_boots BOOTS
+    - trident HAND
+  Skills:
+    - skill{s=GarantizarMontura} @Self ~onSpawn
+    - skill{s=EfectoNacimientoOceanico} @Self ~onSpawn
+    - skill{s=AuraAmbienteOceanica} @Self ~onTimer:30
+    - skill{s=PresionAbisal} @Target ~onAttack
+
+# =============================================================================
+# JINETE 2: BRUJA DEL ARRECIFE (VERSION MAESTRA DEFINITIVA)
+# =============================================================================
+BrujaArrecife:
+  Type: STRAY
+  Display: '&b&lBruja del Arrecife'
+  Health: 60
+  Damage: 6
+  Faction: OceanAbyss
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.25
+    PreventSunburn: true
+    KnockbackResistance: 0.5
+  AIGoalSelectors:
+    - clear
+    - meleeattack
+    - wander
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - iron_chestplate CHEST
+    - turtle_helmet HEAD
+    - prismarine_crystals HAND
+  Skills:
+    - skill{s=GarantizarMontura} @Self ~onSpawn
+    - skill{s=EfectoNacimientoOceanico} @Self ~onSpawn
+    - skill{s=AuraAmbienteOceanica} @Self ~onTimer:30
+    - skill{s=PresionAbisal} @Target ~onAttack
+
+# =============================================================================
+# LA MONTURA: GUARDIÁN ABISAL (PERFECCIONADO)
+# =============================================================================
+GuardianAbisal:
+  Type: GUARDIAN
+  Options:
+    PreventSunburn: true
+    Collidable: false           # Crucial: Evita atascos con el terreno o el jinete
+    MovementSpeed: 0.30         # Velocidad óptima de persecución acuática
+  AIGoalSelectors:
+    - clear
+    - float                     # El guardián maneja de forma nativa la física del agua
+    - meleeattack
+    - wander
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+
+# =============================================================================
+# ENTIDAD DE EFECTOS: VÓRTICE MARINO FIJO (SPAWN MANUAL PERMANENTE)
+# =============================================================================
+AnclaVisualOceanica:
+  Type: ARMOR_STAND
+  Options:
+    Invisible: true
+    Marker: true
+    NoGravity: true
+    Invulnerable: true
+    ForceSpawn: true
+    Despawn: false
+    Persistent: true
+  Skills:
+    - skill{s=EfectoSpawnerOceanico} @Self ~onTimer:20

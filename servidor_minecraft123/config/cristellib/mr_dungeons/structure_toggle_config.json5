@@ -1,0 +1,18 @@
+{
+	"dungeons": {
+		"cold_dungeon": true,
+		"deepwater_dungeon": true,
+		"dusty_tomb": true,
+		"frozen_dungeon": true,
+		"infested_dungeon": true,
+		"insidious_dungeon": true,
+		"lush_dungeon": true,
+		"mouldy_dungeon": true,
+		"muddy_dungeon": true,
+		"scorched_tomb": true,
+		"webbed_dungeon": true
+	},
+	"ruins": {
+		"dungeon_ruins": true
+	}
+}

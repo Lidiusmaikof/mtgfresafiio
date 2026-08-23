@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "nethers_exoticism:jaboticaba_planks"
+  },
+  "result": {
+    "id": "farm_and_charm:silo_wood",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

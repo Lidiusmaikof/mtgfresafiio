@@ -1,0 +1,47 @@
+# =============================================================================
+# ENEMIGO: CAMINANTE GLACIAL (CONSERVADO INTACTO CON IA DIURNA)
+# =============================================================================
+CaminanteGlacial:
+  Type: DROWNED
+  Display: '&b&lCaminante Glacial'
+  Health: 70
+  Damage: 6
+  Faction: Helada
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.25
+    PreventSunburn: true         # Inmune al fuego del sol
+    KnockbackResistance: 0.5
+  AIGoalSelectors:
+    - clear                      # Forzar hostilidad en el día
+    - float
+    - meleeattack
+    - wander
+  AITargetSelectors:
+    - clear
+    - players
+    - attacker
+  Equipment:
+    - diamond_chestplate CHEST
+    - diamond_boots BOOTS
+    - packed_ice HAND
+  Skills:
+    - skill{s=EfectoNacimientoGlacial} @Self ~onSpawn
+    - skill{s=AuraAmbienteGlacial} @Self ~onTimer:30
+    - skill{s=GolpeCongelante} @Target ~onAttack
+
+# =============================================================================
+# ENTIDAD DE EFECTOS: NÚCLEO FIJO (AJUSTADO PARA SPAWN MANUAL PERMANENTE)
+# =============================================================================
+AnclaVisualGlacial:
+  Type: ARMOR_STAND
+  Options:
+    Invisible: true
+    Marker: true
+    NoGravity: true
+    Invulnerable: true
+    ForceSpawn: true
+    Despawn: false               # MODIFICADO: No desaparecerá cuando te alejes
+    Persistent: true             # MODIFICADO: Se guardará permanentemente en el mundo
+  Skills:
+    - skill{s=EfectoSpawnerEncendido} @Self ~onTimer:20

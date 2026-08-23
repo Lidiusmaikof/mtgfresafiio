@@ -1,0 +1,16 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "ecologics:flowering_azalea_log"
+    },
+    {
+      "item": "ecologics:flowering_azalea_wood"
+    }
+  ],
+  "result": {
+    "id": "ecologics:flowering_azalea_fence",
+    "count": 3
+  },
+  "type": "sawmill:woodcutting"
+}

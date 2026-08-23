@@ -1,0 +1,163 @@
+# =============================================================================
+# GESTIÓN DEL ALTAR E INTERACCIÓN (PULIDO VISUAL)
+# =============================================================================
+InteractuarAltar:
+  TriggerConditions:
+    - holding{item=FragmentoDelVacio} true
+  Skills:
+    - skill{s=InicializarFrag} @Self
+    - takeitem{i=FragmentoDelVacio;amount=1} @trigger
+    - sound{s=entity.warden.heartbeat;volume=3;pitch=0.5} @Self
+    - sound{s=block.sculk_sensor.clicking;volume=2;pitch=0.7} @Self
+    - effect:particles{p=sculk_charge;amount=80;speed=0.02;hS=0.8;vS=0.8} @Self
+    - effect:particles{p=town_aura;amount=60;speed=0.1;hS=0.6;vS=1.2} @Self
+    - effect:particles{p=flash;amount=2;speed=0;hS=0.1;vS=0.1} @Self
+    - setvariable{var=caster.fragments;value="<caster.var.fragments> + 1";type=INTEGER} @Self
+    - skill{s=AnunciarEntrega} @Self
+    - skill{s=VerificarCondicionRitual} @Self
+
+InicializarFrag:
+  Conditions:
+    - variableIsSet{var=caster.fragments} false
+  Skills:
+    - setvariable{var=caster.fragments;value=0;type=INTEGER} @Self
+
+AnunciarEntrega:
+  Skills:
+    - 'message{m="&1&l[!] &b<trigger.name> &7ha entregado un Fragmento. ¡La energía del Vacío se acumula!"} @PlayersInRadius{r=40}'
+
+VerificarCondicionRitual:
+  Conditions:
+    - variableEquals{var=caster.fragments;value=7} true
+  Skills:
+    - setvariable{var=caster.fragments;value=0;type=INTEGER} @Self
+    - skill{s=AnimacionCargaRitual} @Self
+
+# =============================================================================
+# ANIMACIÓN DE CARGA Y DESPERTAR DEL RITUAL (TORMENTA DE PARTÍCULAS)
+# =============================================================================
+AnimacionCargaRitual:
+  Skills:
+    - 'message{m="&1&l[!] &b&l¡Todos los fragmentos han sido entregados! El ritual ha comenzado..."} @PlayersInRadius{r=50}'
+    - sound{s=entity.warden.sonic_charge;volume=3;pitch=0.5} @Self
+    - sound{s=ambient.basalt_deltas.mood;volume=2;pitch=0.5} @Self
+    - effect:particles{p=portal;amount=250;speed=-0.5;hS=4;vS=4} @Self
+    - delay 30
+    - sound{s=entity.warden.sonic_charge;volume=3;pitch=0.8} @Self
+    - sound{s=block.respawn_anchor.charge;volume=2;pitch=0.5} @Self
+    - effect:particles{p=sculk_charge;amount=400;speed=0.1;hS=6;vS=6} @Self
+    - effect:particles{p=squid_ink;amount=100;speed=0.02;hS=4;vS=2} @Self
+    - delay 30
+    - sound{s=entity.warden.shriek;volume=4;pitch=0.4} @Self
+    - sound{s=entity.wither.ambient;volume=2;pitch=0.5} @Self
+    - effect:particles{p=sculk_soul;amount=500;speed=0.4;hS=8;vS=8} @Self
+    - delay 30
+    - skill{s=DesplegarCombateTotal} @Self
+
+# =============================================================================
+# INSTAKILL AL APARECER + RANGO MAXIMIZADO (60 BLOQUES)
+# =============================================================================
+DesplegarCombateTotal:
+  Skills:
+    - summon{mob=EcoDelVacio;amount=1;radius=0;force=true} @Self
+    - summon{mob=ZombiDelVacíoRitual;amount=20;radius=20;force=true} @Self
+    - summon{mob=EsqueletoDelVacíoRitual;amount=20;radius=20;force=true} @Self
+    - sound{s=entity.warden.sonic_boom;volume=6;pitch=0.1} @Self
+    - sound{s=entity.generic.explode;volume=5;pitch=0.4} @Self
+    - sound{s=entity.lightning_bolt.thunder;volume=4;pitch=0.5} @Self
+    - effect:particles{p=explosion_emitter;amount=15;speed=0;hS=4;vS=4} @Self
+    - effect:particles{p=sonic_boom;amount=50;speed=0.5;hS=15;vS=15} @Self
+    - effect:particles{p=flash;amount=10;speed=0;hS=3;vS=3} @Self
+    - 'message{m="&4&l[!] ¡EL ECO DEL VACÍO HA DESPERTADO! LA BATALLA COMIENZA..."} @PlayersInRadius{r=60}'
+    - damage{amount=50000;ignoreArmor=true;preventKnockback=false} @PlayersInRadius{r=60}
+
+# =============================================================================
+# HABILIDADES DE COMBATE DEL TITÁN (PULIDAS)
+# =============================================================================
+InfeccionSilenciosa:
+  Skills:
+    - sound{s=entity.warden.heartbeat;volume=3;pitch=0.3} @Self
+    - effect:particles{p=sculk_charge;amount=450;speed=0.2;hS=12;vS=1.5} @Self
+    - effect:particles{p=squid_ink;amount=250;speed=0.02;hS=10;vS=1} @Self
+    - potion{type=BLINDNESS;duration=120;lvl=0} @PlayersInRadius{r=25}
+    - potion{type=DARKNESS;duration=140;lvl=0} @PlayersInRadius{r=25}
+    - damage{amount=16;ignoreArmor=true} @PlayersInRadius{r=25}
+
+TrampaGritos:
+  Skills:
+    - sound{s=entity.warden.sonic_boom;volume=3;pitch=1.3} @Target
+    - sound{s=block.anvil.land;volume=1.5;pitch=0.5} @Target
+    - effect:particles{p=sonic_boom;amount=5;speed=0;hS=0.2;vS=0.2} @Target
+    - effect:particles{p=sculk_soul;amount=180;speed=0.6;hS=2;vS=4} @Target
+    - potion{type=SLOW;duration=80;lvl=4} @Target
+    - damage{amount=24;ignoreArmor=false} @Target
+
+GestoFatidicoPotenciado:
+  Skills:
+    - 'message{m="&1&l[!] &c&lEl Eco del Vacío está concentrando una Tormenta Sónica... ¡ALÉJATE!"} @PlayersInRadius{r=35}'
+    - potion{type=SLOW;duration=80;lvl=6} @Self
+    - sound{s=entity.warden.sonic_charge;volume=3;pitch=0.4} @Self
+    - effect:particles{p=portal;amount=400;speed=0.4;hS=6;vS=3} @Self
+    - delay 40
+    - sound{s=entity.warden.sonic_charge;volume=3;pitch=0.6} @Self
+    - effect:particles{p=sculk_charge;amount=500;speed=0.5;hS=8;vS=3} @Self
+    - delay 40
+    - sound{s=entity.warden.sonic_boom;volume=6;pitch=0.3} @Self
+    - sound{s=entity.generic.explode;volume=4;pitch=0.4} @Self
+    - effect:particles{p=sonic_boom;amount=50;speed=0.5;hS=12;vS=12} @Self
+    - effect:particles{p=sculk_soul;amount=1000;speed=2.5;hS=20;vS=5} @Self
+    - damage{amount=50;ignoreArmor=true} @PlayersInRadius{r=20}
+
+# =============================================================================
+# INSTAKILL AL MORIR + RANGO MAXIMIZADO (75 BLOQUES) + DROP DE RECOMPENSAS
+# =============================================================================
+SecuenciaMuerteYEvacuacion:
+  Skills:
+    - 'message{m="&1&l[!] &1&l¡El Eco del Vacío ha sido derrotado de forma definitiva!"} @PlayersInRadius{r=75}'
+    - sound{s=entity.generic.explode;volume=10;pitch=0.1} @Self
+    - sound{s=entity.warden.sonic_boom;volume=9;pitch=0.1} @Self
+    - sound{s=entity.ender_dragon.death;volume=5;pitch=0.5} @Self
+    - sound{s=ui.toast.challenge_complete;volume=4;pitch=0.5} @Self
+    - effect:particles{p=explosion_emitter;amount=35;speed=0;hS=8;vS=8} @Self
+    - effect:particles{p=sonic_boom;amount=120;speed=0.9;hS=30;vS=30} @Self
+    - effect:particles{p=sculk_soul;amount=2000;speed=3.5;hS=35;vS=8} @Self
+    - effect:particles{p=dragon_breath;amount=600;speed=0.6;hS=20;v=4} @Self
+    - effect:particles{p=flash;amount=25;speed=0;hS=6;vS=6} @Self
+    - throw{velocity=25;verticalVelocity=6} @PlayersInRadius{r=75}
+    - damage{amount=50000;ignoreArmor=true;preventKnockback=false} @PlayersInRadius{r=75}
+    - 'message{m="&4&l[!] ¡UNA ONDA EXPANSIVA APOCALÍPTICA HA ARRASADO LA ARENA AL MORIR EL TITÁN!"} @PlayersInRadius{r=75}'
+    - 'message{m="&4&l[!] &cLa arena colapsará por completo en 30 segundos. ¡Recoged el botín!"} @PlayersInRadius{r=75}'
+    # ----------------=======================================================
+    # SECCIÓN DE LOOT EN SKILLS (Añadido de forma segura en el punto exacto de muerte)
+    # ----------------=======================================================
+    - dropitem{item=diamond_block;amount=32} @Self
+    - dropitem{item=FragmentoDelVacio;amount=10} @Self
+    # ----------------=======================================================
+    - effect:particles{p=sculk_soul;amount=150;speed=0.5;hS=12;vS=6} @Self
+    - delay 200
+    - 'message{m="&4&l[!] &cQuedan 20 segundos para el colapso de la estructura..."} @PlayersInRadius{r=75}'
+    - sound{s=entity.zombie.break_wooden_door;volume=2;pitch=0.3} @PlayersInRadius{r=75}
+    - effect:particles{p=explosion_emitter;amount=5;speed=0;hS=10;vS=5} @Self
+    - delay 200
+    - 'message{m="&4&l[!] &c&l¡Atención! Quedan solo 10 segundos!"} @PlayersInRadius{r=75}'
+    - sound{s=entity.generic.explode;volume=2;pitch=0.4} @PlayersInRadius{r=75}
+    - effect:particles{p=sculk_charge;amount=250;speed=0.2;hS=15;vS=8} @Self
+    - delay 100
+    - 'message{m="&4&l[!] &cEvacuación en: &l5..."} @PlayersInRadius{r=75}'
+    - sound{s=block.note_block.pling;volume=2;pitch=0.6} @PlayersInRadius{r=75}
+    - delay 20
+    - 'message{m="&4&l[!] &cEvacuación en: &l4..."} @PlayersInRadius{r=75}'
+    - sound{s=block.note_block.pling;volume=2;pitch=0.7} @PlayersInRadius{r=75}
+    - delay 20
+    - 'message{m="&4&l[!] &cEvacuación en: &l3..."} @PlayersInRadius{r=75}'
+    - sound{s=block.note_block.pling;volume=2;pitch=0.8} @PlayersInRadius{r=75}
+    - delay 20
+    - 'message{m="&4&l[!] &cEvacuación en: &l2..."} @PlayersInRadius{r=75}'
+    - sound{s=block.note_block.pling;volume=2;pitch=0.9} @PlayersInRadius{r=75}
+    - delay 20
+    - 'message{m="&4&l[!] &cEvacuación en: &l1..."} @PlayersInRadius{r=75}'
+    - sound{s=block.note_block.pling;volume=2;pitch=1.2} @PlayersInRadius{r=75}
+    - delay 20
+    - "command{c='execute at <mob.uuid> run tp @a[distance=..80] 1383 230 1182'} @Self"
+    - 'message{m="&b&l[!] ¡A salvo! Felicidades! acaban de liberar la nueva Dimension del DeepDark."} @PlayersInRadius{r=100}'
+    - remove @Self

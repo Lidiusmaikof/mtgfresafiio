@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "ecologics:walnut_planks"
+  },
+  "result": {
+    "id": "ecologics:walnut_slab",
+    "count": 2
+  },
+  "type": "sawmill:woodcutting"
+}

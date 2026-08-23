@@ -1,0 +1,22 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "autumnity:maple_log"
+    },
+    {
+      "item": "autumnity:maple_wood"
+    },
+    {
+      "item": "autumnity:stripped_maple_log"
+    },
+    {
+      "item": "autumnity:stripped_maple_wood"
+    }
+  ],
+  "result": {
+    "id": "meadow:wooden_flower_pot_big",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}
